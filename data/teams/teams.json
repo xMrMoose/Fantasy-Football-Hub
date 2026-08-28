@@ -16,10 +16,10 @@
     "conference": "AFC",
     "sourceLeagueId": "1398855181952667648",
     "sourceRosterId": 2,
-    "ownerId": null,
-    "displayName": "Team 2",
-    "ownerDisplayName": null,
-    "avatar": null
+    "ownerId": "1265799502548172800",
+    "displayName": "andresnfl",
+    "ownerDisplayName": "andresnfl",
+    "avatar": "d55d1f7075eda01948318de4af616075"
   },
   {
     "teamId": "AFC-3",
@@ -148,10 +148,10 @@
     "conference": "NFC",
     "sourceLeagueId": "1398856149637275648",
     "sourceRosterId": 2,
-    "ownerId": null,
-    "displayName": "Team 2",
-    "ownerDisplayName": null,
-    "avatar": null
+    "ownerId": "1399110025783332864",
+    "displayName": "jweidner5",
+    "ownerDisplayName": "jweidner5",
+    "avatar": "d55d1f7075eda01948318de4af616075"
   },
   {
     "teamId": "NFC-3",
@@ -159,10 +159,10 @@
     "conference": "NFC",
     "sourceLeagueId": "1398856149637275648",
     "sourceRosterId": 3,
-    "ownerId": null,
-    "displayName": "Team 3",
-    "ownerDisplayName": null,
-    "avatar": null
+    "ownerId": "1399111530686971904",
+    "displayName": "nolanhudak01",
+    "ownerDisplayName": "nolanhudak01",
+    "avatar": "d55d1f7075eda01948318de4af616075"
   },
   {
     "teamId": "NFC-4",
@@ -170,9 +170,9 @@
     "conference": "NFC",
     "sourceLeagueId": "1398856149637275648",
     "sourceRosterId": 4,
-    "ownerId": null,
-    "displayName": "Team 4",
-    "ownerDisplayName": null,
+    "ownerId": "1384651076191391744",
+    "displayName": "keepitgoingxav",
+    "ownerDisplayName": "keepitgoingxav",
     "avatar": null
   },
   {
