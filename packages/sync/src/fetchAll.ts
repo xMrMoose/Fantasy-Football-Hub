@@ -5,6 +5,7 @@ import {
   SleeperMatchupsResponseSchema,
   SleeperBracketResponseSchema,
   SleeperNflStateSchema,
+  SleeperProjectionsResponseSchema,
   type SleeperLeague,
   type SleeperRoster,
   type SleeperUser,
@@ -61,6 +62,40 @@ export async function fetchLeaguePayload(
 export async function fetchNflState(client: SleeperClient) {
   const raw = await client.get("/state/nfl");
   return SleeperNflStateSchema.parse(raw);
+}
+
+/** Positions worth projecting — everything this league can start. */
+const PROJECTION_POSITIONS = ["QB", "RB", "WR", "TE", "K", "DEF"];
+
+/**
+ * Fetches one week of player projections, trimmed to rostered players.
+ *
+ * Unlike everything else here this hits Sleeper's *undocumented* projections
+ * host (`api.sleeper.com/projections`, no `/v1`), which is not part of their
+ * published read-only API and may change without notice. Callers must treat a
+ * failure as non-fatal — the site renders "—" for projections when the file is
+ * missing, which is strictly better than failing a sync over a nice-to-have.
+ */
+export async function fetchProjections(
+  client: SleeperClient,
+  season: string,
+  week: number,
+  pointsKey: string,
+  rosteredPlayerIds: Set<string>,
+): Promise<Record<string, number>> {
+  const positions = PROJECTION_POSITIONS.map((p) => `position[]=${p}`).join("&");
+  const raw = await client.get<unknown>(
+    `/projections/nfl/${season}/${week}?season_type=regular&${positions}`,
+  );
+  const entries = SleeperProjectionsResponseSchema.parse(raw);
+
+  const projections: Record<string, number> = {};
+  for (const entry of entries) {
+    if (!rosteredPlayerIds.has(entry.player_id)) continue;
+    const points = entry.stats?.[pointsKey];
+    if (typeof points === "number") projections[entry.player_id] = points;
+  }
+  return projections;
 }
 
 /** Fetches the full player directory and trims it to only the given player IDs (keeps the committed file small and diff-friendly). */

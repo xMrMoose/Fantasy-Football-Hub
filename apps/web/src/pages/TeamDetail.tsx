@@ -255,11 +255,13 @@ function RosterTable({
                 </td>
                 <td>
                   {slot.playerId ? (
-                    info?.full_name ?? slot.playerId
+                    <>
+                      <div className="player-name">{info?.full_name ?? slot.playerId}</div>
+                      {info?.team && <div className="player-team">{info.team}</div>}
+                    </>
                   ) : (
                     <span className="muted">Empty</span>
                   )}
-                  {info?.team && <span className="muted"> · {info.team}</span>}
                 </td>
                 <td>{info?.position ?? "—"}</td>
                 <td>{points !== null ? points.toFixed(2) : "—"}</td>

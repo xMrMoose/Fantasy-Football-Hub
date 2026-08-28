@@ -1,11 +1,13 @@
 import { SleeperClient } from "./sleeperClient.js";
-import { fetchLeaguePayload, fetchNflState, fetchTrimmedPlayers } from "./fetchAll.js";
+import { fetchLeaguePayload, fetchNflState, fetchTrimmedPlayers, fetchProjections } from "./fetchAll.js";
 import { readJsonIfExists, writeJson, weekFileName, paths } from "./buildDataDir.js";
 import { newRunId, okResult, failedResult, appendSyncLog, summarizeRun } from "./syncRun.js";
 import {
   normalizeSourceLeague,
   normalizeTeams,
   normalizeRosters,
+  scoringVariant,
+  projectionPointsKey,
   pairMatchups,
   stableHash,
   computeStandings,
@@ -58,6 +60,8 @@ async function main() {
   }
 
   const client = new SleeperClient();
+  // Projections live on a different host with no /v1 prefix.
+  const projectionsClient = new SleeperClient({ baseUrl: "https://api.sleeper.com" });
   const runId = newRunId();
   const startedAt = new Date().toISOString();
   const warnings: string[] = [];
@@ -234,6 +238,26 @@ async function main() {
       await writeJson(paths.players(DATA_DIR), players);
     } catch (err) {
       warnings.push(`Failed to refresh player directory: ${String(err)}`);
+    }
+  }
+
+  // --- Projections for the active week (best-effort) ---
+  // Sourced from Sleeper's undocumented projections host, so a failure here
+  // only warns: the site renders "—" when the file is absent. Skipped entirely
+  // before a draft, when there is nobody to project.
+  if (rosteredIds.size > 0) {
+    const scoringSettings = (afc.payload ?? nfc.payload)?.league.scoring_settings;
+    try {
+      const projections = await fetchProjections(
+        projectionsClient,
+        SEASON,
+        upToWeek,
+        projectionPointsKey(scoringVariant(scoringSettings)),
+        rosteredIds,
+      );
+      await writeJson(paths.projections(DATA_DIR, upToWeek), projections);
+    } catch (err) {
+      warnings.push(`Failed to fetch week ${upToWeek} projections: ${String(err)}`);
     }
   }
 

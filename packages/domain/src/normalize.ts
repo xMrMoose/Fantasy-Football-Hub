@@ -90,6 +90,28 @@ export function normalizeTeams(
   });
 }
 
+export type ScoringVariant = "ppr" | "half_ppr" | "std";
+
+/**
+ * Which of Sleeper's three pre-computed projection totals matches this league.
+ * Sleeper publishes projections as `pts_ppr` / `pts_half_ppr` / `pts_std`
+ * rather than applying a league's own scoring, so the closest match is chosen
+ * from the per-reception value: 1.0 = PPR, 0.5 = half, anything else standard.
+ * Leagues that differ from the base formats elsewhere will be approximate —
+ * these are projections, not scores.
+ */
+export function scoringVariant(scoringSettings: Record<string, number> | undefined): ScoringVariant {
+  const rec = scoringSettings?.rec ?? 0;
+  if (rec >= 1) return "ppr";
+  if (rec >= 0.5) return "half_ppr";
+  return "std";
+}
+
+/** The stats key on a Sleeper projection entry holding that variant's point total. */
+export function projectionPointsKey(variant: ScoringVariant): string {
+  return `pts_${variant}`;
+}
+
 /** Roster seats that hold a player but never count toward the starting lineup. */
 const NON_STARTING_SLOTS = new Set(["BN", "IR", "TAXI"]);
 

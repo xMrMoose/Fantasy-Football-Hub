@@ -1,5 +1,13 @@
 import { describe, it, expect } from "vitest";
-import { combinePoints, pairMatchups, normalizeTeams, stableHash, buildRosterSlots } from "../src/normalize.js";
+import {
+  combinePoints,
+  pairMatchups,
+  normalizeTeams,
+  stableHash,
+  buildRosterSlots,
+  scoringVariant,
+  projectionPointsKey,
+} from "../src/normalize.js";
 import type { SleeperMatchupEntry, SleeperRoster, SleeperUser } from "../src/sleeperSchemas.js";
 
 describe("combinePoints", () => {
@@ -143,5 +151,27 @@ describe("buildRosterSlots", () => {
   it("fills IR/taxi seats from the bench pool without marking them starters", () => {
     const slots = buildRosterSlots(["QB", "IR"], ["p1"], ["p1", "p2"]);
     expect(slots[1]).toEqual({ slot: "IR", starter: false, playerId: "p2" });
+  });
+});
+
+describe("scoringVariant", () => {
+  it("maps a full point per reception to PPR", () => {
+    expect(scoringVariant({ rec: 1 })).toBe("ppr");
+  });
+
+  it("maps a half point per reception to half PPR", () => {
+    expect(scoringVariant({ rec: 0.5 })).toBe("half_ppr");
+  });
+
+  it("falls back to standard when receptions score nothing", () => {
+    expect(scoringVariant({ rec: 0 })).toBe("std");
+    expect(scoringVariant({})).toBe("std");
+    expect(scoringVariant(undefined)).toBe("std");
+  });
+
+  it("builds the matching Sleeper stats key", () => {
+    expect(projectionPointsKey(scoringVariant({ rec: 1 }))).toBe("pts_ppr");
+    expect(projectionPointsKey(scoringVariant({ rec: 0.5 }))).toBe("pts_half_ppr");
+    expect(projectionPointsKey(scoringVariant({}))).toBe("pts_std");
   });
 });

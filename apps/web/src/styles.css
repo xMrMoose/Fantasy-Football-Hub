@@ -469,6 +469,34 @@ th, td {
 
 .roster-table { font-size: 13px; }
 
+/* fixed layout splits columns evenly by default, which squeezes player names
+   into three-line wraps — give the name column the slack instead */
+.roster-table th:nth-child(1), .roster-table td:nth-child(1) { width: 52px; }
+.roster-table th:nth-child(3), .roster-table td:nth-child(3) { width: 38px; }
+.roster-table th:nth-child(4), .roster-table td:nth-child(4) { width: 48px; }
+.roster-table th:nth-child(5), .roster-table td:nth-child(5) { width: 50px; }
+
+.roster-table td:nth-child(4),
+.roster-table td:nth-child(5) {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.roster-table th:nth-child(4),
+.roster-table th:nth-child(5) { text-align: right; }
+
+.player-name {
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.player-team {
+  font-size: 10px;
+  color: var(--text-faint);
+}
+
 .roster-table th {
   font-size: 10px;
   letter-spacing: 0.5px;

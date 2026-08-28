@@ -110,3 +110,20 @@ export type SleeperPlayer = z.infer<typeof SleeperPlayerSchema>;
 
 /** Full players/nfl payload: a record keyed by player_id. */
 export const SleeperPlayersResponseSchema = z.record(z.string(), SleeperPlayerSchema);
+
+/**
+ * One entry from the undocumented projections endpoint. Only the fields this
+ * project reads are declared; `stats` is a loose numeric record because its
+ * keys vary by position (`pts_ppr`, `pts_allow`, `rec_yd`, …).
+ */
+export const SleeperProjectionSchema = z
+  .object({
+    player_id: z.string(),
+    week: z.number().optional(),
+    season: z.string().optional(),
+    stats: z.record(z.string(), z.number()).nullable().optional(),
+  })
+  .passthrough();
+export type SleeperProjection = z.infer<typeof SleeperProjectionSchema>;
+
+export const SleeperProjectionsResponseSchema = SleeperProjectionSchema.array();
