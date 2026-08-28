@@ -152,6 +152,42 @@ export function buildRosterSlots(
   return slots;
 }
 
+export interface HeadToHeadRow {
+  slot: string;
+  a: PlayerLineupEntry | null;
+  b: PlayerLineupEntry | null;
+}
+
+/**
+ * Pairs two teams' starting lineups seat-for-seat for a head-to-head view —
+ * a team's first RB against the opponent's first RB, not just index N against
+ * index N (their lineups can be different lengths, e.g. an unfilled seat), and
+ * not grouped by real-world position either, since two RB slots must stay
+ * distinct from each other.
+ */
+export function pairStartersBySlot(
+  rosterPositions: string[],
+  lineupA: PlayerLineupEntry[],
+  lineupB: PlayerLineupEntry[],
+): HeadToHeadRow[] {
+  const startingSlots = rosterPositions.filter((p) => !NON_STARTING_SLOTS.has(p));
+  const usedA = new Set<number>();
+  const usedB = new Set<number>();
+
+  function takeNext(lineup: PlayerLineupEntry[], used: Set<number>, slot: string): PlayerLineupEntry | null {
+    const index = lineup.findIndex((e, i) => e.starter && e.slot === slot && !used.has(i));
+    if (index === -1) return null;
+    used.add(index);
+    return lineup[index];
+  }
+
+  return startingSlots.map((slot) => ({
+    slot,
+    a: takeNext(lineupA, usedA, slot),
+    b: takeNext(lineupB, usedB, slot),
+  }));
+}
+
 export function normalizeRosters(
   rosters: SleeperRoster[],
   rosterPositions: string[],
@@ -175,28 +211,31 @@ export function combinePoints(whole: number | undefined, decimal: number | undef
 }
 
 function toLineup(
+  rosterPositions: string[],
   starters: string[] | null | undefined,
   players: string[] | null | undefined,
   playersPoints: Record<string, number> | null | undefined,
   startersPoints: number[] | null | undefined,
 ): PlayerLineupEntry[] {
-  const starterSet = new Set(starters ?? []);
   const startersPointsByPlayer = new Map<string, number>();
   if (starters && startersPoints) {
     starters.forEach((playerId, i) => {
       if (startersPoints[i] !== undefined) startersPointsByPlayer.set(playerId, startersPoints[i]);
     });
   }
-  // Sleeper fills unset starter slots with the literal string "0" (e.g. before
-  // a draft has happened) — that's a placeholder for "empty slot", not a player.
-  const allPlayerIds = (players && players.length > 0 ? players : starters ?? []).filter((id) => id !== "0");
-  return allPlayerIds.map((playerId) => ({
-    playerId,
-    slot: starterSet.has(playerId) ? "starter" : "bench",
-    starter: starterSet.has(playerId),
-    points: playersPoints?.[playerId] ?? startersPointsByPlayer.get(playerId) ?? null,
-    status: null,
-  }));
+  // Reuses the same template-alignment logic as rosters, so a lineup entry's
+  // slot is the real position (QB/RB/RB/WR/.../FLEX/...) rather than just
+  // "starter"/"bench" — needed to pair a team's RB1 against the opponent's
+  // RB1 rather than misaligning by array index in a head-to-head view.
+  return buildRosterSlots(rosterPositions, starters, players)
+    .filter((s): s is typeof s & { playerId: string } => s.playerId !== null)
+    .map((s) => ({
+      playerId: s.playerId,
+      slot: s.slot,
+      starter: s.starter,
+      points: playersPoints?.[s.playerId] ?? startersPointsByPlayer.get(s.playerId) ?? null,
+      status: null,
+    }));
 }
 
 /**
@@ -210,6 +249,7 @@ export function pairMatchups(
   conference: Conference,
   sourceLeagueId: string,
   week: number,
+  rosterPositions: string[],
 ): { matchups: WeeklyMatchup[]; unpaired: SleeperMatchupEntry[]; overCrowded: number[] } {
   const byId = new Map<number, SleeperMatchupEntry[]>();
   const unpaired: SleeperMatchupEntry[] = [];
@@ -230,8 +270,8 @@ export function pairMatchups(
   for (const [sleeperMatchupId, group] of byId) {
     if (group.length > 2) overCrowded.push(sleeperMatchupId);
     const [a, b] = group;
-    const teamASide = toSide(a, conference);
-    const teamBSide = b ? toSide(b, conference) : null;
+    const teamASide = toSide(a, conference, rosterPositions);
+    const teamBSide = b ? toSide(b, conference, rosterPositions) : null;
 
     if (!teamBSide) {
       // Bye week / unmatched single entry.
@@ -266,12 +306,12 @@ export function pairMatchups(
   return { matchups, unpaired, overCrowded };
 }
 
-function toSide(entry: SleeperMatchupEntry, conference: Conference): TeamMatchupSide {
+function toSide(entry: SleeperMatchupEntry, conference: Conference, rosterPositions: string[]): TeamMatchupSide {
   return {
     teamId: teamId(conference, entry.roster_id),
     points: entry.points ?? null,
     customPoints: entry.custom_points ?? null,
-    lineup: toLineup(entry.starters, entry.players, entry.players_points, entry.starters_points),
+    lineup: toLineup(rosterPositions, entry.starters, entry.players, entry.players_points, entry.starters_points),
   };
 }
 

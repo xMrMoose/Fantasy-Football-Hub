@@ -88,11 +88,13 @@ async function main() {
   let allTeams: Team[] = [];
   let allRosters: TeamRoster[] = [];
   const scoringHashes: string[] = [];
+  const rosterPositionsByConference: Record<"AFC" | "NFC", string[]> = { AFC: [], NFC: [] };
 
   for (const side of [afc, nfc] as const) {
     if (!side.payload) continue;
     const sourceLeague = normalizeSourceLeague(side.payload.league, side.conference, startedAt);
     scoringHashes.push(sourceLeague.scoringSettingsHash);
+    rosterPositionsByConference[side.conference] = sourceLeague.rosterPositions;
     await writeJson(paths.sourceLeague(DATA_DIR, side.conference.toLowerCase() as "afc" | "nfc"), sourceLeague);
     const teams = normalizeTeams(side.payload.rosters, side.payload.users, side.conference, side.payload.league.league_id, SEASON);
     allTeams = allTeams.concat(teams);
@@ -134,7 +136,13 @@ async function main() {
       if (!side.payload) continue;
       const entries = side.payload.matchupsByWeek[week];
       if (!entries) continue;
-      const { matchups, unpaired, overCrowded } = pairMatchups(entries, side.conference, side.payload.league.league_id, week);
+      const { matchups, unpaired, overCrowded } = pairMatchups(
+        entries,
+        side.conference,
+        side.payload.league.league_id,
+        week,
+        rosterPositionsByConference[side.conference],
+      );
       if (unpaired.length > 1) warnings.push(`${side.conference} week ${week}: ${unpaired.length} unpaired matchup entries (bye weeks expected to be 1).`);
       if (overCrowded.length > 0) warnings.push(`${side.conference} week ${week}: matchup_id(s) ${overCrowded.join(",")} had more than 2 entries.`);
       const withState = matchups.map((m) => ({

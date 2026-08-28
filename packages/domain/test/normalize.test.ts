@@ -7,8 +7,10 @@ import {
   buildRosterSlots,
   scoringVariant,
   projectionPointsKey,
+  pairStartersBySlot,
 } from "../src/normalize.js";
 import type { SleeperMatchupEntry, SleeperRoster, SleeperUser } from "../src/sleeperSchemas.js";
+import type { PlayerLineupEntry } from "../src/types.js";
 
 describe("combinePoints", () => {
   it("preserves null when both fields are unknown", () => {
@@ -30,7 +32,7 @@ describe("pairMatchups", () => {
       { roster_id: 1, matchup_id: 5, points: 100 },
       { roster_id: 2, matchup_id: 5, points: 90 },
     ];
-    const { matchups, unpaired, overCrowded } = pairMatchups(entries, "AFC", "afc-league", 1);
+    const { matchups, unpaired, overCrowded } = pairMatchups(entries, "AFC", "afc-league", 1, []);
     expect(matchups).toHaveLength(1);
     expect(matchups[0].winnerTeamId).toBe("AFC-1");
     expect(unpaired).toHaveLength(0);
@@ -39,7 +41,7 @@ describe("pairMatchups", () => {
 
   it("treats a missing matchup_id as a bye week", () => {
     const entries: SleeperMatchupEntry[] = [{ roster_id: 1, matchup_id: null, points: 100 }];
-    const { matchups, unpaired } = pairMatchups(entries, "AFC", "afc-league", 1);
+    const { matchups, unpaired } = pairMatchups(entries, "AFC", "afc-league", 1, []);
     expect(matchups).toHaveLength(0);
     expect(unpaired).toHaveLength(1);
   });
@@ -50,7 +52,7 @@ describe("pairMatchups", () => {
       { roster_id: 2, matchup_id: 5, points: 90 },
       { roster_id: 3, matchup_id: 5, points: 80 },
     ];
-    const { overCrowded } = pairMatchups(entries, "AFC", "afc-league", 1);
+    const { overCrowded } = pairMatchups(entries, "AFC", "afc-league", 1, []);
     expect(overCrowded).toEqual([5]);
   });
 
@@ -59,7 +61,7 @@ describe("pairMatchups", () => {
       { roster_id: 1, matchup_id: 5, points: null },
       { roster_id: 2, matchup_id: 5, points: 90 },
     ];
-    const { matchups } = pairMatchups(entries, "AFC", "afc-league", 1);
+    const { matchups } = pairMatchups(entries, "AFC", "afc-league", 1, []);
     expect(matchups[0].winnerTeamId).toBeNull();
   });
 
@@ -68,7 +70,7 @@ describe("pairMatchups", () => {
       { roster_id: 1, matchup_id: 5, points: 100 },
       { roster_id: 2, matchup_id: 5, points: 100 },
     ];
-    const { matchups } = pairMatchups(entries, "AFC", "afc-league", 1);
+    const { matchups } = pairMatchups(entries, "AFC", "afc-league", 1, []);
     expect(matchups[0].winnerTeamId).toBeNull();
   });
 
@@ -77,9 +79,78 @@ describe("pairMatchups", () => {
       { roster_id: 1, matchup_id: 5, points: 0, starters: ["0", "0"], players: [] },
       { roster_id: 2, matchup_id: 5, points: 0, starters: ["0", "0"], players: [] },
     ];
-    const { matchups } = pairMatchups(entries, "AFC", "afc-league", 1);
+    const { matchups } = pairMatchups(entries, "AFC", "afc-league", 1, ["QB", "RB"]);
     expect(matchups[0].teamA.lineup).toHaveLength(0);
     expect(matchups[0].teamB.lineup).toHaveLength(0);
+  });
+
+  it("labels lineup entries with the real roster-position slot, not just starter/bench", () => {
+    const rosterPositions = ["QB", "RB", "WR", "BN"];
+    const entries: SleeperMatchupEntry[] = [
+      {
+        roster_id: 1,
+        matchup_id: 5,
+        points: 30,
+        starters: ["p1", "p2", "p3"],
+        players: ["p1", "p2", "p3", "p4"],
+        players_points: { p1: 10, p2: 8, p3: 12, p4: 0 },
+      },
+      { roster_id: 2, matchup_id: 5, points: 5, starters: [], players: [] },
+    ];
+    const { matchups } = pairMatchups(entries, "AFC", "afc-league", 1, rosterPositions);
+    const lineup = matchups[0].teamA.lineup;
+    expect(lineup.map((e) => [e.slot, e.playerId, e.starter])).toEqual([
+      ["QB", "p1", true],
+      ["RB", "p2", true],
+      ["WR", "p3", true],
+      ["BN", "p4", false],
+    ]);
+  });
+});
+
+describe("pairStartersBySlot", () => {
+  it("pairs each team's Nth occurrence of a slot against the opponent's Nth occurrence", () => {
+    const rosterPositions = ["QB", "RB", "RB", "BN"];
+    const lineupA: PlayerLineupEntry[] = [
+      { playerId: "a-qb", slot: "QB", starter: true, points: 20, status: null },
+      { playerId: "a-rb1", slot: "RB", starter: true, points: 10, status: null },
+      { playerId: "a-rb2", slot: "RB", starter: true, points: 8, status: null },
+    ];
+    const lineupB: PlayerLineupEntry[] = [
+      { playerId: "b-qb", slot: "QB", starter: true, points: 18, status: null },
+      { playerId: "b-rb1", slot: "RB", starter: true, points: 12, status: null },
+      { playerId: "b-rb2", slot: "RB", starter: true, points: 6, status: null },
+    ];
+    const rows = pairStartersBySlot(rosterPositions, lineupA, lineupB);
+    expect(rows).toEqual([
+      { slot: "QB", a: lineupA[0], b: lineupB[0] },
+      { slot: "RB", a: lineupA[1], b: lineupB[1] },
+      { slot: "RB", a: lineupA[2], b: lineupB[2] },
+    ]);
+  });
+
+  it("leaves the missing side null when one team has an unfilled seat", () => {
+    const rosterPositions = ["QB", "RB"];
+    const lineupA: PlayerLineupEntry[] = [{ playerId: "a-qb", slot: "QB", starter: true, points: 20, status: null }];
+    const lineupB: PlayerLineupEntry[] = [
+      { playerId: "b-qb", slot: "QB", starter: true, points: 18, status: null },
+      { playerId: "b-rb", slot: "RB", starter: true, points: 9, status: null },
+    ];
+    const rows = pairStartersBySlot(rosterPositions, lineupA, lineupB);
+    expect(rows).toEqual([
+      { slot: "QB", a: lineupA[0], b: lineupB[0] },
+      { slot: "RB", a: null, b: lineupB[1] },
+    ]);
+  });
+
+  it("excludes bench seats from the pairing", () => {
+    const rosterPositions = ["QB", "BN"];
+    const lineupA: PlayerLineupEntry[] = [
+      { playerId: "a-qb", slot: "QB", starter: true, points: 20, status: null },
+      { playerId: "a-bn", slot: "BN", starter: false, points: null, status: null },
+    ];
+    const rows = pairStartersBySlot(rosterPositions, lineupA, []);
+    expect(rows).toEqual([{ slot: "QB", a: lineupA[0], b: null }]);
   });
 });
 
