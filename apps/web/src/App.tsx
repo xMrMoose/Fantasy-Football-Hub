@@ -21,7 +21,8 @@ function ValidatedMatchupDetail() {
 
 export default function App() {
   const contentRef = useRef<HTMLElement>(null);
-  const swipe = useSwipeTabs(contentRef);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const swipe = useSwipeTabs(contentRef, panelRef);
   return (
     <div className="app-shell">
       <header className="app-header">
@@ -32,18 +33,22 @@ export default function App() {
         className="app-content"
         ref={contentRef}
         onTouchStart={swipe.onTouchStart}
+        onTouchMove={swipe.onTouchMove}
         onTouchEnd={swipe.onTouchEnd}
+        onTouchCancel={swipe.onTouchCancel}
       >
-        <Routes>
-          <Route path="/" element={<Standings />} />
-          <Route path="/standings" element={<Navigate to="/" replace />} />
-          <Route path="/matchups" element={<WeeklyMatchups />} />
-          <Route path="/matchups/:week/:matchupId" element={<ValidatedMatchupDetail />} />
-          <Route path="/team/:teamId" element={<TeamDetail />} />
-          <Route path="/playoffs" element={<Playoffs />} />
-          <Route path="/superbowl" element={<SuperBowl />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
+        <div className="swipe-panel" ref={panelRef}>
+          <Routes>
+            <Route path="/" element={<Standings />} />
+            <Route path="/standings" element={<Navigate to="/" replace />} />
+            <Route path="/matchups" element={<WeeklyMatchups />} />
+            <Route path="/matchups/:week/:matchupId" element={<ValidatedMatchupDetail />} />
+            <Route path="/team/:teamId" element={<TeamDetail />} />
+            <Route path="/playoffs" element={<Playoffs />} />
+            <Route path="/superbowl" element={<SuperBowl />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </div>
       </main>
       <Nav />
     </div>
