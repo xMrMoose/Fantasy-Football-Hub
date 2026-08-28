@@ -39,7 +39,7 @@ export function Playoffs() {
   const [conference, setConference] = useState<"afc" | "nfc">("afc");
   return (
     <div className="container">
-      <h1>Playoff Picture</h1>
+      <h1 className="page-title">Playoffs</h1>
       <FreshnessBanner />
       <div className="tabs" role="tablist" aria-label="Conference">
         {(["afc", "nfc"] as const).map((c) => (

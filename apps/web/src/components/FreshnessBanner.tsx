@@ -16,15 +16,15 @@ export function FreshnessBanner() {
   const time = new Date(latest.finishedAt).toLocaleString();
   const degraded = latest.leagues.afc.status !== "ok" || latest.leagues.nfc.status !== "ok";
 
-  if (degraded) {
-    const failedConf = latest.leagues.afc.status !== "ok" ? "AFC" : "NFC";
-    return (
-      <div className="banner warn" role="alert">
-        Data as of {time}. {failedConf} data could not be refreshed on the last sync — showing the last known-good
-        data for that conference.
-      </div>
-    );
-  }
+  // The healthy case is covered by the always-visible SyncStatusPill in the
+  // app header — only surface a banner here when something needs attention.
+  if (!degraded) return null;
 
-  return <div className="banner info">Data as of {time}.</div>;
+  const failedConf = latest.leagues.afc.status !== "ok" ? "AFC" : "NFC";
+  return (
+    <div className="banner warn" role="alert">
+      Data as of {time}. {failedConf} data could not be refreshed on the last sync — showing the last known-good
+      data for that conference.
+    </div>
+  );
 }

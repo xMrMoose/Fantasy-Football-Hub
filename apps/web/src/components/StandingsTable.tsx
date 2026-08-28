@@ -13,37 +13,36 @@ export function StandingsTable({
     return <p>No standings data yet.</p>;
   }
   return (
-    <table>
-      <thead>
-        <tr>
-          <th scope="col">Rank</th>
-          <th scope="col">Team</th>
-          {showConference && <th scope="col">Conf</th>}
-          <th scope="col">W-L-T</th>
-          <th scope="col">Win %</th>
-          <th scope="col">PF</th>
-          <th scope="col">PA</th>
-          <th scope="col">Diff</th>
-        </tr>
-      </thead>
-      <tbody>
-        {rows.map((row) => (
-          <tr key={row.teamId}>
-            <td>{row.rank}</td>
-            <td>{teamNamesById[row.teamId] ?? row.teamId}</td>
-            {showConference && (
-              <td className={row.conference === "AFC" ? "conf-afc" : "conf-nfc"}>{row.conference}</td>
-            )}
-            <td>
-              {row.wins}-{row.losses}-{row.ties}
-            </td>
-            <td>{row.winPct.toFixed(3)}</td>
-            <td>{row.pointsFor.toFixed(2)}</td>
-            <td>{row.pointsAgainst.toFixed(2)}</td>
-            <td>{row.pointDiff.toFixed(2)}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <ul className="standings-list">
+      {rows.map((row) => (
+        <li key={row.teamId} className="standings-row">
+          <div className="rank" aria-label={`Rank ${row.rank}`}>
+            {row.rank}
+          </div>
+          <div className="team-block">
+            <div className="team-line">
+              <span className="team-name">{teamNamesById[row.teamId] ?? row.teamId}</span>
+              {showConference && (
+                <span className={`conf-pill ${row.conference === "AFC" ? "conf-afc" : "conf-nfc"}`}>
+                  {row.conference}
+                </span>
+              )}
+            </div>
+            <div className="record-line" aria-label="Win-loss-tie record and win percentage">
+              {row.wins}-{row.losses}-{row.ties} &middot; {row.winPct.toFixed(3)}
+            </div>
+          </div>
+          <div className="stat-block">
+            <div className="pf-pa" aria-label="Points for and points against">
+              {row.pointsFor.toFixed(1)} PF &middot; {row.pointsAgainst.toFixed(1)} PA
+            </div>
+            <div className={`diff ${row.pointDiff >= 0 ? "positive" : "negative"}`} aria-label="Point differential">
+              {row.pointDiff >= 0 ? "+" : ""}
+              {row.pointDiff.toFixed(1)}
+            </div>
+          </div>
+        </li>
+      ))}
+    </ul>
   );
 }

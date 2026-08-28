@@ -21,7 +21,8 @@ describe("StandingsTable", () => {
   it("renders a row per team with the resolved display name", () => {
     render(<StandingsTable rows={[row("AFC-1", 1)]} teamNamesById={{ "AFC-1": "The Champs" }} showConference />);
     expect(screen.getByText("The Champs")).toBeInTheDocument();
-    expect(screen.getByText("5-2-0")).toBeInTheDocument();
+    expect(screen.getByText("5-2-0 · 0.714")).toBeInTheDocument();
+    expect(screen.getByText("+100.3")).toBeInTheDocument();
   });
 
   it("shows an empty message when there are no rows", () => {

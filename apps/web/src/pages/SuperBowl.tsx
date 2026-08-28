@@ -12,7 +12,7 @@ export function SuperBowl() {
 
   return (
     <div className="container">
-      <h1>Week 17 Super Bowl</h1>
+      <h1 className="page-title">Super Bowl</h1>
       <FreshnessBanner />
       {sb.status === "loading" && <p>Loading…</p>}
       {sb.status === "error" && <p>Super Bowl data not available yet — check back once both conference championships are final.</p>}

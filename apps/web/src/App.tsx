@@ -1,5 +1,6 @@
 import { Routes, Route, Navigate, useParams } from "react-router-dom";
 import { Nav } from "./components/Nav.js";
+import { SyncStatusPill } from "./components/SyncStatusPill.js";
 import { Standings } from "./pages/Standings.js";
 import { WeeklyMatchups } from "./pages/WeeklyMatchups.js";
 import { MatchupDetail } from "./pages/MatchupDetail.js";
@@ -17,17 +18,23 @@ function ValidatedMatchupDetail() {
 
 export default function App() {
   return (
-    <>
+    <div className="app-shell">
+      <header className="app-header">
+        <div className="wordmark">FFB Hub</div>
+        <SyncStatusPill />
+      </header>
+      <main className="app-content">
+        <Routes>
+          <Route path="/" element={<Standings />} />
+          <Route path="/standings" element={<Navigate to="/" replace />} />
+          <Route path="/matchups" element={<WeeklyMatchups />} />
+          <Route path="/matchups/:week/:matchupId" element={<ValidatedMatchupDetail />} />
+          <Route path="/playoffs" element={<Playoffs />} />
+          <Route path="/superbowl" element={<SuperBowl />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </main>
       <Nav />
-      <Routes>
-        <Route path="/" element={<Standings />} />
-        <Route path="/standings" element={<Navigate to="/" replace />} />
-        <Route path="/matchups" element={<WeeklyMatchups />} />
-        <Route path="/matchups/:week/:matchupId" element={<ValidatedMatchupDetail />} />
-        <Route path="/playoffs" element={<Playoffs />} />
-        <Route path="/superbowl" element={<SuperBowl />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-    </>
+    </div>
   );
 }

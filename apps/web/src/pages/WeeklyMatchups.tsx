@@ -26,7 +26,7 @@ export function WeeklyMatchups() {
 
   return (
     <div className="container">
-      <h1>Weekly Matchups</h1>
+      <h1 className="page-title">Matchups</h1>
       <FreshnessBanner />
       <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: "1rem" }}>
         <WeekSelector week={week} onChange={setWeek} />

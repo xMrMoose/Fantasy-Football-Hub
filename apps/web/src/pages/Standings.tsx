@@ -14,7 +14,10 @@ export function Standings() {
 
   return (
     <div className="container">
-      <h1>24-Team Fantasy Football Hub</h1>
+      <h1 className="page-title">Standings</h1>
+      <div className="page-subtitle">
+        {state.status === "ok" ? `Week ${state.data.asOfWeek} · ${state.data.season} Season` : "24-team league"}
+      </div>
       <FreshnessBanner />
       <ConferenceFilterTabs value={filter} onChange={setFilter} />
       {state.status === "loading" && <p>Loading…</p>}
