@@ -75,6 +75,7 @@ h1, h2, h3 {
 .app-content {
   flex: 1;
   padding-bottom: calc(var(--nav-height) + env(safe-area-inset-bottom, 0px));
+  touch-action: pan-y;
 }
 
 .page-title {

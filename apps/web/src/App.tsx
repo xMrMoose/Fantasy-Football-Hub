@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { Routes, Route, Navigate, useParams } from "react-router-dom";
 import { Nav } from "./components/Nav.js";
 import { SyncStatusPill } from "./components/SyncStatusPill.js";
@@ -6,6 +7,7 @@ import { WeeklyMatchups } from "./pages/WeeklyMatchups.js";
 import { MatchupDetail } from "./pages/MatchupDetail.js";
 import { Playoffs } from "./pages/Playoffs.js";
 import { SuperBowl } from "./pages/SuperBowl.js";
+import { useSwipeTabs } from "./hooks/useSwipeTabs.js";
 
 function ValidatedMatchupDetail() {
   const { week } = useParams<{ week: string }>();
@@ -17,13 +19,20 @@ function ValidatedMatchupDetail() {
 }
 
 export default function App() {
+  const contentRef = useRef<HTMLElement>(null);
+  const swipe = useSwipeTabs(contentRef);
   return (
     <div className="app-shell">
       <header className="app-header">
         <div className="wordmark">FFB Hub</div>
         <SyncStatusPill />
       </header>
-      <main className="app-content">
+      <main
+        className="app-content"
+        ref={contentRef}
+        onTouchStart={swipe.onTouchStart}
+        onTouchEnd={swipe.onTouchEnd}
+      >
         <Routes>
           <Route path="/" element={<Standings />} />
           <Route path="/standings" element={<Navigate to="/" replace />} />
