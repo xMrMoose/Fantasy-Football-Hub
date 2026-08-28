@@ -23,6 +23,7 @@ export const paths = {
   sourceLeague: (dataDir: string, conference: "afc" | "nfc") => join(dataDir, "source-leagues", `${conference}.json`),
   players: (dataDir: string) => join(dataDir, "players", "players-trimmed.json"),
   teams: (dataDir: string) => join(dataDir, "teams", "teams.json"),
+  rosters: (dataDir: string) => join(dataDir, "rosters", "rosters.json"),
   standings: (dataDir: string) => join(dataDir, "standings", "standings-latest.json"),
   seeds: (dataDir: string, conference: "afc" | "nfc") => join(dataDir, "playoffs", `seeds-${conference}.json`),
   bracket: (dataDir: string, conference: "afc" | "nfc") => join(dataDir, "playoffs", `bracket-${conference}.json`),

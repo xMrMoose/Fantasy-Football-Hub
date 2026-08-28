@@ -42,6 +42,27 @@ export interface PlayerLineupEntry {
   status: string | null;
 }
 
+/**
+ * One seat on a roster, in the league's configured `rosterPositions` order.
+ * `playerId: null` is a genuinely empty seat (undrafted league, dropped player)
+ * — the team page renders these as empty slots rather than hiding them.
+ */
+export interface RosterSlot {
+  slot: string; // "QB" | "RB" | "FLEX" | "BN" | "IR" | ...
+  starter: boolean;
+  playerId: string | null;
+}
+
+export interface TeamRoster {
+  teamId: string;
+  season: string;
+  conference: Conference;
+  sourceRosterId: number;
+  slots: RosterSlot[];
+  /** Every rostered player id, including any beyond the configured seat count. */
+  playerIds: string[];
+}
+
 export interface TeamMatchupSide {
   teamId: string;
   points: number | null;

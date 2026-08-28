@@ -5,6 +5,7 @@ import { newRunId, okResult, failedResult, appendSyncLog, summarizeRun } from ".
 import {
   normalizeSourceLeague,
   normalizeTeams,
+  normalizeRosters,
   pairMatchups,
   stableHash,
   computeStandings,
@@ -19,6 +20,7 @@ import {
   applyOverrideField,
   DEFAULT_LEAGUE_RULES,
   type Team,
+  type TeamRoster,
   type WeeklyMatchup,
   type ManualOverride,
   type SyncRunEntry,
@@ -80,6 +82,7 @@ async function main() {
   if (nfc.error) errors.push(`NFC: ${nfc.error}`);
 
   let allTeams: Team[] = [];
+  let allRosters: TeamRoster[] = [];
   const scoringHashes: string[] = [];
 
   for (const side of [afc, nfc] as const) {
@@ -89,12 +92,21 @@ async function main() {
     await writeJson(paths.sourceLeague(DATA_DIR, side.conference.toLowerCase() as "afc" | "nfc"), sourceLeague);
     const teams = normalizeTeams(side.payload.rosters, side.payload.users, side.conference, side.payload.league.league_id, SEASON);
     allTeams = allTeams.concat(teams);
+    allRosters = allRosters.concat(
+      normalizeRosters(side.payload.rosters, sourceLeague.rosterPositions, side.conference, SEASON),
+    );
   }
 
   if (allTeams.length > 0) {
     await writeJson(paths.teams(DATA_DIR), allTeams);
   } else {
     allTeams = (await readJsonIfExists<Team[]>(paths.teams(DATA_DIR))) ?? [];
+  }
+
+  // Rosters are written even while every seat is still empty — the team page
+  // renders the empty seats, and this is the file that fills in on draft day.
+  if (allRosters.length > 0) {
+    await writeJson(paths.rosters(DATA_DIR), allRosters);
   }
 
   const scoringParityMismatch = scoringHashes.length === 2 && scoringHashes[0] !== scoringHashes[1];

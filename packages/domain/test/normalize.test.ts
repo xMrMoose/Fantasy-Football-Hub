@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { combinePoints, pairMatchups, normalizeTeams, stableHash } from "../src/normalize.js";
+import { combinePoints, pairMatchups, normalizeTeams, stableHash, buildRosterSlots } from "../src/normalize.js";
 import type { SleeperMatchupEntry, SleeperRoster, SleeperUser } from "../src/sleeperSchemas.js";
 
 describe("combinePoints", () => {
@@ -99,5 +99,49 @@ describe("stableHash", () => {
 
   it("differs for different content", () => {
     expect(stableHash({ a: 1 })).not.toBe(stableHash({ a: 2 }));
+  });
+});
+
+describe("buildRosterSlots", () => {
+  const positions = ["QB", "RB", "RB", "FLEX", "BN", "BN"];
+
+  it("returns all-empty seats in template order for an undrafted roster", () => {
+    const slots = buildRosterSlots(positions, [], []);
+    expect(slots.map((s) => s.slot)).toEqual(positions);
+    expect(slots.every((s) => s.playerId === null)).toBe(true);
+    expect(slots.filter((s) => s.starter)).toHaveLength(4);
+  });
+
+  it("aligns starters positionally with the starting seats", () => {
+    const slots = buildRosterSlots(positions, ["p1", "p2", "p3", "p4"], ["p1", "p2", "p3", "p4"]);
+    expect(slots.slice(0, 4).map((s) => [s.slot, s.playerId])).toEqual([
+      ["QB", "p1"],
+      ["RB", "p2"],
+      ["RB", "p3"],
+      ["FLEX", "p4"],
+    ]);
+  });
+
+  it('treats Sleeper\'s "0" placeholder as an empty seat, not a player', () => {
+    const slots = buildRosterSlots(positions, ["p1", "0", "p3", "0"], ["p1", "p3"]);
+    expect(slots.map((s) => s.playerId)).toEqual(["p1", null, "p3", null, null, null]);
+  });
+
+  it("fills bench seats with rostered players who are not starting", () => {
+    const slots = buildRosterSlots(positions, ["p1", "p2", "p3", "p4"], ["p1", "p2", "p3", "p4", "p5"]);
+    expect(slots[4]).toEqual({ slot: "BN", starter: false, playerId: "p5" });
+    expect(slots[5]).toEqual({ slot: "BN", starter: false, playerId: null });
+  });
+
+  it("appends overflow seats rather than dropping extra players", () => {
+    const slots = buildRosterSlots(["QB", "BN"], ["p1"], ["p1", "p2", "p3", "p4"]);
+    expect(slots).toHaveLength(4);
+    expect(slots.slice(1).map((s) => s.playerId)).toEqual(["p2", "p3", "p4"]);
+    expect(slots.slice(1).every((s) => s.slot === "BN" && !s.starter)).toBe(true);
+  });
+
+  it("fills IR/taxi seats from the bench pool without marking them starters", () => {
+    const slots = buildRosterSlots(["QB", "IR"], ["p1"], ["p1", "p2"]);
+    expect(slots[1]).toEqual({ slot: "IR", starter: false, playerId: "p2" });
   });
 });

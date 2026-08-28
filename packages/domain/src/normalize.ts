@@ -4,7 +4,16 @@ import type {
   SleeperUser,
   SleeperMatchupEntry,
 } from "./sleeperSchemas.js";
-import type { Conference, SourceLeague, Team, WeeklyMatchup, TeamMatchupSide, PlayerLineupEntry } from "./types.js";
+import type {
+  Conference,
+  SourceLeague,
+  Team,
+  WeeklyMatchup,
+  TeamMatchupSide,
+  PlayerLineupEntry,
+  RosterSlot,
+  TeamRoster,
+} from "./types.js";
 
 /** Deterministic hash of an object's JSON representation (for scoring-settings parity checks and raw-payload traceability). Not cryptographic — just stable and cheap. */
 export function stableHash(value: unknown): string {
@@ -79,6 +88,62 @@ export function normalizeTeams(
       avatar: owner?.avatar ?? null,
     };
   });
+}
+
+/** Roster seats that hold a player but never count toward the starting lineup. */
+const NON_STARTING_SLOTS = new Set(["BN", "IR", "TAXI"]);
+
+/**
+ * Expands a league's `roster_positions` template into ordered, labelled seats
+ * and fills them from a Sleeper roster.
+ *
+ * Sleeper's `starters` array is positionally aligned with the *starting* entries
+ * of `roster_positions` (bench seats are not represented there), and unfilled
+ * seats are the literal string "0". Bench/IR seats are filled from whatever is
+ * on `players` but not starting. Any players beyond the configured seat count
+ * get appended as extra "BN" seats so a roster never silently hides a player.
+ */
+export function buildRosterSlots(
+  rosterPositions: string[],
+  starters: string[] | null | undefined,
+  players: string[] | null | undefined,
+): RosterSlot[] {
+  const starterList = starters ?? [];
+  const startingIds = new Set(starterList.filter((id) => id !== "0"));
+  const benchPool = (players ?? []).filter((id) => id !== "0" && !startingIds.has(id));
+
+  let starterIndex = 0;
+  let benchIndex = 0;
+
+  const slots: RosterSlot[] = rosterPositions.map((position) => {
+    if (NON_STARTING_SLOTS.has(position)) {
+      return { slot: position, starter: false, playerId: benchPool[benchIndex++] ?? null };
+    }
+    const id = starterList[starterIndex++];
+    return { slot: position, starter: true, playerId: id && id !== "0" ? id : null };
+  });
+
+  for (; benchIndex < benchPool.length; benchIndex++) {
+    slots.push({ slot: "BN", starter: false, playerId: benchPool[benchIndex] });
+  }
+
+  return slots;
+}
+
+export function normalizeRosters(
+  rosters: SleeperRoster[],
+  rosterPositions: string[],
+  conference: Conference,
+  season: string,
+): TeamRoster[] {
+  return rosters.map((roster) => ({
+    teamId: teamId(conference, roster.roster_id),
+    season,
+    conference,
+    sourceRosterId: roster.roster_id,
+    slots: buildRosterSlots(rosterPositions, roster.starters, roster.players),
+    playerIds: (roster.players ?? []).filter((id) => id !== "0"),
+  }));
 }
 
 /** Combines Sleeper's whole/decimal point fields. Preserves null (unknown) rather than coercing to 0. */
