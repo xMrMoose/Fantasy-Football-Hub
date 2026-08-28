@@ -33,12 +33,20 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
 const DATA_DIR = join(ROOT, "data");
 const OVERRIDES_PATH = join(ROOT, "config", "overrides.json");
 
-const SEASON = process.env.SEASON ?? "2026";
-const AFC_LEAGUE_ID = process.env.AFC_SLEEPER_LEAGUE_ID ?? "";
-const NFC_LEAGUE_ID = process.env.NFC_SLEEPER_LEAGUE_ID ?? "";
-const PLAYOFF_START_WEEK = Number(process.env.PLAYOFF_START_WEEK ?? DEFAULT_LEAGUE_RULES.playoffStartWeek);
-const SUPER_BOWL_WEEK = Number(process.env.SUPER_BOWL_WEEK ?? DEFAULT_LEAGUE_RULES.superBowlWeek);
-const PLAYOFF_RESEED = (process.env.PLAYOFF_RESEED ?? String(DEFAULT_LEAGUE_RULES.playoffReseed)) === "true";
+// GitHub Actions sets an env var to an empty string (not unset) when the
+// referenced `vars.X` was never created — `?? default` doesn't catch that,
+// so treat "" the same as unset for every optional config value below.
+function envOrDefault(name: string, fallback: string): string {
+  const value = process.env[name];
+  return value === undefined || value === "" ? fallback : value;
+}
+
+const SEASON = envOrDefault("SEASON", "2026");
+const AFC_LEAGUE_ID = envOrDefault("AFC_SLEEPER_LEAGUE_ID", "");
+const NFC_LEAGUE_ID = envOrDefault("NFC_SLEEPER_LEAGUE_ID", "");
+const PLAYOFF_START_WEEK = Number(envOrDefault("PLAYOFF_START_WEEK", String(DEFAULT_LEAGUE_RULES.playoffStartWeek)));
+const SUPER_BOWL_WEEK = Number(envOrDefault("SUPER_BOWL_WEEK", String(DEFAULT_LEAGUE_RULES.superBowlWeek)));
+const PLAYOFF_RESEED = envOrDefault("PLAYOFF_RESEED", String(DEFAULT_LEAGUE_RULES.playoffReseed)) === "true";
 
 async function main() {
   if (!AFC_LEAGUE_ID || !NFC_LEAGUE_ID) {

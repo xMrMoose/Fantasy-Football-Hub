@@ -168,6 +168,7 @@ export function buildChampionshipRound(
   semifinalRound: PlayoffMatchup[],
   week: number,
 ): PlayoffMatchup | null {
+  if (semifinalRound.length !== 2) return null; // semifinals not yet built/resolved
   const winners = semifinalRound.map((m) => m.winnerTeamId);
   if (winners.some((w) => !w)) return null;
   const conference = semifinalRound[0].conference;

@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { buildWildcardRound, buildSemifinalRound, buildChampionshipRound, resolveWinner } from "../src/playoffs.js";
+import { buildWildcardRound, buildSemifinalRound, buildChampionshipRound, buildBracket, resolveWinner } from "../src/playoffs.js";
 import type { PlayoffSeeds } from "../src/types.js";
 
 function seeds(): PlayoffSeeds {
@@ -68,6 +68,15 @@ describe("playoff bracket", () => {
       provenance: "auto" as const,
     };
     expect(resolveWinner(matchup)).toBeNull();
+  });
+
+  it("does not crash when semifinals haven't been built yet (e.g. wildcard round unresolved)", () => {
+    expect(buildChampionshipRound([], 16)).toBeNull();
+  });
+
+  it("buildBracket never throws even when no wildcard results exist yet (e.g. week 0/preseason)", () => {
+    expect(() => buildBracket(seeds(), { wildcard: 0, semifinal: 1, championship: 2 }, false)).not.toThrow();
+    expect(() => buildBracket(seeds(), { wildcard: 0, semifinal: 1, championship: 2 }, true)).not.toThrow();
   });
 
   it("builds a championship only once both semifinals have winners", () => {
