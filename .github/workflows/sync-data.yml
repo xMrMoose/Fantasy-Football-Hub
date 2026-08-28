@@ -36,6 +36,7 @@ jobs:
           SUPER_BOWL_WEEK: ${{ vars.SUPER_BOWL_WEEK }}
           PLAYOFF_RESEED: ${{ vars.PLAYOFF_RESEED }}
         run: |
+          set -o pipefail
           npm run sync -w packages/sync --silent | tee sync-output.log
           SUMMARY=$(grep '^sync run-' sync-output.log | tail -n1)
           echo "summary=${SUMMARY:-sync completed (no summary line found)}" >> "$GITHUB_OUTPUT"
