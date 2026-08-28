@@ -15,7 +15,7 @@ export function ConferenceFilterTabs({
           key={opt}
           role="tab"
           aria-selected={value === opt}
-          className={value === opt ? "active" : ""}
+          className={value === opt ? `active active-${opt.toLowerCase()}` : ""}
           onClick={() => onChange(opt)}
         >
           {opt === "ALL" ? "All" : opt}

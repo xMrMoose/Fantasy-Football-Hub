@@ -9,7 +9,7 @@
   --border: #1b2c47;
   --accent: #13a7dc;
   --accent-afc: #e63946;
-  --accent-nfc: #34d399;
+  --accent-nfc: #1d4ed8;
   --positive: #4ade80;
   --warn: #e6a83a;
   --danger: #f2734a;
@@ -293,6 +293,9 @@ th, td {
   background: var(--accent);
   color: #ffffff;
 }
+
+.tabs button.active.active-afc { background: var(--accent-afc); }
+.tabs button.active.active-nfc { background: var(--accent-nfc); }
 
 .badge {
   display: inline-block;

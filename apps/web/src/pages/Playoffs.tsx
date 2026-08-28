@@ -43,7 +43,7 @@ export function Playoffs() {
       <FreshnessBanner />
       <div className="tabs" role="tablist" aria-label="Conference">
         {(["afc", "nfc"] as const).map((c) => (
-          <button key={c} role="tab" aria-selected={conference === c} className={conference === c ? "active" : ""} onClick={() => setConference(c)}>
+          <button key={c} role="tab" aria-selected={conference === c} className={conference === c ? `active active-${c}` : ""} onClick={() => setConference(c)}>
             {c.toUpperCase()}
           </button>
         ))}
