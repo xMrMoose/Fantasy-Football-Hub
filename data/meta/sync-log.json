@@ -113,5 +113,97 @@
     "warnings": [],
     "errors": [],
     "weeksUpdated": []
+  },
+  {
+    "runId": "run-1787924312442",
+    "startedAt": "2026-08-28T13:38:32.442Z",
+    "finishedAt": "2026-08-28T13:38:33.606Z",
+    "success": true,
+    "leagues": {
+      "afc": {
+        "status": "ok",
+        "rosterCount": 12,
+        "rawHash": "56366672",
+        "error": null
+      },
+      "nfc": {
+        "status": "ok",
+        "rosterCount": 12,
+        "rawHash": "1396e545",
+        "error": null
+      }
+    },
+    "warnings": [],
+    "errors": [],
+    "weeksUpdated": []
+  },
+  {
+    "runId": "run-1787928578387",
+    "startedAt": "2026-08-28T14:49:38.387Z",
+    "finishedAt": "2026-08-28T14:49:39.565Z",
+    "success": true,
+    "leagues": {
+      "afc": {
+        "status": "ok",
+        "rosterCount": 12,
+        "rawHash": "56366672",
+        "error": null
+      },
+      "nfc": {
+        "status": "ok",
+        "rosterCount": 12,
+        "rawHash": "1396e545",
+        "error": null
+      }
+    },
+    "warnings": [],
+    "errors": [],
+    "weeksUpdated": []
+  },
+  {
+    "runId": "run-1787929186143",
+    "startedAt": "2026-08-28T14:59:46.143Z",
+    "finishedAt": "2026-08-28T14:59:47.510Z",
+    "success": true,
+    "leagues": {
+      "afc": {
+        "status": "ok",
+        "rosterCount": 12,
+        "rawHash": "56366672",
+        "error": null
+      },
+      "nfc": {
+        "status": "ok",
+        "rosterCount": 12,
+        "rawHash": "1396e545",
+        "error": null
+      }
+    },
+    "warnings": [],
+    "errors": [],
+    "weeksUpdated": []
+  },
+  {
+    "runId": "run-1787930713874",
+    "startedAt": "2026-08-28T15:25:13.874Z",
+    "finishedAt": "2026-08-28T15:25:15.119Z",
+    "success": true,
+    "leagues": {
+      "afc": {
+        "status": "ok",
+        "rosterCount": 12,
+        "rawHash": "45d886bd",
+        "error": null
+      },
+      "nfc": {
+        "status": "ok",
+        "rosterCount": 12,
+        "rawHash": "5f2ddea0",
+        "error": null
+      }
+    },
+    "warnings": [],
+    "errors": [],
+    "weeksUpdated": []
   }
 ]

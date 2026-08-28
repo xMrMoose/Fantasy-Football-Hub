@@ -1,0 +1,1898 @@
+[
+  {
+    "teamId": "AFC-1",
+    "season": "2026",
+    "conference": "AFC",
+    "sourceRosterId": 1,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "AFC-2",
+    "season": "2026",
+    "conference": "AFC",
+    "sourceRosterId": 2,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "AFC-3",
+    "season": "2026",
+    "conference": "AFC",
+    "sourceRosterId": 3,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "AFC-4",
+    "season": "2026",
+    "conference": "AFC",
+    "sourceRosterId": 4,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "AFC-5",
+    "season": "2026",
+    "conference": "AFC",
+    "sourceRosterId": 5,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "AFC-6",
+    "season": "2026",
+    "conference": "AFC",
+    "sourceRosterId": 6,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "AFC-7",
+    "season": "2026",
+    "conference": "AFC",
+    "sourceRosterId": 7,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "AFC-8",
+    "season": "2026",
+    "conference": "AFC",
+    "sourceRosterId": 8,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "AFC-9",
+    "season": "2026",
+    "conference": "AFC",
+    "sourceRosterId": 9,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "AFC-10",
+    "season": "2026",
+    "conference": "AFC",
+    "sourceRosterId": 10,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "AFC-11",
+    "season": "2026",
+    "conference": "AFC",
+    "sourceRosterId": 11,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "AFC-12",
+    "season": "2026",
+    "conference": "AFC",
+    "sourceRosterId": 12,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "NFC-1",
+    "season": "2026",
+    "conference": "NFC",
+    "sourceRosterId": 1,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "NFC-2",
+    "season": "2026",
+    "conference": "NFC",
+    "sourceRosterId": 2,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "NFC-3",
+    "season": "2026",
+    "conference": "NFC",
+    "sourceRosterId": 3,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "NFC-4",
+    "season": "2026",
+    "conference": "NFC",
+    "sourceRosterId": 4,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "NFC-5",
+    "season": "2026",
+    "conference": "NFC",
+    "sourceRosterId": 5,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "NFC-6",
+    "season": "2026",
+    "conference": "NFC",
+    "sourceRosterId": 6,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "NFC-7",
+    "season": "2026",
+    "conference": "NFC",
+    "sourceRosterId": 7,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "NFC-8",
+    "season": "2026",
+    "conference": "NFC",
+    "sourceRosterId": 8,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "NFC-9",
+    "season": "2026",
+    "conference": "NFC",
+    "sourceRosterId": 9,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "NFC-10",
+    "season": "2026",
+    "conference": "NFC",
+    "sourceRosterId": 10,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "NFC-11",
+    "season": "2026",
+    "conference": "NFC",
+    "sourceRosterId": 11,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  },
+  {
+    "teamId": "NFC-12",
+    "season": "2026",
+    "conference": "NFC",
+    "sourceRosterId": 12,
+    "slots": [
+      {
+        "slot": "QB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "RB",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "WR",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "TE",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "FLEX",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "K",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "DEF",
+        "starter": true,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": null
+      }
+    ],
+    "playerIds": []
+  }
+]
