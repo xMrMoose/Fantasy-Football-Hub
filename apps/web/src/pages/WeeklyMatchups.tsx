@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react";
-import type { WeeklyMatchup } from "@fantasy/domain";
+import { useEffect, useMemo, useRef, useState } from "react";
+import type { StandingsRow, StandingsSnapshot, WeeklyMatchup } from "@fantasy/domain";
 import { useDataQuery } from "../data/useDataQuery.js";
 import { useTeams } from "../data/useTeams.js";
 import { WeekSelector } from "../components/WeekSelector.js";
@@ -27,6 +27,14 @@ export function WeeklyMatchups() {
   const [filter, setFilter] = useState<ConferenceFilter>("ALL");
   const { teamNamesById } = useTeams();
   const weekData = useDataQuery<WeekFile>(`matchups/week-${String(week).padStart(2, "0")}.json`, (d) => d.matchups.length === 0);
+  const standings = useDataQuery<StandingsSnapshot>("standings/standings-latest.json");
+  const projections = useDataQuery<Record<string, number>>(`projections/week-${String(week).padStart(2, "0")}.json`);
+
+  const standingsByTeamId = useMemo(() => {
+    if (standings.status !== "ok") return {} as Record<string, StandingsRow>;
+    return Object.fromEntries(standings.data.combined.map((row) => [row.teamId, row]));
+  }, [standings]);
+  const projectionsById = projections.status === "ok" ? projections.data : {};
 
   // Jump to the real current week once it's known, but only if the viewer
   // hasn't already picked a week themselves (season.json can resolve after
@@ -64,7 +72,16 @@ export function WeeklyMatchups() {
       {weekData.status === "empty" && <p>No matchups recorded for week {week} yet.</p>}
       {weekData.status === "ok" &&
         (matchups.length > 0 ? (
-          matchups.map((m) => <ScoreCard key={m.matchupId} matchup={m} teamNamesById={teamNamesById} week={week} />)
+          matchups.map((m) => (
+            <ScoreCard
+              key={m.matchupId}
+              matchup={m}
+              teamNamesById={teamNamesById}
+              standingsByTeamId={standingsByTeamId}
+              projectionsById={projectionsById}
+              week={week}
+            />
+          ))
         ) : (
           <p>No matchups for this filter.</p>
         ))}

@@ -1,0 +1,183 @@
+{
+  "week": 3,
+  "state": "computed",
+  "matchups": [
+    {
+      "matchupId": "AFC-9001",
+      "conference": "AFC",
+      "sourceLeagueId": "1398855181952667648",
+      "week": 3,
+      "state": "live",
+      "teamA": {
+        "teamId": "AFC-1",
+        "points": 107.56,
+        "customPoints": null,
+        "lineup": [
+          {
+            "playerId": "4046",
+            "slot": "QB",
+            "starter": true,
+            "points": 24.46,
+            "status": null
+          },
+          {
+            "playerId": "4866",
+            "slot": "RB",
+            "starter": true,
+            "points": 15.2,
+            "status": null
+          },
+          {
+            "playerId": "5850",
+            "slot": "RB",
+            "starter": true,
+            "points": 14.0,
+            "status": null
+          },
+          {
+            "playerId": "6794",
+            "slot": "WR",
+            "starter": true,
+            "points": 12.1,
+            "status": null
+          },
+          {
+            "playerId": "8112",
+            "slot": "WR",
+            "starter": true,
+            "points": 8.4,
+            "status": null
+          },
+          {
+            "playerId": "4033",
+            "slot": "TE",
+            "starter": true,
+            "points": 10.6,
+            "status": null
+          },
+          {
+            "playerId": "6801",
+            "slot": "FLEX",
+            "starter": true,
+            "points": 9.8,
+            "status": null
+          },
+          {
+            "playerId": "11533",
+            "slot": "K",
+            "starter": true,
+            "points": 9.0,
+            "status": null
+          },
+          {
+            "playerId": "ATL",
+            "slot": "DEF",
+            "starter": true,
+            "points": 4.0,
+            "status": null
+          },
+          {
+            "playerId": "5045",
+            "slot": "BN",
+            "starter": false,
+            "points": null,
+            "status": null
+          },
+          {
+            "playerId": "4035",
+            "slot": "BN",
+            "starter": false,
+            "points": null,
+            "status": null
+          }
+        ]
+      },
+      "teamB": {
+        "teamId": "AFC-2",
+        "points": 79.1,
+        "customPoints": null,
+        "lineup": [
+          {
+            "playerId": "demo-b-qb",
+            "slot": "QB",
+            "starter": true,
+            "points": 18.2,
+            "status": null
+          },
+          {
+            "playerId": "demo-b-rb1",
+            "slot": "RB",
+            "starter": true,
+            "points": 11.5,
+            "status": null
+          },
+          {
+            "playerId": "demo-b-rb2",
+            "slot": "RB",
+            "starter": true,
+            "points": 7.2,
+            "status": null
+          },
+          {
+            "playerId": "demo-b-wr1",
+            "slot": "WR",
+            "starter": true,
+            "points": 13.8,
+            "status": null
+          },
+          {
+            "playerId": "demo-b-wr2",
+            "slot": "WR",
+            "starter": true,
+            "points": 6.0,
+            "status": null
+          },
+          {
+            "playerId": "demo-b-te",
+            "slot": "TE",
+            "starter": true,
+            "points": 5.4,
+            "status": null
+          },
+          {
+            "playerId": "demo-b-flex",
+            "slot": "FLEX",
+            "starter": true,
+            "points": 8.0,
+            "status": null
+          },
+          {
+            "playerId": "demo-b-k",
+            "slot": "K",
+            "starter": true,
+            "points": 6.0,
+            "status": null
+          },
+          {
+            "playerId": "demo-b-def",
+            "slot": "DEF",
+            "starter": true,
+            "points": 3.0,
+            "status": null
+          },
+          {
+            "playerId": "demo-b-bn1",
+            "slot": "BN",
+            "starter": false,
+            "points": null,
+            "status": null
+          },
+          {
+            "playerId": "demo-b-bn2",
+            "slot": "BN",
+            "starter": false,
+            "points": null,
+            "status": null
+          }
+        ]
+      },
+      "winnerTeamId": "AFC-1",
+      "customPointsUsed": false
+    }
+  ]
+}

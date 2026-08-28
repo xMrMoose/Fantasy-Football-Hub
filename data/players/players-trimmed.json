@@ -1,1 +1,134 @@
-{}
+{
+  "4046": {
+    "full_name": "Patrick Mahomes",
+    "team": "KC",
+    "position": "QB",
+    "injury_status": null
+  },
+  "4866": {
+    "full_name": "Saquon Barkley",
+    "team": "PHI",
+    "position": "RB",
+    "injury_status": null
+  },
+  "5850": {
+    "full_name": "Josh Jacobs",
+    "team": "GB",
+    "position": "RB",
+    "injury_status": null
+  },
+  "6794": {
+    "full_name": "AJ Brown",
+    "team": "PHI",
+    "position": "WR",
+    "injury_status": null
+  },
+  "8112": {
+    "full_name": "Garrett Wilson",
+    "team": "NYJ",
+    "position": "WR",
+    "injury_status": null
+  },
+  "4033": {
+    "full_name": "George Kittle",
+    "team": "SF",
+    "position": "TE",
+    "injury_status": null
+  },
+  "6801": {
+    "full_name": "Tony Pollard",
+    "team": "TEN",
+    "position": "RB",
+    "injury_status": null
+  },
+  "11533": {
+    "full_name": "Brandon Aubrey",
+    "team": "DAL",
+    "position": "K",
+    "injury_status": null
+  },
+  "ATL": {
+    "full_name": "Atlanta Falcons",
+    "team": "ATL",
+    "position": "DEF",
+    "injury_status": null
+  },
+  "5045": {
+    "full_name": "Michael Pittman",
+    "team": "IND",
+    "position": "WR",
+    "injury_status": null
+  },
+  "4035": {
+    "full_name": "Dalton Schultz",
+    "team": "HOU",
+    "position": "TE",
+    "injury_status": null
+  },
+  "demo-b-qb": {
+    "full_name": "Derek Carr",
+    "team": "LV",
+    "position": "QB",
+    "injury_status": null
+  },
+  "demo-b-rb1": {
+    "full_name": "Derrick Henry",
+    "team": "BAL",
+    "position": "RB",
+    "injury_status": null
+  },
+  "demo-b-rb2": {
+    "full_name": "James Cook",
+    "team": "BUF",
+    "position": "RB",
+    "injury_status": null
+  },
+  "demo-b-wr1": {
+    "full_name": "Amon-Ra St. Brown",
+    "team": "DET",
+    "position": "WR",
+    "injury_status": null
+  },
+  "demo-b-wr2": {
+    "full_name": "DK Metcalf",
+    "team": "PIT",
+    "position": "WR",
+    "injury_status": null
+  },
+  "demo-b-te": {
+    "full_name": "Trey McBride",
+    "team": "ARI",
+    "position": "TE",
+    "injury_status": null
+  },
+  "demo-b-flex": {
+    "full_name": "Rhamondre Stevenson",
+    "team": "NE",
+    "position": "RB",
+    "injury_status": null
+  },
+  "demo-b-k": {
+    "full_name": "Harrison Butker",
+    "team": "KC",
+    "position": "K",
+    "injury_status": null
+  },
+  "demo-b-def": {
+    "full_name": "Pittsburgh Steelers",
+    "team": "PIT",
+    "position": "DEF",
+    "injury_status": null
+  },
+  "demo-b-bn1": {
+    "full_name": "Jayden Reed",
+    "team": "GB",
+    "position": "WR",
+    "injury_status": null
+  },
+  "demo-b-bn2": {
+    "full_name": "Cade Otton",
+    "team": "TB",
+    "position": "TE",
+    "injury_status": null
+  }
+}
