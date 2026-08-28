@@ -1,8 +1,12 @@
 name: Sync Sleeper data
 
 on:
+  # Off the top of the hour on purpose — GitHub's own docs warn that ":00" is
+  # the highest-congestion moment for Actions scheduling (every repo on
+  # earth tends to pick it), and under load a scheduled trigger can be
+  # dropped outright rather than just delayed. :17 avoids that crowd.
   schedule:
-    - cron: "0 * * * *"
+    - cron: "17 * * * *"
   workflow_dispatch: {}
 
 permissions:
