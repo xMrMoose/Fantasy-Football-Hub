@@ -1,0 +1,22 @@
+{
+  "name": "@fantasy/sync",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "sync": "tsx src/index.ts",
+    "discover": "tsx src/discoverySpike.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fantasy/domain": "*",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "tsx": "^4.16.2",
+    "vitest": "^2.0.5",
+    "typescript": "^5.5.4",
+    "@types/node": "^20.14.15"
+  }
+}

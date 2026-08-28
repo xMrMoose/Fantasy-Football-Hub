@@ -1,0 +1,26 @@
+{
+  "season": "2026",
+  "conference": "NFC",
+  "sleeperLeagueId": "1398856149637275648",
+  "status": "pre_draft",
+  "rosterPositions": [
+    "QB",
+    "RB",
+    "RB",
+    "WR",
+    "WR",
+    "TE",
+    "FLEX",
+    "FLEX",
+    "K",
+    "DEF",
+    "BN",
+    "BN",
+    "BN",
+    "BN",
+    "BN"
+  ],
+  "scoringSettingsHash": "a2e18b61",
+  "previousLeagueId": null,
+  "lastValidatedAt": "2026-08-28T03:16:32.760Z"
+}

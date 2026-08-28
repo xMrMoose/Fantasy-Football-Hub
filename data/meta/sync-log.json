@@ -1,0 +1,25 @@
+[
+  {
+    "runId": "run-1787886992760",
+    "startedAt": "2026-08-28T03:16:32.760Z",
+    "finishedAt": "2026-08-28T03:16:33.252Z",
+    "success": true,
+    "leagues": {
+      "afc": {
+        "status": "ok",
+        "rosterCount": 12,
+        "rawHash": "56366672",
+        "error": null
+      },
+      "nfc": {
+        "status": "ok",
+        "rosterCount": 12,
+        "rawHash": "1396e545",
+        "error": null
+      }
+    },
+    "warnings": [],
+    "errors": [],
+    "weeksUpdated": []
+  }
+]

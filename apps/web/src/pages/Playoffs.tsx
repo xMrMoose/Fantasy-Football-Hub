@@ -1,0 +1,46 @@
+import { useState } from "react";
+import type { PlayoffBracket } from "@fantasy/domain";
+import { useDataQuery } from "../data/useDataQuery.js";
+import { useTeams } from "../data/useTeams.js";
+import { BracketView } from "../components/BracketView.js";
+import { BracketListView } from "../components/BracketListView.js";
+import { FreshnessBanner } from "../components/FreshnessBanner.js";
+
+function ConferenceBracket({ conference }: { conference: "afc" | "nfc" }) {
+  const { teamNamesById } = useTeams();
+  const bracket = useDataQuery<PlayoffBracket>(`playoffs/bracket-${conference}.json`, (d) => d.matchups.length === 0);
+
+  if (bracket.status === "loading") return <p>Loading…</p>;
+  if (bracket.status === "error") return <p>Playoff bracket not available yet.</p>;
+  if (bracket.status === "empty") return <p>Playoff seeding hasn't been locked yet.</p>;
+
+  return (
+    <div>
+      <div className="bracket-desktop">
+        <BracketView bracket={bracket.data} teamNamesById={teamNamesById} />
+      </div>
+      <details>
+        <summary>List view (accessible / mobile)</summary>
+        <BracketListView bracket={bracket.data} teamNamesById={teamNamesById} />
+      </details>
+    </div>
+  );
+}
+
+export function Playoffs() {
+  const [conference, setConference] = useState<"afc" | "nfc">("afc");
+  return (
+    <div className="container">
+      <h1>Conference Playoffs</h1>
+      <FreshnessBanner />
+      <div className="tabs" role="tablist" aria-label="Conference">
+        {(["afc", "nfc"] as const).map((c) => (
+          <button key={c} role="tab" aria-selected={conference === c} className={conference === c ? "active" : ""} onClick={() => setConference(c)}>
+            {c.toUpperCase()}
+          </button>
+        ))}
+      </div>
+      <ConferenceBracket conference={conference} />
+    </div>
+  );
+}

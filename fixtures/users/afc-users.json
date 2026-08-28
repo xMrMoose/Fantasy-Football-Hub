@@ -1,0 +1,4 @@
+[
+  { "user_id": "u1", "display_name": "jsmith", "avatar": null, "metadata": { "team_name": "The Champs" } },
+  { "user_id": "u2", "display_name": "abrown", "avatar": null, "metadata": {} }
+]

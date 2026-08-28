@@ -1,0 +1,16 @@
+[
+  {
+    "roster_id": 1,
+    "owner_id": "u1",
+    "players": ["p1", "p2", "p3"],
+    "starters": ["p1", "p2"],
+    "settings": { "wins": 5, "losses": 2, "ties": 0, "fpts": 720, "fpts_decimal": 34 }
+  },
+  {
+    "roster_id": 2,
+    "owner_id": "u2",
+    "players": ["p4", "p5", "p6"],
+    "starters": ["p4", "p5"],
+    "settings": { "wins": 4, "losses": 3, "ties": 0, "fpts": 680, "fpts_decimal": 12 }
+  }
+]

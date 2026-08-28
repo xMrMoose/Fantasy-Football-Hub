@@ -1,0 +1,9 @@
+{
+  "league_id": "1398855181952667648",
+  "name": "AFC",
+  "season": "2026",
+  "status": "in_season",
+  "previous_league_id": null,
+  "roster_positions": ["QB", "RB", "RB", "WR", "WR", "TE", "FLEX", "DEF", "BN", "BN", "BN", "BN", "BN"],
+  "scoring_settings": { "pass_td": 4, "rec": 0.5, "rush_td": 6 }
+}

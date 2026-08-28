@@ -1,0 +1,18 @@
+[
+  {
+    "roster_id": 1,
+    "matchup_id": 1,
+    "points": 45.2,
+    "starters": ["p1", "p2"],
+    "players": ["p1", "p2", "p3"],
+    "players_points": { "p1": 20.2, "p2": 25.0, "p3": 0 }
+  },
+  {
+    "roster_id": 2,
+    "matchup_id": 1,
+    "points": null,
+    "starters": ["p4", "p5"],
+    "players": ["p4", "p5", "p6"],
+    "players_points": { "p4": 10.0 }
+  }
+]

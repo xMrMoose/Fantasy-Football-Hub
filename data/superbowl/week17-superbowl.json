@@ -1,0 +1,13 @@
+{
+  "season": "2026",
+  "week": 17,
+  "state": "awaiting_participant",
+  "afcChampionTeamId": null,
+  "nfcChampionTeamId": null,
+  "lineupSnapshot": null,
+  "scores": { "afc": null, "nfc": null },
+  "winnerTeamId": null,
+  "lastUpdated": null,
+  "overrideHistory": [],
+  "blockingReason": null
+}

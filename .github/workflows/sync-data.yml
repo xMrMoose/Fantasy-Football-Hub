@@ -1,0 +1,52 @@
+name: Sync Sleeper data
+
+on:
+  schedule:
+    - cron: "0 * * * *" # hourly; adjust freely, per-project decision is that even weekly would be fine
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-data
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - name: Run sync
+        id: sync
+        env:
+          SEASON: ${{ vars.SEASON }}
+          AFC_SLEEPER_LEAGUE_ID: ${{ vars.AFC_SLEEPER_LEAGUE_ID }}
+          NFC_SLEEPER_LEAGUE_ID: ${{ vars.NFC_SLEEPER_LEAGUE_ID }}
+          PLAYOFF_START_WEEK: ${{ vars.PLAYOFF_START_WEEK }}
+          SUPER_BOWL_WEEK: ${{ vars.SUPER_BOWL_WEEK }}
+          PLAYOFF_RESEED: ${{ vars.PLAYOFF_RESEED }}
+        run: |
+          npm run sync -w packages/sync | tee sync-output.log
+          echo "summary=$(head -n1 sync-output.log)" >> "$GITHUB_OUTPUT"
+
+      - name: Commit data changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/ config/; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+          git add data/ config/
+          git commit -m "chore(sync): ${{ steps.sync.outputs.summary }}"
+          git push

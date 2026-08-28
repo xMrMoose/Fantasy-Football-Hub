@@ -1,0 +1,19 @@
+{
+  "name": "fantasy-football-hub",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "test": "npm run test -w packages/domain && npm run test -w packages/sync && npm run test -w apps/web",
+    "sync": "npm run sync -w packages/sync",
+    "discover": "npm run discover -w packages/sync",
+    "dev": "npm run dev -w apps/web",
+    "build": "npm run build -w apps/web"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}

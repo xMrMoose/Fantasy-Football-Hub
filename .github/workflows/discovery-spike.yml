@@ -1,0 +1,38 @@
+name: Discovery spike (manual)
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - name: Fetch and sanitize real Sleeper payloads
+        env:
+          SEASON: ${{ vars.SEASON }}
+          AFC_SLEEPER_LEAGUE_ID: ${{ vars.AFC_SLEEPER_LEAGUE_ID }}
+          NFC_SLEEPER_LEAGUE_ID: ${{ vars.NFC_SLEEPER_LEAGUE_ID }}
+        run: npm run discover -w packages/sync
+
+      - name: Open a PR with the new fixtures for review
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore(fixtures): update discovery-spike fixtures"
+          branch: discovery-spike-fixtures
+          title: "Discovery spike: updated real-payload fixtures"
+          body: >
+            Sanitized real Sleeper payloads fetched for review. Promote relevant
+            files from fixtures/_discovery/** into fixtures/** once reviewed.
+          add-paths: fixtures/_discovery/**

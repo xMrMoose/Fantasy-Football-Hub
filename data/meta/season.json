@@ -1,0 +1,10 @@
+{
+  "season": "2026",
+  "status": "in_progress",
+  "activeWeek": 3,
+  "rulesVersion": "v1",
+  "playoffStartWeek": 14,
+  "superBowlWeek": 17,
+  "playoffTeamCount": 6,
+  "playoffReseed": true
+}

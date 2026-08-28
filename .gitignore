@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.env
+*.local
+fixtures/_local-only/
+.DS_Store
