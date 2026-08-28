@@ -20,7 +20,7 @@ jobs:
         with:
           persist-credentials: true
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 20
 
@@ -36,8 +36,9 @@ jobs:
           SUPER_BOWL_WEEK: ${{ vars.SUPER_BOWL_WEEK }}
           PLAYOFF_RESEED: ${{ vars.PLAYOFF_RESEED }}
         run: |
-          npm run sync -w packages/sync | tee sync-output.log
-          echo "summary=$(head -n1 sync-output.log)" >> "$GITHUB_OUTPUT"
+          npm run sync -w packages/sync --silent | tee sync-output.log
+          SUMMARY=$(grep '^sync run-' sync-output.log | tail -n1)
+          echo "summary=${SUMMARY:-sync completed (no summary line found)}" >> "$GITHUB_OUTPUT"
 
       - name: Commit data changes
         run: |
