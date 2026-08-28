@@ -1,10 +1,10 @@
-import { useRef, type RefObject, type TouchEvent } from "react";
+import { useEffect, useRef, type RefObject, type TouchEvent } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const SWIPE_TABS = ["/", "/matchups", "/playoffs"];
 const COMMIT_THRESHOLD_PX = 60;
 const RESISTANCE = 3; // divisor applied when dragging past the first/last tab
-const TRANSITION_MS = 220;
+const TRANSITION_MS = 150;
 
 // Don't hijack the gesture if it starts inside an element that itself
 // scrolls horizontally (e.g. the playoff bracket columns, wide tables) —
@@ -28,17 +28,23 @@ interface DragState {
 }
 
 /**
- * Drives both the swipe gesture and the slide animation for the three
- * primary tabs. The dragged panel is moved by direct style mutation (not
- * React state) so it tracks the finger at full frame rate; a settle()
- * commits to a CSS transition for the release animation, including a
- * slide-out-then-slide-in pair across the navigate() when a swipe completes.
+ * Drives both the swipe gesture and the tab-change animation.
+ *
+ * The panel is moved by direct style mutation (not React state) so it
+ * tracks the finger at full frame rate. On a committed swipe, the outgoing
+ * page is snapped fully off-screen instantly (no transition — it's about to
+ * be replaced, so animating its exit only adds a second, disconnected-feeling
+ * phase), then once the route swap has actually landed in the DOM the new
+ * page is snapped to the opposite edge and slid to rest in one continuous
+ * transition. That single-phase handoff is what makes it read as one fluid
+ * swipe instead of "exit, pause, enter."
  */
 export function useSwipeTabs(containerRef: RefObject<HTMLElement>, panelRef: RefObject<HTMLElement>) {
   const navigate = useNavigate();
   const location = useLocation();
   const drag = useRef<DragState | null>(null);
   const animating = useRef(false);
+  const pendingEnter = useRef<{ dir: number; width: number } | null>(null);
 
   function setTransform(px: number, withTransition: boolean) {
     const panel = panelRef.current;
@@ -62,6 +68,22 @@ export function useSwipeTabs(containerRef: RefObject<HTMLElement>, panelRef: Ref
     // Fallback in case transitionend never fires (e.g. target === current position).
     window.setTimeout(handle, TRANSITION_MS + 60);
   }
+
+  // Fires once the route we navigated to on a committed swipe has actually
+  // rendered — only then is it safe to position the new page and slide it in.
+  useEffect(() => {
+    const pending = pendingEnter.current;
+    if (!pending) return;
+    pendingEnter.current = null;
+    setTransform(-pending.dir * pending.width, false);
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        settle(0, () => {
+          animating.current = false;
+        });
+      });
+    });
+  }, [location.pathname]);
 
   function onTouchStart(e: TouchEvent) {
     const container = containerRef.current;
@@ -119,22 +141,9 @@ export function useSwipeTabs(containerRef: RefObject<HTMLElement>, panelRef: Ref
     }
 
     animating.current = true;
-    const width = d.width;
-    const nextPath = SWIPE_TABS[tabIndex + (dir < 0 ? 1 : -1)];
-
-    // Slide the current page fully off-screen, swap routes while it's out of
-    // view, then slide the new page in from the opposite edge.
-    settle(dir * width, () => {
-      navigate(nextPath);
-      setTransform(-dir * width, false);
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          settle(0, () => {
-            animating.current = false;
-          });
-        });
-      });
-    });
+    setTransform(dir * d.width, false); // snap the outgoing page fully off-screen, instantly
+    pendingEnter.current = { dir, width: d.width };
+    navigate(SWIPE_TABS[tabIndex + (dir < 0 ? 1 : -1)]);
   }
 
   function onTouchCancel() {
