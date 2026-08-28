@@ -7,6 +7,7 @@ import { WeeklyMatchups } from "./pages/WeeklyMatchups.js";
 import { MatchupDetail } from "./pages/MatchupDetail.js";
 import { Playoffs } from "./pages/Playoffs.js";
 import { SuperBowl } from "./pages/SuperBowl.js";
+import { TeamDetail } from "./pages/TeamDetail.js";
 import { useSwipeTabs } from "./hooks/useSwipeTabs.js";
 
 function ValidatedMatchupDetail() {
@@ -38,6 +39,7 @@ export default function App() {
           <Route path="/standings" element={<Navigate to="/" replace />} />
           <Route path="/matchups" element={<WeeklyMatchups />} />
           <Route path="/matchups/:week/:matchupId" element={<ValidatedMatchupDetail />} />
+          <Route path="/team/:teamId" element={<TeamDetail />} />
           <Route path="/playoffs" element={<Playoffs />} />
           <Route path="/superbowl" element={<SuperBowl />} />
           <Route path="*" element={<Navigate to="/" replace />} />
