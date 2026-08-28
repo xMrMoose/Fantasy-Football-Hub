@@ -1,12 +1,8 @@
 name: Sync Sleeper data
 
 on:
-  # Hourly schedule is paused until the draft happens and games start — no
-  # need to auto-sync an empty pre-draft league. Re-enable by uncommenting
-  # the schedule block below; manual runs (Actions tab -> "Run workflow")
-  # still work in the meantime.
-  # schedule:
-  #   - cron: "0 * * * *"
+  schedule:
+    - cron: "0 * * * *"
   workflow_dispatch: {}
 
 permissions:
