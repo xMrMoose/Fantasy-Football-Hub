@@ -711,28 +711,20 @@ th, td {
   margin-bottom: 0.5rem;
 }
 
+/* five real grid columns — not nested flex groups — so the score and slot
+   columns line up identically on every row regardless of name length */
 .h2h-row {
   display: grid;
-  grid-template-columns: 1fr auto 40px auto 1fr;
+  grid-template-columns: minmax(0, 1fr) 42px 40px 42px minmax(0, 1fr);
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   padding: 10px 0;
   border-bottom: 1px solid var(--border);
 }
 
-.h2h-side {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  min-width: 0;
-}
-
-.h2h-side-a { justify-content: flex-end; }
-.h2h-side-b { justify-content: flex-start; }
-
-.h2h-player { min-width: 0; }
-.h2h-player-left { text-align: right; }
-.h2h-player-right { text-align: left; }
+.h2h-info { min-width: 0; }
+.h2h-info-left { text-align: right; }
+.h2h-info-right { text-align: left; }
 
 .h2h-player-name {
   font-weight: 600;
@@ -746,33 +738,27 @@ th, td {
 .h2h-player-meta {
   font-size: 10.5px;
   color: var(--text-faint);
-  display: flex;
-  align-items: center;
-  gap: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
-.h2h-player-right .h2h-player-meta { flex-direction: row; }
-.h2h-player-left .h2h-player-meta { flex-direction: row-reverse; justify-content: flex-end; }
 
 .h2h-injury {
   color: var(--danger);
   font-weight: 700;
   text-transform: uppercase;
   font-size: 9px;
+  margin-left: 4px;
 }
 
 .h2h-score {
-  flex-shrink: 0;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 800;
   font-size: 15px;
   color: var(--text);
+  text-align: center;
   font-variant-numeric: tabular-nums;
-  min-width: 36px;
 }
-
-.h2h-side-a .h2h-score { text-align: right; }
-.h2h-side-b .h2h-score { text-align: left; }
 
 .h2h-slot {
   text-align: center;
@@ -784,3 +770,11 @@ th, td {
   border-radius: 5px;
   padding: 3px 0;
 }
+
+.h2h-slot.slot-qb { color: #f87171; }
+.h2h-slot.slot-rb { color: #4ade80; }
+.h2h-slot.slot-wr { color: #60a5fa; }
+.h2h-slot.slot-te { color: #fbbf24; }
+.h2h-slot.slot-flex { color: #c084fc; }
+.h2h-slot.slot-k { color: #f472b6; }
+.h2h-slot.slot-def { color: #2dd4bf; }

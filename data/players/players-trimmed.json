@@ -130,5 +130,41 @@
     "team": "TB",
     "position": "TE",
     "injury_status": null
+  },
+  "demo-a-bn3": {
+    "full_name": "Zay Flowers",
+    "team": "BAL",
+    "position": "WR",
+    "injury_status": null
+  },
+  "demo-a-bn4": {
+    "full_name": "Rashee Rice",
+    "team": "KC",
+    "position": "WR",
+    "injury_status": null
+  },
+  "demo-a-bn5": {
+    "full_name": "Chase Brown",
+    "team": "CIN",
+    "position": "RB",
+    "injury_status": null
+  },
+  "demo-b-bn3": {
+    "full_name": "Jaylen Waddle",
+    "team": "MIA",
+    "position": "WR",
+    "injury_status": null
+  },
+  "demo-b-bn4": {
+    "full_name": "Tank Bigsby",
+    "team": "JAX",
+    "position": "RB",
+    "injury_status": null
+  },
+  "demo-b-bn5": {
+    "full_name": "Evan Engram",
+    "team": "DEN",
+    "position": "TE",
+    "injury_status": null
   }
 }

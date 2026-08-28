@@ -10,7 +10,7 @@ function shortSlot(slot: string): string {
   return SHORT_SLOT[slot] ?? slot;
 }
 
-function Side({
+function PlayerCell({
   entry,
   playersById,
   align,
@@ -20,8 +20,8 @@ function Side({
   align: "left" | "right";
 }) {
   const info = entry ? playersById[entry.playerId] : undefined;
-  const player = (
-    <div className={`h2h-player h2h-player-${align}`}>
+  return (
+    <div className={`h2h-info h2h-info-${align}`}>
       <div className="h2h-player-name">{entry ? info?.full_name ?? entry.playerId : "—"}</div>
       {entry && (
         <div className="h2h-player-meta">
@@ -31,19 +31,10 @@ function Side({
       )}
     </div>
   );
-  const score = <div className="h2h-score">{entry?.points != null ? entry.points.toFixed(2) : "—"}</div>;
+}
 
-  return align === "left" ? (
-    <div className="h2h-side h2h-side-a">
-      {player}
-      {score}
-    </div>
-  ) : (
-    <div className="h2h-side h2h-side-b">
-      {score}
-      {player}
-    </div>
-  );
+function ScoreCell({ entry }: { entry: PlayerLineupEntry | null }) {
+  return <div className="h2h-score">{entry?.points != null ? entry.points.toFixed(2) : "—"}</div>;
 }
 
 export interface H2HRow {
@@ -57,9 +48,11 @@ export function HeadToHead({ rows, playersById }: { rows: H2HRow[]; playersById:
     <div className="h2h-list">
       {rows.map((row, i) => (
         <div className="h2h-row" key={`${row.slot}-${i}`}>
-          <Side entry={row.a} playersById={playersById} align="left" />
-          <div className="h2h-slot">{shortSlot(row.slot)}</div>
-          <Side entry={row.b} playersById={playersById} align="right" />
+          <PlayerCell entry={row.a} playersById={playersById} align="left" />
+          <ScoreCell entry={row.a} />
+          <div className={`h2h-slot slot-${row.slot.toLowerCase()}`}>{shortSlot(row.slot)}</div>
+          <ScoreCell entry={row.b} />
+          <PlayerCell entry={row.b} playersById={playersById} align="right" />
         </div>
       ))}
     </div>

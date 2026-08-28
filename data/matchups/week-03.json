@@ -89,6 +89,27 @@
             "starter": false,
             "points": null,
             "status": null
+          },
+          {
+            "playerId": "demo-a-bn3",
+            "slot": "BN",
+            "starter": false,
+            "points": null,
+            "status": null
+          },
+          {
+            "playerId": "demo-a-bn4",
+            "slot": "BN",
+            "starter": false,
+            "points": null,
+            "status": null
+          },
+          {
+            "playerId": "demo-a-bn5",
+            "slot": "BN",
+            "starter": false,
+            "points": null,
+            "status": null
           }
         ]
       },
@@ -169,6 +190,27 @@
           },
           {
             "playerId": "demo-b-bn2",
+            "slot": "BN",
+            "starter": false,
+            "points": null,
+            "status": null
+          },
+          {
+            "playerId": "demo-b-bn3",
+            "slot": "BN",
+            "starter": false,
+            "points": null,
+            "status": null
+          },
+          {
+            "playerId": "demo-b-bn4",
+            "slot": "BN",
+            "starter": false,
+            "points": null,
+            "status": null
+          },
+          {
+            "playerId": "demo-b-bn5",
             "slot": "BN",
             "starter": false,
             "points": null,
