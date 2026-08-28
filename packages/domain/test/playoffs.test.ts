@@ -75,8 +75,19 @@ describe("playoff bracket", () => {
   });
 
   it("buildBracket never throws even when no wildcard results exist yet (e.g. week 0/preseason)", () => {
-    expect(() => buildBracket(seeds(), { wildcard: 0, semifinal: 1, championship: 2 }, false)).not.toThrow();
-    expect(() => buildBracket(seeds(), { wildcard: 0, semifinal: 1, championship: 2 }, true)).not.toThrow();
+    expect(() => buildBracket(seeds(), { wildcard: 0, semifinal: 1, championship: 2 }, false, 0)).not.toThrow();
+    expect(() => buildBracket(seeds(), { wildcard: 0, semifinal: 1, championship: 2 }, true, 0)).not.toThrow();
+  });
+
+  it("marks a bracket as unofficial (a projected playoff picture) until its seeds are locked", () => {
+    const unlocked = { ...seeds(), lockedAt: null };
+    const projected = buildBracket(unlocked, { wildcard: 14, semifinal: 15, championship: 16 }, true, 8);
+    expect(projected.official).toBe(false);
+    expect(projected.asOfWeek).toBe(8);
+
+    const locked = { ...seeds(), lockedAt: "2026-12-01T00:00:00Z" };
+    const official = buildBracket(locked, { wildcard: 14, semifinal: 15, championship: 16 }, true, 14);
+    expect(official.official).toBe(true);
   });
 
   it("builds a championship only once both semifinals have winners", () => {

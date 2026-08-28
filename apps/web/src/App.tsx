@@ -1,6 +1,5 @@
 import { Routes, Route, Navigate, useParams } from "react-router-dom";
 import { Nav } from "./components/Nav.js";
-import { Home } from "./pages/Home.js";
 import { Standings } from "./pages/Standings.js";
 import { WeeklyMatchups } from "./pages/WeeklyMatchups.js";
 import { MatchupDetail } from "./pages/MatchupDetail.js";
@@ -21,8 +20,8 @@ export default function App() {
     <>
       <Nav />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/standings" element={<Standings />} />
+        <Route path="/" element={<Standings />} />
+        <Route path="/standings" element={<Navigate to="/" replace />} />
         <Route path="/matchups" element={<WeeklyMatchups />} />
         <Route path="/matchups/:week/:matchupId" element={<ValidatedMatchupDetail />} />
         <Route path="/playoffs" element={<Playoffs />} />

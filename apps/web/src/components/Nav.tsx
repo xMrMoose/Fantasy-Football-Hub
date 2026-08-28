@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
 
+// Super Bowl intentionally has no nav entry yet — too early in the season to
+// be relevant, but its route/page/backend logic stay fully wired up.
 const links = [
-  { to: "/", label: "Home", end: true },
-  { to: "/standings", label: "Standings" },
+  { to: "/", label: "Standings", end: true },
   { to: "/matchups", label: "Matchups" },
   { to: "/playoffs", label: "Playoffs" },
-  { to: "/superbowl", label: "Super Bowl" },
 ];
 
 export function Nav() {

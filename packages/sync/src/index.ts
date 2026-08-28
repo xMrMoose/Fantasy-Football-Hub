@@ -156,25 +156,29 @@ async function main() {
       ...standings,
     });
 
-    // --- Playoffs (only once the regular season / playoff window has begun) ---
-    if (upToWeek >= PLAYOFF_START_WEEK) {
-      for (const conf of ["afc", "nfc"] as const) {
-        const confStandings = conf === "afc" ? standings.afc : standings.nfc;
-        if (confStandings.length < 6) continue;
+    // --- Playoffs: a "playoff picture" projected from current standings
+    // recomputes every run once real games have been played, then locks
+    // (becomes official) once the playoff window (Week 14 by default) starts.
+    for (const conf of ["afc", "nfc"] as const) {
+      const confStandings = conf === "afc" ? standings.afc : standings.nfc;
+      if (confStandings.length < 6) continue;
+      const hasPlayedGames = confStandings.some((r) => r.gamesPlayed > 0);
+      if (!hasPlayedGames) continue;
 
-        let seeds = await readJsonIfExists<PlayoffSeeds>(paths.seeds(DATA_DIR, conf));
-        if (!seeds || !seeds.lockedAt) {
-          seeds = seedFromStandings(confStandings, SEASON, DEFAULT_LEAGUE_RULES.rulesVersion, 6, startedAt);
-          await writeJson(paths.seeds(DATA_DIR, conf), seeds);
-        }
-
-        const bracket: PlayoffBracket = buildBracket(
-          seeds,
-          { wildcard: PLAYOFF_START_WEEK, semifinal: PLAYOFF_START_WEEK + 1, championship: PLAYOFF_START_WEEK + 2 },
-          PLAYOFF_RESEED,
-        );
-        await writeJson(paths.bracket(DATA_DIR, conf), bracket);
+      let seeds = await readJsonIfExists<PlayoffSeeds>(paths.seeds(DATA_DIR, conf));
+      if (!seeds || !seeds.lockedAt) {
+        const locking = upToWeek >= PLAYOFF_START_WEEK;
+        seeds = seedFromStandings(confStandings, SEASON, DEFAULT_LEAGUE_RULES.rulesVersion, 6, locking ? startedAt : null);
+        await writeJson(paths.seeds(DATA_DIR, conf), seeds);
       }
+
+      const bracket: PlayoffBracket = buildBracket(
+        seeds,
+        { wildcard: PLAYOFF_START_WEEK, semifinal: PLAYOFF_START_WEEK + 1, championship: PLAYOFF_START_WEEK + 2 },
+        PLAYOFF_RESEED,
+        upToWeek,
+      );
+      await writeJson(paths.bracket(DATA_DIR, conf), bracket);
     }
 
     // --- Super Bowl (only once both conference championships are final) ---

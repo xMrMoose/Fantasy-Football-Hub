@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import type { StandingsSnapshot } from "@fantasy/domain";
 import { useDataQuery } from "../data/useDataQuery.js";
 import { useTeams } from "../data/useTeams.js";
@@ -13,7 +14,7 @@ export function Standings() {
 
   return (
     <div className="container">
-      <h1>Standings</h1>
+      <h1>24-Team Fantasy Football Hub</h1>
       <FreshnessBanner />
       <ConferenceFilterTabs value={filter} onChange={setFilter} />
       {state.status === "loading" && <p>Loading…</p>}
@@ -34,6 +35,9 @@ export function Standings() {
           />
         </>
       )}
+      <p>
+        <Link to="/matchups">This week's matchups</Link> · <Link to="/playoffs">Playoff picture</Link>
+      </p>
     </div>
   );
 }

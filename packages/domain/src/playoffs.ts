@@ -198,10 +198,17 @@ export function resolveWinner(matchup: PlayoffMatchup): string | null {
   return p1.score > p2.score ? p1.teamId : p2.teamId;
 }
 
+/**
+ * Builds a conference bracket from a seeds record. If `seeds.lockedAt` is
+ * null, this is a projected "playoff picture" — the caller is expected to
+ * recompute it from current standings on every sync run until seeding
+ * locks at the start of the playoff window (Week 14 by default).
+ */
 export function buildBracket(
   seeds: PlayoffSeeds,
   weeks: { wildcard: number; semifinal: number; championship: number },
   reseed: boolean,
+  asOfWeek: number,
 ): PlayoffBracket {
   const wildcard = buildWildcardRound(seeds, weeks.wildcard);
   const semifinal = buildSemifinalRound(wildcard, weeks.semifinal, reseed) ?? [];
@@ -210,6 +217,8 @@ export function buildBracket(
     season: seeds.season,
     conference: seeds.conference,
     reseed,
+    official: seeds.lockedAt !== null,
+    asOfWeek,
     matchups: [...wildcard, ...semifinal, ...(championship ? [championship] : [])],
   };
 }

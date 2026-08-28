@@ -7,6 +7,8 @@ const bracket: PlayoffBracket = {
   season: "2026",
   conference: "AFC",
   reseed: true,
+  official: true,
+  asOfWeek: 14,
   matchups: [
     {
       round: "wildcard",

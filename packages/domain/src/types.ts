@@ -121,6 +121,9 @@ export interface PlayoffBracket {
   season: string;
   conference: Conference;
   reseed: boolean;
+  /** false = a projected "playoff picture" recomputed from current standings each sync; true = locked/official once Week 14 seeding is set. */
+  official: boolean;
+  asOfWeek: number;
   matchups: PlayoffMatchup[];
 }
 
