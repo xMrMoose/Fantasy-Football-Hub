@@ -10,6 +10,20 @@ function shortSlot(slot: string): string {
   return SHORT_SLOT[slot] ?? slot;
 }
 
+/**
+ * "Patrick Mahomes" -> "P. Mahomes" (ESPN/Sleeper style), so the full last
+ * name fits the column instead of getting truncated. A team defense's name
+ * ("Pittsburgh Steelers") isn't a person's name and several run long enough
+ * to truncate anyway, so those show just the team abbreviation instead —
+ * which also avoids repeating the same team twice (name line + meta line).
+ */
+function displayName(fullName: string, team: string | null | undefined, position: string | null | undefined): string {
+  if (position === "DEF") return team ?? fullName;
+  const parts = fullName.trim().split(/\s+/);
+  if (parts.length < 2) return fullName;
+  return `${parts[0][0]}. ${parts.slice(1).join(" ")}`;
+}
+
 function PlayerCell({
   entry,
   playersById,
@@ -20,10 +34,12 @@ function PlayerCell({
   align: "left" | "right";
 }) {
   const info = entry ? playersById[entry.playerId] : undefined;
+  const isDef = info?.position === "DEF";
+  const name = entry ? displayName(info?.full_name ?? entry.playerId, info?.team, info?.position) : "—";
   return (
     <div className={`h2h-info h2h-info-${align}`}>
-      <div className="h2h-player-name">{entry ? info?.full_name ?? entry.playerId : "—"}</div>
-      {entry && (
+      <div className="h2h-player-name">{name}</div>
+      {entry && !isDef && (
         <div className="h2h-player-meta">
           {info?.team ?? "—"}
           {info?.injury_status && <span className="h2h-injury">{info.injury_status}</span>}
