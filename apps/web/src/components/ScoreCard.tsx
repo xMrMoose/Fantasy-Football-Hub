@@ -55,12 +55,14 @@ export function ScoreCard({
   standingsByTeamId,
   projectionsById,
   week,
+  showConference,
 }: {
   matchup: WeeklyMatchup;
   teamNamesById: Record<string, string>;
   standingsByTeamId: Record<string, StandingsRow>;
   projectionsById: Record<string, number>;
   week: number;
+  showConference: boolean;
 }) {
   const isBye = !matchup.teamB.teamId;
   const isFinal = matchup.state === "final";
@@ -73,8 +75,15 @@ export function ScoreCard({
   const card = (
     <div className={`score-card conf-${matchup.conference.toLowerCase()}`}>
       <div className="score-card-header">
-        <StatusBadge state={matchup.state} />
-        {matchup.customPointsUsed && <span className="badge overridden">Adjusted score</span>}
+        <div className="score-card-badges">
+          <StatusBadge state={matchup.state} />
+          {matchup.customPointsUsed && <span className="badge overridden">Adjusted score</span>}
+        </div>
+        {showConference && (
+          <span className={`conf-pill ${matchup.conference === "AFC" ? "conf-afc" : "conf-nfc"}`}>
+            {matchup.conference}
+          </span>
+        )}
       </div>
       <div className="score-card-matchup">
         <TeamColumn

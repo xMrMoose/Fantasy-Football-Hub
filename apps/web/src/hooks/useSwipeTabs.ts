@@ -1,7 +1,7 @@
 import { useEffect, useRef, type RefObject, type TouchEvent } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
-const SWIPE_TABS = ["/", "/matchups", "/playoffs"];
+export const SWIPE_TABS = ["/", "/matchups", "/playoffs"];
 const COMMIT_THRESHOLD_PX = 60;
 const RESISTANCE = 3; // divisor applied when dragging past the first/last tab
 const TRANSITION_MS = 150;

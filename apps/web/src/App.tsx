@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { Routes, Route, Navigate, useParams } from "react-router-dom";
+import { Routes, Route, Navigate, useParams, useLocation } from "react-router-dom";
 import { Nav } from "./components/Nav.js";
 import { SyncStatusPill } from "./components/SyncStatusPill.js";
 import { Standings } from "./pages/Standings.js";
@@ -8,7 +8,7 @@ import { MatchupDetail } from "./pages/MatchupDetail.js";
 import { Playoffs } from "./pages/Playoffs.js";
 import { SuperBowl } from "./pages/SuperBowl.js";
 import { TeamDetail } from "./pages/TeamDetail.js";
-import { useSwipeTabs } from "./hooks/useSwipeTabs.js";
+import { useSwipeTabs, SWIPE_TABS } from "./hooks/useSwipeTabs.js";
 
 function ValidatedMatchupDetail() {
   const { week } = useParams<{ week: string }>();
@@ -23,6 +23,8 @@ export default function App() {
   const contentRef = useRef<HTMLElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   const swipe = useSwipeTabs(contentRef, panelRef);
+  const location = useLocation();
+  const showNav = SWIPE_TABS.includes(location.pathname);
   return (
     <div className="app-shell">
       <header className="app-header">
@@ -30,7 +32,7 @@ export default function App() {
         <SyncStatusPill />
       </header>
       <main
-        className="app-content"
+        className={`app-content${showNav ? "" : " no-nav"}`}
         ref={contentRef}
         onTouchStart={swipe.onTouchStart}
         onTouchMove={swipe.onTouchMove}
@@ -50,7 +52,7 @@ export default function App() {
           </Routes>
         </div>
       </main>
-      <Nav />
+      {showNav && <Nav />}
     </div>
   );
 }

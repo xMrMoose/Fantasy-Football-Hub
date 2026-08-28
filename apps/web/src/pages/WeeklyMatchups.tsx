@@ -80,6 +80,7 @@ export function WeeklyMatchups() {
               standingsByTeamId={standingsByTeamId}
               projectionsById={projectionsById}
               week={week}
+              showConference={filter === "ALL"}
             />
           ))
         ) : (
