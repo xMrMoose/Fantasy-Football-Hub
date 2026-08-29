@@ -27,10 +27,10 @@
     "conference": "AFC",
     "sourceLeagueId": "1398855181952667648",
     "sourceRosterId": 3,
-    "ownerId": null,
-    "displayName": "Team 3",
-    "ownerDisplayName": null,
-    "avatar": null
+    "ownerId": "858828135813234688",
+    "displayName": "Num1UsoppHater",
+    "ownerDisplayName": "Num1UsoppHater",
+    "avatar": "80e5cc3e6f457b8fbf18f1fc14b7ece5"
   },
   {
     "teamId": "AFC-4",
@@ -38,10 +38,10 @@
     "conference": "AFC",
     "sourceLeagueId": "1398855181952667648",
     "sourceRosterId": 4,
-    "ownerId": null,
-    "displayName": "Team 4",
-    "ownerDisplayName": null,
-    "avatar": null
+    "ownerId": "1399526947242921984",
+    "displayName": "colepaller",
+    "ownerDisplayName": "colepaller",
+    "avatar": "51385ba57cd089261f6de9ce483b8716"
   },
   {
     "teamId": "AFC-5",
@@ -49,10 +49,10 @@
     "conference": "AFC",
     "sourceLeagueId": "1398855181952667648",
     "sourceRosterId": 5,
-    "ownerId": null,
-    "displayName": "Team 5",
-    "ownerDisplayName": null,
-    "avatar": null
+    "ownerId": "1003798804325294080",
+    "displayName": "lsmo9",
+    "ownerDisplayName": "lsmo9",
+    "avatar": "b319fdf8b7b5b0359d3c78622ba4d70c"
   },
   {
     "teamId": "AFC-6",
@@ -60,10 +60,10 @@
     "conference": "AFC",
     "sourceLeagueId": "1398855181952667648",
     "sourceRosterId": 6,
-    "ownerId": null,
-    "displayName": "Team 6",
-    "ownerDisplayName": null,
-    "avatar": null
+    "ownerId": "1399526826333704192",
+    "displayName": "ryangoldkamp",
+    "ownerDisplayName": "ryangoldkamp",
+    "avatar": "d55d1f7075eda01948318de4af616075"
   },
   {
     "teamId": "AFC-7",
@@ -71,10 +71,10 @@
     "conference": "AFC",
     "sourceLeagueId": "1398855181952667648",
     "sourceRosterId": 7,
-    "ownerId": null,
-    "displayName": "Team 7",
-    "ownerDisplayName": null,
-    "avatar": null
+    "ownerId": "1399527878198063104",
+    "displayName": "jackspeight24",
+    "ownerDisplayName": "jackspeight24",
+    "avatar": "d55d1f7075eda01948318de4af616075"
   },
   {
     "teamId": "AFC-8",
@@ -181,10 +181,10 @@
     "conference": "NFC",
     "sourceLeagueId": "1398856149637275648",
     "sourceRosterId": 5,
-    "ownerId": null,
-    "displayName": "Team 5",
-    "ownerDisplayName": null,
-    "avatar": null
+    "ownerId": "1399527361816346624",
+    "displayName": "csheeh05",
+    "ownerDisplayName": "csheeh05",
+    "avatar": "7572250c2fb084c434fed0e82229e183"
   },
   {
     "teamId": "NFC-6",
@@ -192,10 +192,10 @@
     "conference": "NFC",
     "sourceLeagueId": "1398856149637275648",
     "sourceRosterId": 6,
-    "ownerId": null,
-    "displayName": "Team 6",
-    "ownerDisplayName": null,
-    "avatar": null
+    "ownerId": "1399527398608801792",
+    "displayName": "Schreebs",
+    "ownerDisplayName": "Schreebs",
+    "avatar": "7572250c2fb084c434fed0e82229e183"
   },
   {
     "teamId": "NFC-7",
