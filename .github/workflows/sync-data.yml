@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: sync-data
@@ -46,13 +47,28 @@ jobs:
           echo "summary=${SUMMARY:-sync completed (no summary line found)}" >> "$GITHUB_OUTPUT"
 
       - name: Commit data changes
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           if git diff --quiet -- data/ config/; then
             echo "No data changes to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git add data/ config/
           git commit -m "chore(sync): ${{ steps.sync.outputs.summary }}"
           git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # A push made with the default GITHUB_TOKEN (as the commit above is)
+      # does NOT trigger other workflows' `push` events — GitHub's own
+      # anti-loop safeguard. deploy.yml would otherwise never run after an
+      # automated sync. Explicitly dispatching it is the documented
+      # workaround; only do it when there was actually something new to
+      # deploy.
+      - name: Trigger Pages redeploy
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
