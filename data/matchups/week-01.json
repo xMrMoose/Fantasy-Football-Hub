@@ -1,12 +1,12 @@
 {
-  "week": 3,
+  "week": 1,
   "state": "computed",
   "matchups": [
     {
       "matchupId": "AFC-9001",
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
-      "week": 3,
+      "week": 1,
       "state": "live",
       "teamA": {
         "teamId": "AFC-1",
