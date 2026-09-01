@@ -1,0 +1,86 @@
+{
+  "season": "2026",
+  "conference": "NFC",
+  "reseed": true,
+  "official": false,
+  "asOfWeek": 1,
+  "hasPlayedGames": false,
+  "matchups": [
+    {
+      "round": "wildcard",
+      "week": 14,
+      "conference": "NFC",
+      "participants": [
+        {
+          "seed": 1,
+          "teamId": "NFC-1",
+          "score": null,
+          "source": "bye"
+        }
+      ],
+      "winnerTeamId": "NFC-1",
+      "state": "scheduled",
+      "provenance": "auto"
+    },
+    {
+      "round": "wildcard",
+      "week": 14,
+      "conference": "NFC",
+      "participants": [
+        {
+          "seed": 2,
+          "teamId": "NFC-10",
+          "score": null,
+          "source": "bye"
+        }
+      ],
+      "winnerTeamId": "NFC-10",
+      "state": "scheduled",
+      "provenance": "auto"
+    },
+    {
+      "round": "wildcard",
+      "week": 14,
+      "conference": "NFC",
+      "participants": [
+        {
+          "seed": 3,
+          "teamId": "NFC-11",
+          "score": null,
+          "source": "auto"
+        },
+        {
+          "seed": 6,
+          "teamId": "NFC-3",
+          "score": null,
+          "source": "auto"
+        }
+      ],
+      "winnerTeamId": null,
+      "state": "scheduled",
+      "provenance": "auto"
+    },
+    {
+      "round": "wildcard",
+      "week": 14,
+      "conference": "NFC",
+      "participants": [
+        {
+          "seed": 4,
+          "teamId": "NFC-12",
+          "score": null,
+          "source": "auto"
+        },
+        {
+          "seed": 5,
+          "teamId": "NFC-2",
+          "score": null,
+          "source": "auto"
+        }
+      ],
+      "winnerTeamId": null,
+      "state": "scheduled",
+      "provenance": "auto"
+    }
+  ]
+}
