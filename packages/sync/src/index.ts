@@ -187,11 +187,14 @@ async function main() {
       const confStandings = conf === "afc" ? standings.afc : standings.nfc;
       if (confStandings.length < 6) continue;
       const hasPlayedGames = confStandings.some((r) => r.gamesPlayed > 0);
-      if (!hasPlayedGames) continue;
 
+      // Even before Week 1 kicks off, publish a placeholder playoff picture so the
+      // Playoffs tab always shows real teams in seed order (alphabetical tiebreak
+      // pre-season) rather than an empty state. It's clearly marked unofficial/
+      // preseason via hasPlayedGames until real results start shaping the seeding.
       let seeds = await readJsonIfExists<PlayoffSeeds>(paths.seeds(DATA_DIR, conf));
       if (!seeds || !seeds.lockedAt) {
-        const locking = upToWeek >= PLAYOFF_START_WEEK;
+        const locking = hasPlayedGames && upToWeek >= PLAYOFF_START_WEEK;
         seeds = seedFromStandings(confStandings, SEASON, DEFAULT_LEAGUE_RULES.rulesVersion, 6, locking ? startedAt : null);
         await writeJson(paths.seeds(DATA_DIR, conf), seeds);
       }
@@ -201,6 +204,7 @@ async function main() {
         { wildcard: PLAYOFF_START_WEEK, semifinal: PLAYOFF_START_WEEK + 1, championship: PLAYOFF_START_WEEK + 2 },
         PLAYOFF_RESEED,
         upToWeek,
+        hasPlayedGames,
       );
       await writeJson(paths.bracket(DATA_DIR, conf), bracket);
     }

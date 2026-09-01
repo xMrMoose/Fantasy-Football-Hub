@@ -177,6 +177,12 @@ h1, h2, h3 {
   color: var(--text);
 }
 
+.banner.neutral {
+  background: var(--bg-elevated);
+  color: var(--text-dim);
+  border-style: dashed;
+}
+
 /* other pages (Matchups detail, etc.) still use plain tables */
 table {
   width: 100%;
@@ -446,12 +452,86 @@ th, td {
   overflow-x: auto;
 }
 
+.bracket-round h4 {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.bracket-round-week {
+  font-weight: 400;
+  color: var(--text-faint);
+  font-size: 0.75rem;
+}
+
 .bracket-matchup {
   border: 1px solid var(--border);
+  border-top-width: 3px;
   border-radius: 8px;
-  padding: 0.5rem;
+  padding: 0.5rem 0.6rem;
   background: var(--bg-elevated);
 }
+
+.bracket-columns.conf-afc .bracket-matchup { border-top-color: var(--accent-afc); }
+.bracket-columns.conf-nfc .bracket-matchup { border-top-color: var(--accent-nfc); }
+
+.bracket-bye-group { border-top-style: dashed; }
+
+.bracket-bye-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-faint);
+  margin-bottom: 0.35rem;
+}
+
+.bracket-team {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.15rem 0;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.bracket-team.winner {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.seed-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.3rem;
+  height: 1.3rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--border);
+  color: var(--text-dim);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.bracket-team.winner .seed-badge {
+  background: var(--positive);
+  color: #ffffff;
+}
+
+.bracket-team-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bracket-team-score {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.8rem;
+  color: var(--text-faint);
+}
+
+.bracket-team.winner .bracket-team-score { color: var(--positive); }
 
 .sr-only {
   position: absolute;

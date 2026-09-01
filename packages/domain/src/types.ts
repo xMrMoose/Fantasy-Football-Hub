@@ -145,6 +145,8 @@ export interface PlayoffBracket {
   /** false = a projected "playoff picture" recomputed from current standings each sync; true = locked/official once Week 14 seeding is set. */
   official: boolean;
   asOfWeek: number;
+  /** false before any regular-season game has been played — seeding is a placeholder standings order (alphabetical tiebreak), not a meaningful ranking yet. */
+  hasPlayedGames: boolean;
   matchups: PlayoffMatchup[];
 }
 

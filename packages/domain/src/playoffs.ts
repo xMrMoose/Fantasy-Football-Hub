@@ -209,6 +209,7 @@ export function buildBracket(
   weeks: { wildcard: number; semifinal: number; championship: number },
   reseed: boolean,
   asOfWeek: number,
+  hasPlayedGames = true,
 ): PlayoffBracket {
   const wildcard = buildWildcardRound(seeds, weeks.wildcard);
   const semifinal = buildSemifinalRound(wildcard, weeks.semifinal, reseed) ?? [];
@@ -219,6 +220,7 @@ export function buildBracket(
     reseed,
     official: seeds.lockedAt !== null,
     asOfWeek,
+    hasPlayedGames,
     matchups: [...wildcard, ...semifinal, ...(championship ? [championship] : [])],
   };
 }

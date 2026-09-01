@@ -18,6 +18,11 @@ function ConferenceBracket({ conference }: { conference: "afc" | "nfc" }) {
     <div>
       {bracket.data.official ? (
         <div className="banner info">Official bracket — seeding locked after Week 13.</div>
+      ) : !bracket.data.hasPlayedGames ? (
+        <div className="banner neutral">
+          Preseason — no games have been played yet. Seeds below are a placeholder (all teams are tied, so order is
+          alphabetical) and will start reflecting real standings once Week 1 results are final.
+        </div>
       ) : (
         <div className="banner warn">
           Playoff picture — projected from standings as of Week {bracket.data.asOfWeek}. Not yet official; seeding
