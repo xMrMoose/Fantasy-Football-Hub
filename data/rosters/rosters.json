@@ -8,75 +8,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "12508"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "4034"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "12507"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "7525"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "7526"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "9484"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "5927"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "1945"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "LAC"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "11646"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "12489"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "12533"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "13294"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "2449"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "11646",
+      "12489",
+      "12507",
+      "12508",
+      "12533",
+      "13294",
+      "1945",
+      "2449",
+      "4034",
+      "5927",
+      "7525",
+      "7526",
+      "9484",
+      "LAC"
+    ]
   },
   {
     "teamId": "AFC-2",
@@ -87,75 +102,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "11566"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "9224"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "7543"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "7547"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "2133"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "8130"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "5045"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "3451"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "NE"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "11631"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "12474"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "3214"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "7523"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8408"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "11566",
+      "11631",
+      "12474",
+      "2133",
+      "3214",
+      "3451",
+      "5045",
+      "7523",
+      "7543",
+      "7547",
+      "8130",
+      "8408",
+      "9224",
+      "NE"
+    ]
   },
   {
     "teamId": "AFC-3",
@@ -166,75 +196,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "4881"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "8138"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "7021"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "8112"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "11635"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "10859"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "9756"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "11539"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "MIN"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "11586"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "13279"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "5844"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "5967"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "6804"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "10859",
+      "11539",
+      "11586",
+      "11635",
+      "13279",
+      "4881",
+      "5844",
+      "5967",
+      "6804",
+      "7021",
+      "8112",
+      "8138",
+      "9756",
+      "MIN"
+    ]
   },
   {
     "teamId": "AFC-4",
@@ -245,75 +290,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "6770"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "4866"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "8155"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "5859"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "4983"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "7553"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "7594"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "2747"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "DEN"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "5872"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "6806"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8183"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8676"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "9480"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "2747",
+      "4866",
+      "4983",
+      "5859",
+      "5872",
+      "6770",
+      "6806",
+      "7553",
+      "7594",
+      "8155",
+      "8183",
+      "8676",
+      "9480",
+      "DEN"
+    ]
   },
   {
     "teamId": "AFC-5",
@@ -324,75 +384,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "11563"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "9221"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "13287"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "11632"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "9997"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "12506"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "12490"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "12713"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "HOU"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "12534"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "13417"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "5846"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8121"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "9228"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "11563",
+      "11632",
+      "12490",
+      "12506",
+      "12534",
+      "12713",
+      "13287",
+      "13417",
+      "5846",
+      "8121",
+      "9221",
+      "9228",
+      "9997",
+      "HOU"
+    ]
   },
   {
     "teamId": "AFC-6",
@@ -403,75 +478,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "3294"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "9509"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "12512"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "8137"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "7569"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "12518"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "11620"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "12015"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "SEA"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "11624"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "421"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8126"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "9508"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "9754"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "11620",
+      "11624",
+      "12015",
+      "12512",
+      "12518",
+      "3294",
+      "421",
+      "7569",
+      "8126",
+      "8137",
+      "9508",
+      "9509",
+      "9754",
+      "SEA"
+    ]
   },
   {
     "teamId": "AFC-7",
@@ -482,75 +572,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "4046"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "9226"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "12481"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "6786"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "6801"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "12493"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "12529"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "12711"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "LV"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "10232"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "11583"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "12501"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "12519"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "1466"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "10232",
+      "11583",
+      "12481",
+      "12493",
+      "12501",
+      "12519",
+      "12529",
+      "12711",
+      "1466",
+      "4046",
+      "6786",
+      "6801",
+      "9226",
+      "LV"
+    ]
   },
   {
     "teamId": "AFC-8",
@@ -561,75 +666,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "4984"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "11584"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "7611"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "9488"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "8144"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "10236"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "8146"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "11792"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "JAX"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "10222"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "4199"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "7567"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "9487"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "9500"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "10222",
+      "10236",
+      "11584",
+      "11792",
+      "4199",
+      "4984",
+      "7567",
+      "7611",
+      "8144",
+      "8146",
+      "9487",
+      "9488",
+      "9500",
+      "JAX"
+    ]
   },
   {
     "teamId": "AFC-9",
@@ -640,75 +760,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "6797"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "5892"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "6790"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "7564"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "10229"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "11604"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "8167"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "8259"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "BAL"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "10219"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "13293"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "4037"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "5012"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "5849"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "10219",
+      "10229",
+      "11604",
+      "13293",
+      "4037",
+      "5012",
+      "5849",
+      "5892",
+      "6790",
+      "6797",
+      "7564",
+      "8167",
+      "8259",
+      "BAL"
+    ]
   },
   {
     "teamId": "AFC-10",
@@ -719,75 +854,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "6904"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "6813"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "8151"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "12526"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "8148"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "4217"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "7588"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "4227"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "DET"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "11628"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "13298"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "3163"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "6819"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8142"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "11628",
+      "12526",
+      "13298",
+      "3163",
+      "4217",
+      "4227",
+      "6813",
+      "6819",
+      "6904",
+      "7588",
+      "8142",
+      "8148",
+      "8151",
+      "DET"
+    ]
   },
   {
     "teamId": "AFC-11",
@@ -798,75 +948,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "11560"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "3198"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "8150"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "9493"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "12514"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "5022"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "5850"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "11786"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "PHI"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "11581"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "13281"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8110"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8132"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8228"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "11560",
+      "11581",
+      "11786",
+      "12514",
+      "13281",
+      "3198",
+      "5022",
+      "5850",
+      "8110",
+      "8132",
+      "8150",
+      "8228",
+      "9493",
+      "PHI"
+    ]
   },
   {
     "teamId": "AFC-12",
@@ -877,75 +1042,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "11564"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "12527"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "13286"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "6794"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "2216"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "12517"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "5947"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "11533"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "PIT"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "4892"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8131"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8134"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8136"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "LAR"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "11533",
+      "11564",
+      "12517",
+      "12527",
+      "13286",
+      "2216",
+      "4892",
+      "5947",
+      "6794",
+      "8131",
+      "8134",
+      "8136",
+      "LAR",
+      "PIT"
+    ]
   },
   {
     "teamId": "NFC-1",
@@ -956,75 +1136,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "3294"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "9221"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "5892"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "7569"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "2133"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "11604"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "8228"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "8259"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "JAX"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "11646"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "12501"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "13294"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "4037"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "9508"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "11604",
+      "11646",
+      "12501",
+      "13294",
+      "2133",
+      "3294",
+      "4037",
+      "5892",
+      "7569",
+      "8228",
+      "8259",
+      "9221",
+      "9508",
+      "JAX"
+    ]
   },
   {
     "teamId": "NFC-2",
@@ -1035,75 +1230,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "7523"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "8138"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "8151"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "7525"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "9997"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "9484"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "8167"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "5189"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "PIT"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "11581"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "11583"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "13417"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "3163"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "9500"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "11581",
+      "11583",
+      "13417",
+      "3163",
+      "5189",
+      "7523",
+      "7525",
+      "8138",
+      "8151",
+      "8167",
+      "9484",
+      "9500",
+      "9997",
+      "PIT"
+    ]
   },
   {
     "teamId": "NFC-3",
@@ -1114,42 +1324,42 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "6904"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "12527"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "12490"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "6794"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "12526"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "10236"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "7526"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "12015"
       },
       {
         "slot": "DEF",
@@ -1159,30 +1369,50 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "11628"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "12474"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "12534"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "13298"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "13330"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": "5872"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "10236",
+      "11628",
+      "12015",
+      "12474",
+      "12490",
+      "12526",
+      "12527",
+      "12534",
+      "13298",
+      "13330",
+      "5872",
+      "6794",
+      "6904",
+      "7526"
+    ]
   },
   {
     "teamId": "NFC-4",
@@ -1193,75 +1423,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "12508"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "7588"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "12481"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "7564"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "11620"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "8130"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "6790"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "7839"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "SEA"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "11563"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8134"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8408"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8676"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "9487"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "11563",
+      "11620",
+      "12481",
+      "12508",
+      "6790",
+      "7564",
+      "7588",
+      "7839",
+      "8130",
+      "8134",
+      "8408",
+      "8676",
+      "9487",
+      "SEA"
+    ]
   },
   {
     "teamId": "NFC-5",
@@ -1272,75 +1517,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "11560"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "9509"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "13287"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "8112"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "4983"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "7553"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "5850"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "11792"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "HOU"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "11624"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "12493"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "4046"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "4199"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "6806"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "11560",
+      "11624",
+      "11792",
+      "12493",
+      "13287",
+      "4046",
+      "4199",
+      "4983",
+      "5850",
+      "6806",
+      "7553",
+      "8112",
+      "9509",
+      "HOU"
+    ]
   },
   {
     "teamId": "NFC-6",
@@ -1351,75 +1611,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "4984"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "8150"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "7611"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "9488"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "5927"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "12518"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "7594"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "11533"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "DEN"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "10222"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "13305"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "3214"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "5045"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8136"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "10222",
+      "11533",
+      "12518",
+      "13305",
+      "3214",
+      "4984",
+      "5045",
+      "5927",
+      "7594",
+      "7611",
+      "8136",
+      "8150",
+      "9488",
+      "DEN"
+    ]
   },
   {
     "teamId": "NFC-7",
@@ -1430,75 +1705,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "11566"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "4034"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "11584"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "8137"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "8144"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "1466"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "12519"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "1945"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "MIN"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "12533"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "2449"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "4217"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "5947"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8132"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "11566",
+      "11584",
+      "12519",
+      "12533",
+      "1466",
+      "1945",
+      "2449",
+      "4034",
+      "4217",
+      "5947",
+      "8132",
+      "8137",
+      "8144",
+      "MIN"
+    ]
   },
   {
     "teamId": "NFC-8",
@@ -1509,75 +1799,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "421"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "9226"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "12507"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "11635"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "13279"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "12517"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "13286"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "3451"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "DET"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "10232"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "13281"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "5012"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "5846"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "9753"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "10232",
+      "11635",
+      "12507",
+      "12517",
+      "13279",
+      "13281",
+      "13286",
+      "3451",
+      "421",
+      "5012",
+      "5846",
+      "9226",
+      "9753",
+      "DET"
+    ]
   },
   {
     "teamId": "NFC-9",
@@ -1588,75 +1893,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "4881"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "4866"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "12529"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "6786"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "12514"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "5022"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "2216"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "2747"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "NE"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "11631"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "4892"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "7021"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8142"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "9480"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "11631",
+      "12514",
+      "12529",
+      "2216",
+      "2747",
+      "4866",
+      "4881",
+      "4892",
+      "5022",
+      "6786",
+      "7021",
+      "8142",
+      "9480",
+      "NE"
+    ]
   },
   {
     "teamId": "NFC-10",
@@ -1667,75 +1987,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "6797"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "9224"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "8155"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "7547"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "8146"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "12506"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "12512"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "11539"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "PHI"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "11586"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "5844"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "6804"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "6819"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8126"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "11539",
+      "11586",
+      "12506",
+      "12512",
+      "5844",
+      "6797",
+      "6804",
+      "6819",
+      "7547",
+      "8126",
+      "8146",
+      "8155",
+      "9224",
+      "PHI"
+    ]
   },
   {
     "teamId": "NFC-11",
@@ -1746,75 +2081,90 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "11564"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "6813"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "7543"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "5859"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "11632"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "8131"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "8148"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "11786"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "LAR"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "10219"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "5849"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "7567"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8154"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "9754"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "10219",
+      "11564",
+      "11632",
+      "11786",
+      "5849",
+      "5859",
+      "6813",
+      "7543",
+      "7567",
+      "8131",
+      "8148",
+      "8154",
+      "9754",
+      "LAR"
+    ]
   },
   {
     "teamId": "NFC-12",
@@ -1825,74 +2175,89 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": null
+        "playerId": "6770"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "3198"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "12489"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "9493"
       },
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "10229"
       },
       {
         "slot": "TE",
         "starter": true,
-        "playerId": null
+        "playerId": "10859"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": null
+        "playerId": "6801"
       },
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "4227"
       },
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "BAL"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "5967"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8110"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8121"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "8183"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": null
+        "playerId": "9756"
       }
     ],
-    "playerIds": []
+    "playerIds": [
+      "10229",
+      "10859",
+      "12489",
+      "3198",
+      "4227",
+      "5967",
+      "6770",
+      "6801",
+      "8110",
+      "8121",
+      "8183",
+      "9493",
+      "9756",
+      "BAL"
+    ]
   }
 ]
