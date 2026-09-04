@@ -3838,5 +3838,30 @@
     "weeksUpdated": [
       1
     ]
+  },
+  {
+    "runId": "run-1788518101308",
+    "startedAt": "2026-09-04T10:35:01.308Z",
+    "finishedAt": "2026-09-04T10:35:02.836Z",
+    "success": true,
+    "leagues": {
+      "afc": {
+        "status": "ok",
+        "rosterCount": 12,
+        "rawHash": "681c8415",
+        "error": null
+      },
+      "nfc": {
+        "status": "ok",
+        "rosterCount": 12,
+        "rawHash": "2eac6995",
+        "error": null
+      }
+    },
+    "warnings": [],
+    "errors": [],
+    "weeksUpdated": [
+      1
+    ]
   }
 ]
