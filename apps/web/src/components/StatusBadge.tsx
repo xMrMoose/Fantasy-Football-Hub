@@ -3,7 +3,7 @@ import type { AnyState } from "@fantasy/domain";
 const LABELS: Record<AnyState, string> = {
   scheduled: "Scheduled",
   live: "Live",
-  unofficial: "Unofficial",
+  unofficial: "Matchup Complete",
   final: "Final",
   awaiting_participant: "Awaiting participant",
   source_incomplete: "Data incomplete",
