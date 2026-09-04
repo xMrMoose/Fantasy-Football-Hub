@@ -1482,6 +1482,13 @@
             "status": null
           },
           {
+            "playerId": "LV",
+            "slot": "DEF",
+            "starter": true,
+            "points": 0,
+            "status": null
+          },
+          {
             "playerId": "11628",
             "slot": "BN",
             "starter": false,
@@ -1504,13 +1511,6 @@
           },
           {
             "playerId": "13298",
-            "slot": "BN",
-            "starter": false,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "13330",
             "slot": "BN",
             "starter": false,
             "points": 0,

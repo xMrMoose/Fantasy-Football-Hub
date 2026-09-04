@@ -1363,7 +1363,7 @@
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "LV"
       },
       {
         "slot": "BN",
@@ -1388,11 +1388,6 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "13330"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
         "playerId": "5872"
       }
     ],
@@ -1406,11 +1401,11 @@
       "12527",
       "12534",
       "13298",
-      "13330",
       "5872",
       "6794",
       "6904",
-      "7526"
+      "7526",
+      "LV"
     ]
   },
   {
