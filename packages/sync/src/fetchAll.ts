@@ -22,11 +22,19 @@ export interface LeaguePayload {
   losersBracket: unknown[];
 }
 
-/** Fetches everything needed for one conference's league, for weeks 1..upToWeek. Validates each response at the boundary; throws on transport failure (caller decides how to degrade). */
+/**
+ * Fetches everything needed for one conference's league, for weeks 1..maxWeek.
+ * Sleeper publishes the full-season schedule (matchup pairings) up front, with
+ * points sitting at 0 until a week is actually played, so `maxWeek` is
+ * typically the last regular-season week rather than the currently active
+ * one — callers want the whole schedule visible, not just weeks played so far.
+ * Validates each response at the boundary; throws on transport failure
+ * (caller decides how to degrade).
+ */
 export async function fetchLeaguePayload(
   client: SleeperClient,
   leagueId: string,
-  upToWeek: number,
+  maxWeek: number,
 ): Promise<LeaguePayload> {
   const [leagueRaw, rostersRaw, usersRaw] = await Promise.all([
     client.get(`/league/${leagueId}`),
@@ -39,7 +47,7 @@ export async function fetchLeaguePayload(
   const users = SleeperUserSchema.array().parse(usersRaw);
 
   const matchupsByWeek: Record<number, SleeperMatchupEntry[]> = {};
-  for (let week = 1; week <= upToWeek; week++) {
+  for (let week = 1; week <= maxWeek; week++) {
     const raw = await client.get(`/league/${leagueId}/matchups/${week}`);
     matchupsByWeek[week] = SleeperMatchupsResponseSchema.parse(raw);
   }

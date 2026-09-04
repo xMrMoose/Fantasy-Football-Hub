@@ -18,10 +18,13 @@ export function deriveMatchupState(
   teamB: TeamMatchupSide | null,
 ): AnyState {
   if (!teamB || !teamB.teamId) return "scheduled"; // bye week
+  // Sleeper reports points as 0 (never null) for a week that hasn't happened
+  // yet, so a future week can't be told apart from a 0-0 live game by points
+  // alone — the week/nflState.week comparison is the only real signal.
+  if (week > nflState.week && nflState.season_type !== "post") return "scheduled";
   const bothScored = teamA.points !== null && teamB.points !== null;
   const weekHasPassed = nflState.week > week || (nflState.season_type === "post" && nflState.week >= week);
 
-  if (!bothScored && week > nflState.week) return "scheduled";
   if (!bothScored) return "live";
   if (weekHasPassed) return "final";
   return "unofficial";

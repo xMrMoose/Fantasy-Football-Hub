@@ -78,9 +78,16 @@ async function main() {
     return { week: 1, season: SEASON, season_type: "regular" as const };
   });
   const upToWeek = Math.max(1, Math.min(17, nflState.week));
+  // Sleeper exposes the full regular-season schedule (pairings, 0 points) as
+  // soon as the league is set up, so pull it all up front rather than only
+  // the weeks played so far — lets the site show the whole schedule, not
+  // just week upToWeek. Once upToWeek moves into the playoffs this just
+  // tracks upToWeek as before.
+  const regularSeasonLastWeek = Math.min(17, Math.max(1, PLAYOFF_START_WEEK - 1));
+  const maxMatchupWeek = Math.max(upToWeek, regularSeasonLastWeek);
 
-  const afc = await tryFetchLeague(client, "AFC", AFC_LEAGUE_ID, upToWeek);
-  const nfc = await tryFetchLeague(client, "NFC", NFC_LEAGUE_ID, upToWeek);
+  const afc = await tryFetchLeague(client, "AFC", AFC_LEAGUE_ID, maxMatchupWeek);
+  const nfc = await tryFetchLeague(client, "NFC", NFC_LEAGUE_ID, maxMatchupWeek);
 
   if (afc.error) errors.push(`AFC: ${afc.error}`);
   if (nfc.error) errors.push(`NFC: ${nfc.error}`);
@@ -129,7 +136,7 @@ async function main() {
       allFinalizedMatchups = allFinalizedMatchups.concat(existing.matchups);
       continue; // protect finalized/historical weeks from destructive resync
     }
-    if (week > upToWeek) continue;
+    if (week > maxMatchupWeek) continue;
 
     let weekMatchups: WeeklyMatchup[] = [];
     for (const side of [afc, nfc] as const) {
