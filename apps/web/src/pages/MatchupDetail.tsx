@@ -25,6 +25,7 @@ export function MatchupDetail() {
   const { teamNamesById } = useTeams();
   const weekData = useDataQuery<WeekFile>(`matchups/week-${String(weekNum).padStart(2, "0")}.json`, (d) => d.matchups.length === 0);
   const players = useDataQuery<Record<string, PlayerInfo>>("players/players-trimmed.json");
+  const projections = useDataQuery<Record<string, number>>(`projections/week-${String(weekNum).padStart(2, "0")}.json`);
 
   const matchup = weekData.status === "ok" ? weekData.data.matchups.find((m) => m.matchupId === matchupId) : undefined;
   const sourceLeague = useDataQuery<SourceLeague>(
@@ -56,6 +57,7 @@ export function MatchupDetail() {
   }
 
   const playersById = players.status === "ok" ? players.data : {};
+  const projectionsById = projections.status === "ok" ? projections.data : {};
   const aName = teamNamesById[matchup.teamA.teamId] ?? matchup.teamA.teamId;
   const bName = matchup.teamB.teamId ? teamNamesById[matchup.teamB.teamId] ?? matchup.teamB.teamId : "Bye";
   const aScore = matchup.teamA.customPoints ?? matchup.teamA.points;
@@ -93,11 +95,11 @@ export function MatchupDetail() {
 
       {matchup.teamB.teamId ? (
         <>
-          <HeadToHead rows={startingRows} playersById={playersById} />
+          <HeadToHead rows={startingRows} playersById={playersById} projectionsById={projectionsById} />
           {benchRows.length > 0 && (
             <>
               <h2 className="section-title">Bench</h2>
-              <HeadToHead rows={benchRows} playersById={playersById} />
+              <HeadToHead rows={benchRows} playersById={playersById} projectionsById={projectionsById} />
             </>
           )}
         </>

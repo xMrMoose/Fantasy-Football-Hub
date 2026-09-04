@@ -49,8 +49,13 @@ function PlayerCell({
   );
 }
 
-function ScoreCell({ entry }: { entry: PlayerLineupEntry | null }) {
-  return <div className="h2h-score">{entry?.points != null ? entry.points.toFixed(2) : "—"}</div>;
+function ScoreCell({ entry, projected }: { entry: PlayerLineupEntry | null; projected: number | undefined }) {
+  return (
+    <div className="h2h-score">
+      <div className="h2h-score-actual">{entry?.points != null ? entry.points.toFixed(2) : "—"}</div>
+      {entry && <div className="h2h-score-proj">{projected != null ? projected.toFixed(1) : "—"}</div>}
+    </div>
+  );
 }
 
 export interface H2HRow {
@@ -59,15 +64,23 @@ export interface H2HRow {
   b: PlayerLineupEntry | null;
 }
 
-export function HeadToHead({ rows, playersById }: { rows: H2HRow[]; playersById: Record<string, PlayerInfo> }) {
+export function HeadToHead({
+  rows,
+  playersById,
+  projectionsById,
+}: {
+  rows: H2HRow[];
+  playersById: Record<string, PlayerInfo>;
+  projectionsById: Record<string, number>;
+}) {
   return (
     <div className="h2h-list">
       {rows.map((row, i) => (
         <div className="h2h-row" key={`${row.slot}-${i}`}>
           <PlayerCell entry={row.a} playersById={playersById} align="left" />
-          <ScoreCell entry={row.a} />
+          <ScoreCell entry={row.a} projected={row.a ? projectionsById[row.a.playerId] : undefined} />
           <div className={`h2h-slot slot-${row.slot.toLowerCase()}`}>{shortSlot(row.slot)}</div>
-          <ScoreCell entry={row.b} />
+          <ScoreCell entry={row.b} projected={row.b ? projectionsById[row.b.playerId] : undefined} />
           <PlayerCell entry={row.b} playersById={playersById} align="right" />
         </div>
       ))}

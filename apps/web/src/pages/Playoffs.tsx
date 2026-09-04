@@ -3,7 +3,6 @@ import type { PlayoffBracket } from "@fantasy/domain";
 import { useDataQuery } from "../data/useDataQuery.js";
 import { useTeams } from "../data/useTeams.js";
 import { BracketView } from "../components/BracketView.js";
-import { BracketListView } from "../components/BracketListView.js";
 import { FreshnessBanner } from "../components/FreshnessBanner.js";
 
 function ConferenceBracket({ conference }: { conference: "afc" | "nfc" }) {
@@ -29,13 +28,7 @@ function ConferenceBracket({ conference }: { conference: "afc" | "nfc" }) {
           locks once Week 14 begins.
         </div>
       )}
-      <div className="bracket-desktop">
-        <BracketView bracket={bracket.data} teamNamesById={teamNamesById} />
-      </div>
-      <details>
-        <summary>List view (accessible / mobile)</summary>
-        <BracketListView bracket={bracket.data} teamNamesById={teamNamesById} />
-      </details>
+      <BracketView bracket={bracket.data} teamNamesById={teamNamesById} />
     </div>
   );
 }

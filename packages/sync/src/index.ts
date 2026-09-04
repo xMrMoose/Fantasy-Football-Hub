@@ -260,23 +260,22 @@ async function main() {
     }
   }
 
-  // --- Projections for the active week (best-effort) ---
+  // --- Projections for every regular-season week (best-effort per week) ---
   // Sourced from Sleeper's undocumented projections host, so a failure here
-  // only warns: the site renders "—" when the file is absent. Skipped entirely
-  // before a draft, when there is nobody to project.
+  // only warns: the site renders "—" when a week's file is absent. Fetched
+  // for the whole regular season (like matchups above) so every week's
+  // matchup page can show a projection, not just the currently active week.
+  // Skipped entirely before a draft, when there is nobody to project.
   if (rosteredIds.size > 0) {
     const scoringSettings = (afc.payload ?? nfc.payload)?.league.scoring_settings;
-    try {
-      const projections = await fetchProjections(
-        projectionsClient,
-        SEASON,
-        upToWeek,
-        projectionPointsKey(scoringVariant(scoringSettings)),
-        rosteredIds,
-      );
-      await writeJson(paths.projections(DATA_DIR, upToWeek), projections);
-    } catch (err) {
-      warnings.push(`Failed to fetch week ${upToWeek} projections: ${String(err)}`);
+    const pointsKey = projectionPointsKey(scoringVariant(scoringSettings));
+    for (let week = 1; week <= maxMatchupWeek; week++) {
+      try {
+        const projections = await fetchProjections(projectionsClient, SEASON, week, pointsKey, rosteredIds);
+        await writeJson(paths.projections(DATA_DIR, week), projections);
+      } catch (err) {
+        warnings.push(`Failed to fetch week ${week} projections: ${String(err)}`);
+      }
     }
   }
 
