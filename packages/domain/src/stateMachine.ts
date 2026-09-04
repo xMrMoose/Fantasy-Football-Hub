@@ -16,12 +16,21 @@ export function deriveMatchupState(
   nflState: SleeperNflState,
   teamA: TeamMatchupSide,
   teamB: TeamMatchupSide | null,
+  now: number = Date.now(),
 ): AnyState {
   if (!teamB || !teamB.teamId) return "scheduled"; // bye week
   // Sleeper reports points as 0 (never null) for a week that hasn't happened
   // yet, so a future week can't be told apart from a 0-0 live game by points
   // alone — the week/nflState.week comparison is the only real signal.
-  if (week > nflState.week && nflState.season_type !== "post") return "scheduled";
+  // nflState.week already flips to 1 as soon as the previous season's
+  // playoffs wrap, days before the new season's first game actually kicks
+  // off — season_start_date catches that gap for the currently "active" week.
+  const seasonNotStarted =
+    nflState.season_start_date != null && now < Date.parse(nflState.season_start_date);
+  if (nflState.season_type !== "post") {
+    if (week > nflState.week) return "scheduled";
+    if (week === nflState.week && seasonNotStarted) return "scheduled";
+  }
   const bothScored = teamA.points !== null && teamB.points !== null;
   const weekHasPassed = nflState.week > week || (nflState.season_type === "post" && nflState.week >= week);
 

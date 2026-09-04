@@ -89,6 +89,7 @@ export const SleeperNflStateSchema = z
     season: z.string(),
     season_type: z.string(),
     display_week: z.number().optional(),
+    season_start_date: z.string().optional(),
   })
   .passthrough();
 export type SleeperNflState = z.infer<typeof SleeperNflStateSchema>;
