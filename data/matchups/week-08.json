@@ -1084,6 +1084,13 @@
             "starter": false,
             "points": 0,
             "status": null
+          },
+          {
+            "playerId": "13413",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
           }
         ]
       },
