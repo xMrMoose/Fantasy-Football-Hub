@@ -36,5 +36,11 @@ export function deriveMatchupState(
 
   if (!bothScored) return "live";
   if (weekHasPassed) return "final";
-  return "unofficial";
+  // Sleeper's per-matchup `points` is a live-updating running total that's
+  // already non-null before kickoff and keeps changing all week — its
+  // presence is not evidence the week's games have finished, just that
+  // scoring exists. Until nflState confirms the week has passed there is no
+  // reliable signal that every player is done, so this matchup is still
+  // "live" even though both sides already show a score.
+  return "live";
 }
