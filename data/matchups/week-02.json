@@ -1680,7 +1680,7 @@
             "status": null
           },
           {
-            "playerId": "5927",
+            "playerId": "10222",
             "slot": "WR",
             "starter": true,
             "points": 0,
@@ -1715,13 +1715,6 @@
             "status": null
           },
           {
-            "playerId": "10222",
-            "slot": "BN",
-            "starter": false,
-            "points": 0,
-            "status": null
-          },
-          {
             "playerId": "13305",
             "slot": "BN",
             "starter": false,
@@ -1737,6 +1730,13 @@
           },
           {
             "playerId": "5045",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "5927",
             "slot": "BN",
             "starter": false,
             "points": 0,
