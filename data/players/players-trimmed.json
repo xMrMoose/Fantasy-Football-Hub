@@ -1894,7 +1894,7 @@
     "search_first_name": "kyler",
     "kalshi_id": "0471cbcd-9a96-43bb-83fa-5b7534f0ee82",
     "search_full_name": "kylermurray",
-    "news_updated": 1789403403811,
+    "news_updated": 1789411506738,
     "college": "Oklahoma",
     "fantasy_positions": [
       "QB"
@@ -4595,7 +4595,7 @@
     "search_first_name": "alec",
     "kalshi_id": "07d8c8ab-d96c-41a9-9232-1234ae814577",
     "search_full_name": "alecpierce",
-    "news_updated": 1789389003896,
+    "news_updated": 1789412706291,
     "college": "Cincinnati",
     "fantasy_positions": [
       "WR"
@@ -5286,7 +5286,7 @@
     "espn_id": null,
     "high_school": "Gallatin (TN)",
     "yahoo_id": null,
-    "injury_status": null,
+    "injury_status": "Questionable",
     "metadata": {
       "channel_id": "1113708878597484544",
       "genius_id": "1073347",
@@ -5318,7 +5318,7 @@
     "years_exp": 4,
     "practice_description": null,
     "search_last_name": "mason",
-    "injury_body_part": null,
+    "injury_body_part": "Thumb",
     "hashtag": "#jordanmason-NFL-MIN-27",
     "competitions": [],
     "practice_participation": null,
@@ -5331,7 +5331,7 @@
     "search_first_name": "jordan",
     "kalshi_id": "52802c94-260b-49b4-80a7-dd66d0cc6dbb",
     "search_full_name": "jordanmason",
-    "news_updated": 1789363561281,
+    "news_updated": 1789413004994,
     "college": "Georgia Tech",
     "fantasy_positions": [
       "RB"
@@ -6370,7 +6370,7 @@
     "search_first_name": "zay",
     "kalshi_id": "65f41cb6-4d34-45f3-9a62-c6fec3713f8b",
     "search_full_name": "zayflowers",
-    "news_updated": 1789405504112,
+    "news_updated": 1789413609886,
     "college": "Boston College",
     "fantasy_positions": [
       "WR"
@@ -7780,7 +7780,7 @@
     "search_first_name": "ladd",
     "kalshi_id": "a42ca7db-91f1-4dda-ba7a-12e7999c1170",
     "search_full_name": "laddmcconkey",
-    "news_updated": 1789408504496,
+    "news_updated": 1789410306274,
     "college": "Georgia",
     "fantasy_positions": [
       "WR"
@@ -7797,7 +7797,7 @@
     "espn_id": null,
     "high_school": "Potomac Falls (VA)",
     "yahoo_id": null,
-    "injury_status": null,
+    "injury_status": "Questionable",
     "metadata": {
       "channel_id": "1113708883592900609",
       "genius_id": "1482873",
@@ -7828,7 +7828,7 @@
     "years_exp": 2,
     "practice_description": null,
     "search_last_name": "coker",
-    "injury_body_part": null,
+    "injury_body_part": "Ankle",
     "hashtag": "#jalencoker-NFL-CAR-18",
     "competitions": [],
     "practice_participation": null,
@@ -7841,7 +7841,7 @@
     "search_first_name": "jalen",
     "kalshi_id": "85b609a0-24c7-42cf-b829-0980f7fcae2a",
     "search_full_name": "jalencoker",
-    "news_updated": 1789396504805,
+    "news_updated": 1789412106623,
     "college": "Holy Cross",
     "fantasy_positions": [
       "WR"
