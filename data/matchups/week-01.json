@@ -7,7 +7,7 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 1,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "AFC-1",
         "points": 80.1,
@@ -226,7 +226,7 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 1,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "AFC-2",
         "points": 128.16,
@@ -445,7 +445,7 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 1,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "AFC-3",
         "points": 90.46,
@@ -664,7 +664,7 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 1,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "AFC-5",
         "points": 110.84,
@@ -883,7 +883,7 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 1,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "AFC-6",
         "points": 112.2,
@@ -1102,7 +1102,7 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 1,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "AFC-7",
         "points": 120.26,
@@ -1321,7 +1321,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 1,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "NFC-1",
         "points": 139.5,
@@ -1540,7 +1540,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 1,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "NFC-3",
         "points": 144.12,
@@ -1759,7 +1759,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 1,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "NFC-4",
         "points": 164.2,
@@ -1978,7 +1978,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 1,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "NFC-5",
         "points": 114.06,
@@ -2197,7 +2197,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 1,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "NFC-6",
         "points": 133.26,
@@ -2416,7 +2416,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 1,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "NFC-8",
         "points": 78.8,
