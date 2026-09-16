@@ -27,7 +27,7 @@ describe("StandingsTable", () => {
     );
     expect(screen.getByText("The Champs")).toBeInTheDocument();
     expect(screen.getByText("5-2-0 · 0.714")).toBeInTheDocument();
-    expect(screen.getByText("+100.3")).toBeInTheDocument();
+    expect(screen.getByText("900.5 PF")).toBeInTheDocument();
   });
 
   it("links each row to that team's detail page", () => {

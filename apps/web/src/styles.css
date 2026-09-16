@@ -280,19 +280,17 @@ th, td {
   text-align: right;
 }
 
-.standings-row .pf-pa {
+.standings-row .pf {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.standings-row .pa {
+  margin-top: 2px;
   font-size: 11px;
   color: var(--text-faint);
 }
-
-.standings-row .diff {
-  margin-top: 2px;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.standings-row .diff.positive { color: var(--positive); }
-.standings-row .diff.negative { color: var(--danger); }
 
 /* segmented control (ConferenceFilterTabs) */
 .tabs {

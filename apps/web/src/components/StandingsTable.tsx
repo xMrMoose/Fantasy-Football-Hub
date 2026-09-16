@@ -35,12 +35,11 @@ export function StandingsTable({
               </div>
             </div>
             <div className="stat-block">
-              <div className="pf-pa" aria-label="Points for and points against">
-                {row.pointsFor.toFixed(1)} PF &middot; {row.pointsAgainst.toFixed(1)} PA
+              <div className="pf" aria-label="Points for">
+                {row.pointsFor.toFixed(1)} PF
               </div>
-              <div className={`diff ${row.pointDiff >= 0 ? "positive" : "negative"}`} aria-label="Point differential">
-                {row.pointDiff >= 0 ? "+" : ""}
-                {row.pointDiff.toFixed(1)}
+              <div className="pa" aria-label="Points against">
+                {row.pointsAgainst.toFixed(1)} PA
               </div>
             </div>
             <span className="row-chevron" aria-hidden="true">›</span>
