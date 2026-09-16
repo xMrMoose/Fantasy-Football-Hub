@@ -557,7 +557,7 @@
         "customPoints": null,
         "lineup": [
           {
-            "playerId": "6770",
+            "playerId": "8183",
             "slot": "QB",
             "starter": true,
             "points": 0,
@@ -578,7 +578,7 @@
             "status": null
           },
           {
-            "playerId": "5859",
+            "playerId": "5872",
             "slot": "WR",
             "starter": true,
             "points": 0,
@@ -620,7 +620,14 @@
             "status": null
           },
           {
-            "playerId": "5872",
+            "playerId": "5859",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "6770",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -628,13 +635,6 @@
           },
           {
             "playerId": "6806",
-            "slot": "BN",
-            "starter": false,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "8183",
             "slot": "BN",
             "starter": false,
             "points": 0,
