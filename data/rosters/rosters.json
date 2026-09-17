@@ -142,7 +142,7 @@
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": "NE"
+        "playerId": null
       },
       {
         "slot": "BN",
@@ -168,6 +168,11 @@
         "slot": "BN",
         "starter": false,
         "playerId": "8408"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": "SF"
       }
     ],
     "playerIds": [
@@ -184,7 +189,7 @@
       "8130",
       "8408",
       "9224",
-      "NE"
+      "SF"
     ]
   },
   {
