@@ -1,42 +1,5 @@
 [
   {
-    "runId": "run-1789056093742",
-    "startedAt": "2026-09-10T16:01:33.742Z",
-    "finishedAt": "2026-09-10T16:01:38.601Z",
-    "success": true,
-    "leagues": {
-      "afc": {
-        "status": "ok",
-        "rosterCount": 12,
-        "rawHash": "b43c3f3",
-        "error": null
-      },
-      "nfc": {
-        "status": "ok",
-        "rosterCount": 12,
-        "rawHash": "3a74a266",
-        "error": null
-      }
-    },
-    "warnings": [],
-    "errors": [],
-    "weeksUpdated": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13
-    ]
-  },
-  {
     "runId": "run-1789057645158",
     "startedAt": "2026-09-10T16:27:25.158Z",
     "finishedAt": "2026-09-10T16:27:34.520Z",
@@ -7277,6 +7240,42 @@
     "runId": "run-1789770373298",
     "startedAt": "2026-09-18T22:26:13.298Z",
     "finishedAt": "2026-09-18T22:26:17.284Z",
+    "success": true,
+    "leagues": {
+      "afc": {
+        "status": "ok",
+        "rosterCount": 12,
+        "rawHash": "6ab872cb",
+        "error": null
+      },
+      "nfc": {
+        "status": "ok",
+        "rosterCount": 12,
+        "rawHash": "56437a8f",
+        "error": null
+      }
+    },
+    "warnings": [],
+    "errors": [],
+    "weeksUpdated": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  {
+    "runId": "run-1789773953611",
+    "startedAt": "2026-09-18T23:25:53.611Z",
+    "finishedAt": "2026-09-18T23:25:56.643Z",
     "success": true,
     "leagues": {
       "afc": {
