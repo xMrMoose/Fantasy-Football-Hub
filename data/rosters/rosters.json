@@ -1275,7 +1275,7 @@
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": "PIT"
+        "playerId": null
       },
       {
         "slot": "BN",
@@ -1301,6 +1301,11 @@
         "slot": "BN",
         "starter": false,
         "playerId": "9997"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": "TB"
       }
     ],
     "playerIds": [
@@ -1317,7 +1322,7 @@
       "9484",
       "9500",
       "9997",
-      "PIT"
+      "TB"
     ]
   },
   {

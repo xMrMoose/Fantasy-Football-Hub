@@ -1489,13 +1489,6 @@
             "status": null
           },
           {
-            "playerId": "PIT",
-            "slot": "DEF",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
             "playerId": "11581",
             "slot": "BN",
             "starter": false,
@@ -1525,6 +1518,13 @@
           },
           {
             "playerId": "9997",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "TB",
             "slot": "BN",
             "starter": false,
             "points": 0,
