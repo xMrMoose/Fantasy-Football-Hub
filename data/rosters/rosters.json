@@ -1259,7 +1259,7 @@
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": "11834"
+        "playerId": "9997"
       },
       {
         "slot": "K",
@@ -1284,17 +1284,17 @@
       {
         "slot": "BN",
         "starter": false,
+        "playerId": "11834"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
         "playerId": "3163"
       },
       {
         "slot": "BN",
         "starter": false,
         "playerId": "9500"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
-        "playerId": "9997"
       }
     ],
     "playerIds": [
