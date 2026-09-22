@@ -6,32 +6,32 @@
   "seeds": [
     {
       "seed": 1,
-      "teamId": "NFC-2",
-      "source": "auto"
-    },
-    {
-      "seed": 2,
-      "teamId": "NFC-4",
-      "source": "auto"
-    },
-    {
-      "seed": 3,
-      "teamId": "NFC-3",
-      "source": "auto"
-    },
-    {
-      "seed": 4,
       "teamId": "NFC-6",
       "source": "auto"
     },
     {
+      "seed": 2,
+      "teamId": "NFC-3",
+      "source": "auto"
+    },
+    {
+      "seed": 3,
+      "teamId": "NFC-2",
+      "source": "auto"
+    },
+    {
+      "seed": 4,
+      "teamId": "NFC-1",
+      "source": "auto"
+    },
+    {
       "seed": 5,
-      "teamId": "NFC-11",
+      "teamId": "NFC-4",
       "source": "auto"
     },
     {
       "seed": 6,
-      "teamId": "NFC-9",
+      "teamId": "NFC-7",
       "source": "auto"
     }
   ]

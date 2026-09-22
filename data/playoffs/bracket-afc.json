@@ -3,7 +3,7 @@
   "conference": "AFC",
   "reseed": true,
   "official": false,
-  "asOfWeek": 2,
+  "asOfWeek": 3,
   "hasPlayedGames": true,
   "matchups": [
     {
@@ -29,12 +29,12 @@
       "participants": [
         {
           "seed": 2,
-          "teamId": "AFC-11",
+          "teamId": "AFC-10",
           "score": null,
           "source": "bye"
         }
       ],
-      "winnerTeamId": "AFC-11",
+      "winnerTeamId": "AFC-10",
       "state": "scheduled",
       "provenance": "auto"
     },
@@ -45,13 +45,13 @@
       "participants": [
         {
           "seed": 3,
-          "teamId": "AFC-10",
+          "teamId": "AFC-2",
           "score": null,
           "source": "auto"
         },
         {
           "seed": 6,
-          "teamId": "AFC-2",
+          "teamId": "AFC-11",
           "score": null,
           "source": "auto"
         }
@@ -73,7 +73,7 @@
         },
         {
           "seed": 5,
-          "teamId": "AFC-12",
+          "teamId": "AFC-7",
           "score": null,
           "source": "auto"
         }
