@@ -2041,16 +2041,9 @@
             "status": null
           },
           {
-            "playerId": "DEN",
+            "playerId": "KC",
             "slot": "DEF",
             "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "10222",
-            "slot": "BN",
-            "starter": false,
             "points": 0,
             "status": null
           },
@@ -2062,14 +2055,21 @@
             "status": null
           },
           {
-            "playerId": "3214",
+            "playerId": "5045",
             "slot": "BN",
             "starter": false,
             "points": 0,
             "status": null
           },
           {
-            "playerId": "5045",
+            "playerId": "7002",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "7571",
             "slot": "BN",
             "starter": false,
             "points": 0,

@@ -1646,12 +1646,7 @@
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": "DEN"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
-        "playerId": "10222"
+        "playerId": "KC"
       },
       {
         "slot": "BN",
@@ -1661,12 +1656,17 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "3214"
+        "playerId": "5045"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "5045"
+        "playerId": "7002"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": "7571"
       },
       {
         "slot": "BN",
@@ -1675,20 +1675,20 @@
       }
     ],
     "playerIds": [
-      "10222",
       "11533",
       "12518",
       "13305",
-      "3214",
       "4984",
       "5045",
       "5927",
+      "7002",
+      "7571",
       "7594",
       "7611",
       "8136",
       "8150",
       "9488",
-      "DEN"
+      "KC"
     ]
   },
   {
