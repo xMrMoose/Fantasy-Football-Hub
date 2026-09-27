@@ -932,7 +932,7 @@
             "status": null
           },
           {
-            "playerId": "13287",
+            "playerId": "9997",
             "slot": "FLEX",
             "starter": true,
             "points": 0,
@@ -974,14 +974,14 @@
             "status": null
           },
           {
-            "playerId": "8121",
+            "playerId": "13287",
             "slot": "BN",
             "starter": false,
             "points": 0,
             "status": null
           },
           {
-            "playerId": "9997",
+            "playerId": "8121",
             "slot": "BN",
             "starter": false,
             "points": 0,
