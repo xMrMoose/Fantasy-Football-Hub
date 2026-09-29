@@ -11,7 +11,7 @@
     },
     {
       "seed": 2,
-      "teamId": "NFC-3",
+      "teamId": "NFC-1",
       "source": "auto"
     },
     {
@@ -21,12 +21,12 @@
     },
     {
       "seed": 4,
-      "teamId": "NFC-1",
+      "teamId": "NFC-3",
       "source": "auto"
     },
     {
       "seed": 5,
-      "teamId": "NFC-4",
+      "teamId": "NFC-8",
       "source": "auto"
     },
     {

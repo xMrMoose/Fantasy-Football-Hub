@@ -11,27 +11,27 @@
     },
     {
       "seed": 2,
-      "teamId": "AFC-10",
-      "source": "auto"
-    },
-    {
-      "seed": 3,
-      "teamId": "AFC-2",
-      "source": "auto"
-    },
-    {
-      "seed": 4,
       "teamId": "AFC-9",
       "source": "auto"
     },
     {
-      "seed": 5,
+      "seed": 3,
+      "teamId": "AFC-10",
+      "source": "auto"
+    },
+    {
+      "seed": 4,
       "teamId": "AFC-7",
       "source": "auto"
     },
     {
+      "seed": 5,
+      "teamId": "AFC-2",
+      "source": "auto"
+    },
+    {
       "seed": 6,
-      "teamId": "AFC-11",
+      "teamId": "AFC-5",
       "source": "auto"
     }
   ]

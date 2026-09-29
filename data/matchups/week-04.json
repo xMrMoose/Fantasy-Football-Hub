@@ -1,13 +1,13 @@
 {
   "week": 4,
-  "state": "scheduled",
+  "state": "computed",
   "matchups": [
     {
       "matchupId": "AFC-3",
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 4,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "AFC-1",
         "points": 0,
@@ -119,70 +119,28 @@
         "customPoints": null,
         "lineup": [
           {
-            "playerId": "4984",
-            "slot": "QB",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "11584",
-            "slot": "RB",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "7611",
-            "slot": "RB",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "9488",
-            "slot": "WR",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "8144",
-            "slot": "WR",
-            "starter": true,
+            "playerId": "10222",
+            "slot": "BN",
+            "starter": false,
             "points": 0,
             "status": null
           },
           {
             "playerId": "10236",
-            "slot": "TE",
-            "starter": true,
+            "slot": "BN",
+            "starter": false,
             "points": 0,
             "status": null
           },
           {
-            "playerId": "8146",
-            "slot": "FLEX",
-            "starter": true,
+            "playerId": "11584",
+            "slot": "BN",
+            "starter": false,
             "points": 0,
             "status": null
           },
           {
             "playerId": "11792",
-            "slot": "K",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "JAX",
-            "slot": "DEF",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "10222",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -196,7 +154,35 @@
             "status": null
           },
           {
+            "playerId": "4984",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
             "playerId": "7567",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "7611",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "8144",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "8146",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -210,7 +196,21 @@
             "status": null
           },
           {
+            "playerId": "9488",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
             "playerId": "9500",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "JAX",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -226,7 +226,7 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 4,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "AFC-2",
         "points": 0,
@@ -445,7 +445,7 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 4,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "AFC-4",
         "points": 0,
@@ -664,7 +664,7 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 4,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "AFC-6",
         "points": 0,
@@ -883,7 +883,7 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 4,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "AFC-7",
         "points": 0,
@@ -995,69 +995,6 @@
         "customPoints": null,
         "lineup": [
           {
-            "playerId": "6904",
-            "slot": "QB",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "6813",
-            "slot": "RB",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "8151",
-            "slot": "RB",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "12526",
-            "slot": "WR",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "8148",
-            "slot": "WR",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "4217",
-            "slot": "TE",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "7588",
-            "slot": "FLEX",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "4227",
-            "slot": "K",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "DET",
-            "slot": "DEF",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
             "playerId": "10232",
             "slot": "BN",
             "starter": false,
@@ -1072,7 +1009,35 @@
             "status": null
           },
           {
+            "playerId": "12526",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
             "playerId": "13298",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "4217",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "4227",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "6813",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -1086,7 +1051,42 @@
             "status": null
           },
           {
+            "playerId": "6904",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "7588",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
             "playerId": "8142",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "8148",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "8151",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "DET",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -1102,7 +1102,7 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 4,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "AFC-11",
         "points": 0,
@@ -1321,7 +1321,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 4,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "NFC-1",
         "points": 0,
@@ -1540,7 +1540,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 4,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "NFC-2",
         "points": 0,
@@ -1652,70 +1652,56 @@
         "customPoints": null,
         "lineup": [
           {
-            "playerId": "6770",
-            "slot": "QB",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "3198",
-            "slot": "RB",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "12489",
-            "slot": "RB",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "9493",
-            "slot": "WR",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
             "playerId": "10229",
-            "slot": "WR",
-            "starter": true,
+            "slot": "BN",
+            "starter": false,
             "points": 0,
             "status": null
           },
           {
             "playerId": "10859",
-            "slot": "TE",
-            "starter": true,
+            "slot": "BN",
+            "starter": false,
             "points": 0,
             "status": null
           },
           {
-            "playerId": "6801",
-            "slot": "FLEX",
-            "starter": true,
+            "playerId": "12489",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "3198",
+            "slot": "BN",
+            "starter": false,
             "points": 0,
             "status": null
           },
           {
             "playerId": "4227",
-            "slot": "K",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "BAL",
-            "slot": "DEF",
-            "starter": true,
+            "slot": "BN",
+            "starter": false,
             "points": 0,
             "status": null
           },
           {
             "playerId": "5967",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "6770",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "6801",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -1743,7 +1729,21 @@
             "status": null
           },
           {
+            "playerId": "9493",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
             "playerId": "9756",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "BAL",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -1759,7 +1759,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 4,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "NFC-3",
         "points": 0,
@@ -1978,7 +1978,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 4,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "NFC-6",
         "points": 0,
@@ -2197,7 +2197,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 4,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "NFC-7",
         "points": 0,
@@ -2309,69 +2309,6 @@
         "customPoints": null,
         "lineup": [
           {
-            "playerId": "421",
-            "slot": "QB",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "9226",
-            "slot": "RB",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "12507",
-            "slot": "RB",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "11635",
-            "slot": "WR",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "13279",
-            "slot": "WR",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "12517",
-            "slot": "TE",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "13286",
-            "slot": "FLEX",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "3451",
-            "slot": "K",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "DET",
-            "slot": "DEF",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
             "playerId": "10232",
             "slot": "BN",
             "starter": false,
@@ -2379,7 +2316,56 @@
             "status": null
           },
           {
+            "playerId": "11635",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "12507",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "12517",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "13279",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
             "playerId": "13281",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "13286",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "3451",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "421",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -2400,7 +2386,21 @@
             "status": null
           },
           {
+            "playerId": "9226",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
             "playerId": "9753",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "DET",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -2416,7 +2416,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 4,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "NFC-10",
         "points": 0,
@@ -2437,7 +2437,7 @@
             "status": null
           },
           {
-            "playerId": "8155",
+            "playerId": "12512",
             "slot": "RB",
             "starter": true,
             "points": 0,
@@ -2493,13 +2493,6 @@
             "status": null
           },
           {
-            "playerId": "12512",
-            "slot": "BN",
-            "starter": false,
-            "points": 0,
-            "status": null
-          },
-          {
             "playerId": "5844",
             "slot": "BN",
             "starter": false,
@@ -2508,6 +2501,13 @@
           },
           {
             "playerId": "6819",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "8155",
             "slot": "BN",
             "starter": false,
             "points": 0,

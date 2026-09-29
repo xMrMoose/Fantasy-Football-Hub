@@ -1992,7 +1992,7 @@
       {
         "slot": "RB",
         "starter": true,
-        "playerId": "8155"
+        "playerId": "12512"
       },
       {
         "slot": "WR",
@@ -2032,17 +2032,17 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "12512"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
         "playerId": "5844"
       },
       {
         "slot": "BN",
         "starter": false,
         "playerId": "6819"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": "8155"
       },
       {
         "slot": "BN",
