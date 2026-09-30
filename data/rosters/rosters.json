@@ -1270,7 +1270,7 @@
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": null
+        "playerId": "PIT"
       },
       {
         "slot": "BN",
@@ -1296,11 +1296,6 @@
         "slot": "BN",
         "starter": false,
         "playerId": "9500"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
-        "playerId": "PIT"
       }
     ],
     "playerIds": [
