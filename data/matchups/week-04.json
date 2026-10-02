@@ -2472,7 +2472,7 @@
             "status": null
           },
           {
-            "playerId": "11539",
+            "playerId": "12185",
             "slot": "K",
             "starter": true,
             "points": 0,
@@ -2482,6 +2482,13 @@
             "playerId": "PHI",
             "slot": "DEF",
             "starter": true,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "11539",
+            "slot": "BN",
+            "starter": false,
             "points": 0,
             "status": null
           },

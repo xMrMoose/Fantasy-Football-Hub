@@ -2017,12 +2017,17 @@
       {
         "slot": "K",
         "starter": true,
-        "playerId": "11539"
+        "playerId": "12185"
       },
       {
         "slot": "DEF",
         "starter": true,
         "playerId": "PHI"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": "11539"
       },
       {
         "slot": "BN",
@@ -2033,11 +2038,6 @@
         "slot": "BN",
         "starter": false,
         "playerId": "5844"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
-        "playerId": "6819"
       },
       {
         "slot": "BN",
@@ -2053,12 +2053,12 @@
     "playerIds": [
       "11539",
       "11576",
+      "12185",
       "12506",
       "12512",
       "12545",
       "13346",
       "5844",
-      "6819",
       "7547",
       "8146",
       "8155",
