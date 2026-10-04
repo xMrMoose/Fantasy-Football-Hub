@@ -38,7 +38,7 @@
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": "5927"
+        "playerId": "11646"
       },
       {
         "slot": "K",
@@ -49,11 +49,6 @@
         "slot": "DEF",
         "starter": true,
         "playerId": "LAC"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
-        "playerId": "11646"
       },
       {
         "slot": "BN",
@@ -74,6 +69,11 @@
         "slot": "BN",
         "starter": false,
         "playerId": "2449"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": "5927"
       }
     ],
     "playerIds": [
