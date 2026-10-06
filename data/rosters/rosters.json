@@ -295,7 +295,7 @@
       {
         "slot": "RB",
         "starter": true,
-        "playerId": "4866"
+        "playerId": "8155"
       },
       {
         "slot": "RB",
@@ -335,6 +335,11 @@
       {
         "slot": "BN",
         "starter": false,
+        "playerId": "4866"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
         "playerId": "5859"
       },
       {
@@ -346,11 +351,6 @@
         "slot": "BN",
         "starter": false,
         "playerId": "7553"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
-        "playerId": "8155"
       },
       {
         "slot": "BN",
