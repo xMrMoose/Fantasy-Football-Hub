@@ -289,7 +289,7 @@
             "status": null
           },
           {
-            "playerId": "CHI",
+            "playerId": "CIN",
             "slot": "DEF",
             "starter": true,
             "points": 0,
@@ -1109,7 +1109,7 @@
         "customPoints": null,
         "lineup": [
           {
-            "playerId": "4046",
+            "playerId": "12545",
             "slot": "QB",
             "starter": true,
             "points": 0,
@@ -1144,7 +1144,7 @@
             "status": null
           },
           {
-            "playerId": "1466",
+            "playerId": "13330",
             "slot": "TE",
             "starter": true,
             "points": 0,
@@ -1165,16 +1165,9 @@
             "status": null
           },
           {
-            "playerId": "GB",
+            "playerId": "LV",
             "slot": "DEF",
             "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "11583",
-            "slot": "BN",
-            "starter": false,
             "points": 0,
             "status": null
           },
@@ -1186,7 +1179,14 @@
             "status": null
           },
           {
-            "playerId": "12545",
+            "playerId": "1466",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "4046",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -1200,7 +1200,7 @@
             "status": null
           },
           {
-            "playerId": "LV",
+            "playerId": "GB",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -1561,6 +1561,13 @@
             "status": null
           },
           {
+            "playerId": "11435",
+            "slot": "RB",
+            "starter": true,
+            "points": 0,
+            "status": null
+          },
+          {
             "playerId": "9500",
             "slot": "WR",
             "starter": true,
@@ -1599,13 +1606,6 @@
             "playerId": "PIT",
             "slot": "DEF",
             "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "11435",
-            "slot": "BN",
-            "starter": false,
             "points": 0,
             "status": null
           },
