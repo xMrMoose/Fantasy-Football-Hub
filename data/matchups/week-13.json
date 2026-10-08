@@ -394,7 +394,7 @@
             "status": null
           },
           {
-            "playerId": "LV",
+            "playerId": "GB",
             "slot": "DEF",
             "starter": true,
             "points": 0,
@@ -429,7 +429,7 @@
             "status": null
           },
           {
-            "playerId": "GB",
+            "playerId": "LV",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -459,7 +459,7 @@
             "status": null
           },
           {
-            "playerId": "8155",
+            "playerId": "11435",
             "slot": "RB",
             "starter": true,
             "points": 0,
@@ -494,7 +494,7 @@
             "status": null
           },
           {
-            "playerId": "11435",
+            "playerId": "11637",
             "slot": "FLEX",
             "starter": true,
             "points": 0,
@@ -515,13 +515,6 @@
             "status": null
           },
           {
-            "playerId": "11637",
-            "slot": "BN",
-            "starter": false,
-            "points": 0,
-            "status": null
-          },
-          {
             "playerId": "4866",
             "slot": "BN",
             "starter": false,
@@ -537,6 +530,13 @@
           },
           {
             "playerId": "7594",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "8155",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -1708,6 +1708,13 @@
             "status": null
           },
           {
+            "playerId": "DEN",
+            "slot": "DEF",
+            "starter": true,
+            "points": 0,
+            "status": null
+          },
+          {
             "playerId": "11610",
             "slot": "BN",
             "starter": false,
@@ -1737,13 +1744,6 @@
           },
           {
             "playerId": "9511",
-            "slot": "BN",
-            "starter": false,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "DEN",
             "slot": "BN",
             "starter": false,
             "points": 0,
