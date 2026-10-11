@@ -196,7 +196,7 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": "4881"
+        "playerId": "6804"
       },
       {
         "slot": "RB",
@@ -206,7 +206,7 @@
       {
         "slot": "RB",
         "starter": true,
-        "playerId": "7021"
+        "playerId": "5967"
       },
       {
         "slot": "WR",
@@ -251,17 +251,17 @@
       {
         "slot": "BN",
         "starter": false,
+        "playerId": "4881"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
         "playerId": "5844"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "5967"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
-        "playerId": "6804"
+        "playerId": "7021"
       }
     ],
     "playerIds": [
