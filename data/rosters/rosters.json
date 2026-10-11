@@ -18,7 +18,7 @@
       {
         "slot": "RB",
         "starter": true,
-        "playerId": "12507"
+        "playerId": "12489"
       },
       {
         "slot": "WR",
@@ -38,7 +38,7 @@
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": "12489"
+        "playerId": "12507"
       },
       {
         "slot": "K",
@@ -48,7 +48,12 @@
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": "LAC"
+        "playerId": "ATL"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": "11630"
       },
       {
         "slot": "BN",
@@ -63,11 +68,6 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "13294"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
         "playerId": "2449"
       },
       {
@@ -77,11 +77,11 @@
       }
     ],
     "playerIds": [
+      "11630",
       "11646",
       "12489",
       "12507",
       "12533",
-      "13294",
       "1945",
       "2449",
       "3163",
@@ -90,7 +90,7 @@
       "7525",
       "7526",
       "9484",
-      "LAC"
+      "ATL"
     ]
   },
   {
@@ -300,7 +300,7 @@
       {
         "slot": "RB",
         "starter": true,
-        "playerId": "6806"
+        "playerId": "4035"
       },
       {
         "slot": "WR",
@@ -362,12 +362,12 @@
       "11435",
       "11637",
       "2747",
+      "4035",
       "4866",
       "4983",
       "5859",
       "5872",
       "6770",
-      "6806",
       "7594",
       "8155",
       "8183",
@@ -419,7 +419,7 @@
       {
         "slot": "K",
         "starter": true,
-        "playerId": null
+        "playerId": "12711"
       },
       {
         "slot": "DEF",
@@ -444,11 +444,6 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "7839"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
         "playerId": "8121"
       },
       {
@@ -463,10 +458,10 @@
       "12495",
       "12506",
       "12529",
+      "12711",
       "13287",
       "5846",
       "6801",
-      "7839",
       "8121",
       "9221",
       "9228",
@@ -1275,7 +1270,7 @@
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": "PIT"
+        "playerId": null
       },
       {
         "slot": "BN",
@@ -1301,6 +1296,11 @@
         "slot": "BN",
         "starter": false,
         "playerId": "9486"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": "CIN"
       }
     ],
     "playerIds": [
@@ -1317,7 +1317,7 @@
       "9486",
       "9500",
       "9997",
-      "PIT"
+      "CIN"
     ]
   },
   {
@@ -1334,7 +1334,7 @@
       {
         "slot": "RB",
         "starter": true,
-        "playerId": "12495"
+        "playerId": "12527"
       },
       {
         "slot": "RB",
@@ -1344,7 +1344,7 @@
       {
         "slot": "WR",
         "starter": true,
-        "playerId": "5872"
+        "playerId": "6794"
       },
       {
         "slot": "WR",
@@ -1359,7 +1359,7 @@
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": "12527"
+        "playerId": "12495"
       },
       {
         "slot": "K",
@@ -1394,7 +1394,7 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "6794"
+        "playerId": "5872"
       }
     ],
     "playerIds": [
@@ -1621,7 +1621,7 @@
       {
         "slot": "RB",
         "starter": true,
-        "playerId": "7611"
+        "playerId": "8136"
       },
       {
         "slot": "WR",
@@ -1656,11 +1656,6 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "13305"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
         "playerId": "5045"
       },
       {
@@ -1676,6 +1671,11 @@
       {
         "slot": "BN",
         "starter": false,
+        "playerId": "7611"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
         "playerId": "9511"
       }
     ],
@@ -1683,13 +1683,13 @@
       "11533",
       "11610",
       "12518",
-      "13305",
       "4984",
       "5045",
       "5927",
       "7002",
       "7594",
       "7611",
+      "8136",
       "8150",
       "9488",
       "9511",
