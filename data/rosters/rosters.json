@@ -575,12 +575,12 @@
       {
         "slot": "RB",
         "starter": true,
-        "playerId": "12534"
+        "playerId": "12481"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": "12481"
+        "playerId": "12534"
       },
       {
         "slot": "WR",
@@ -595,12 +595,12 @@
       {
         "slot": "TE",
         "starter": true,
-        "playerId": "13330"
+        "playerId": "1466"
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": "12519"
+        "playerId": "12501"
       },
       {
         "slot": "K",
@@ -615,12 +615,12 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "12501"
+        "playerId": "12519"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "1466"
+        "playerId": "13330"
       },
       {
         "slot": "BN",
@@ -674,7 +674,7 @@
       {
         "slot": "RB",
         "starter": true,
-        "playerId": "4199"
+        "playerId": "7611"
       },
       {
         "slot": "WR",
@@ -714,12 +714,12 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "7567"
+        "playerId": "4199"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "7611"
+        "playerId": "7567"
       },
       {
         "slot": "BN",
@@ -1901,7 +1901,7 @@
       {
         "slot": "RB",
         "starter": true,
-        "playerId": "12529"
+        "playerId": "4866"
       },
       {
         "slot": "WR",
@@ -1916,7 +1916,7 @@
       {
         "slot": "TE",
         "starter": true,
-        "playerId": "13330"
+        "playerId": "5022"
       },
       {
         "slot": "FLEX",
@@ -1941,17 +1941,17 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "4866"
+        "playerId": "12529"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": "13330"
       },
       {
         "slot": "BN",
         "starter": false,
         "playerId": "4881"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
-        "playerId": "5022"
       },
       {
         "slot": "BN",
