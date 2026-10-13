@@ -256,12 +256,12 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "5844"
+        "playerId": null
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "7021"
+        "playerId": null
       }
     ],
     "playerIds": [
@@ -271,10 +271,8 @@
       "11635",
       "13279",
       "4881",
-      "5844",
       "5967",
       "6804",
-      "7021",
       "8112",
       "8138",
       "9756",
