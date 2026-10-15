@@ -692,7 +692,7 @@
             "status": null
           },
           {
-            "playerId": "5872",
+            "playerId": "5859",
             "slot": "WR",
             "starter": true,
             "points": 0,
@@ -748,7 +748,7 @@
             "status": null
           },
           {
-            "playerId": "5859",
+            "playerId": "5872",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -1603,7 +1603,7 @@
             "status": null
           },
           {
-            "playerId": "ATL",
+            "playerId": "KC",
             "slot": "DEF",
             "starter": true,
             "points": 0,
