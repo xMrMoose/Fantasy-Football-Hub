@@ -107,7 +107,7 @@
       {
         "slot": "RB",
         "starter": true,
-        "playerId": "9224"
+        "playerId": "11439"
       },
       {
         "slot": "RB",
@@ -117,7 +117,7 @@
       {
         "slot": "WR",
         "starter": true,
-        "playerId": "7547"
+        "playerId": "13150"
       },
       {
         "slot": "WR",
@@ -142,22 +142,12 @@
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": "CIN"
+        "playerId": "IND"
       },
       {
         "slot": "BN",
         "starter": false,
         "playerId": "11566"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
-        "playerId": "11631"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
-        "playerId": "3321"
       },
       {
         "slot": "BN",
@@ -168,15 +158,25 @@
         "slot": "BN",
         "starter": false,
         "playerId": "7543"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": "7547"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": "9224"
       }
     ],
     "playerIds": [
+      "11439",
       "11566",
       "11576",
-      "11631",
       "11834",
+      "13150",
       "2133",
-      "3321",
       "3451",
       "5045",
       "7523",
@@ -184,7 +184,7 @@
       "7547",
       "8130",
       "9224",
-      "CIN"
+      "IND"
     ]
   },
   {
@@ -2106,7 +2106,7 @@
       {
         "slot": "WR",
         "starter": true,
-        "playerId": null
+        "playerId": "5859"
       },
       {
         "slot": "WR",
@@ -2121,7 +2121,7 @@
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": "8148"
+        "playerId": "7567"
       },
       {
         "slot": "K",
@@ -2151,12 +2151,7 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "5859"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
-        "playerId": "7567"
+        "playerId": "8148"
       },
       {
         "slot": "BN",
