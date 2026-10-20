@@ -1230,7 +1230,7 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": "7523"
+        "playerId": "3163"
       },
       {
         "slot": "RB",
@@ -1260,7 +1260,7 @@
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": "11435"
+        "playerId": "7525"
       },
       {
         "slot": "K",
@@ -1275,17 +1275,17 @@
       {
         "slot": "BN",
         "starter": false,
+        "playerId": "11435"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
         "playerId": "11834"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "3163"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
-        "playerId": "7525"
+        "playerId": "7523"
       },
       {
         "slot": "BN",
@@ -1893,12 +1893,12 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": "3257"
+        "playerId": "4881"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": null
+        "playerId": "12474"
       },
       {
         "slot": "RB",
@@ -1943,11 +1943,6 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "12474"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
         "playerId": "12529"
       },
       {
@@ -1958,7 +1953,7 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "4881"
+        "playerId": "3257"
       },
       {
         "slot": "BN",
