@@ -685,7 +685,7 @@
             "status": null
           },
           {
-            "playerId": "4035",
+            "playerId": "4866",
             "slot": "RB",
             "starter": true,
             "points": 0,
@@ -699,21 +699,21 @@
             "status": null
           },
           {
-            "playerId": "11637",
+            "playerId": "10213",
             "slot": "WR",
             "starter": true,
             "points": 0,
             "status": null
           },
           {
-            "playerId": "9480",
+            "playerId": "9482",
             "slot": "TE",
             "starter": true,
             "points": 0,
             "status": null
           },
           {
-            "playerId": "11435",
+            "playerId": "8155",
             "slot": "FLEX",
             "starter": true,
             "points": 0,
@@ -734,14 +734,14 @@
             "status": null
           },
           {
-            "playerId": "4866",
+            "playerId": "11435",
             "slot": "BN",
             "starter": false,
             "points": 0,
             "status": null
           },
           {
-            "playerId": "4983",
+            "playerId": "11637",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -762,7 +762,7 @@
             "status": null
           },
           {
-            "playerId": "8155",
+            "playerId": "9480",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -1440,13 +1440,6 @@
             "status": null
           },
           {
-            "playerId": "12495",
-            "slot": "RB",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
             "playerId": "12527",
             "slot": "RB",
             "starter": true,
@@ -1454,14 +1447,21 @@
             "status": null
           },
           {
-            "playerId": "12526",
+            "playerId": "12495",
+            "slot": "RB",
+            "starter": true,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "6794",
             "slot": "WR",
             "starter": true,
             "points": 0,
             "status": null
           },
           {
-            "playerId": "7526",
+            "playerId": "12526",
             "slot": "WR",
             "starter": true,
             "points": 0,
@@ -1475,15 +1475,8 @@
             "status": null
           },
           {
-            "playerId": "6794",
+            "playerId": "7526",
             "slot": "FLEX",
-            "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "13545",
-            "slot": "K",
             "starter": true,
             "points": 0,
             "status": null
@@ -1525,6 +1518,13 @@
           },
           {
             "playerId": "5872",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "6650",
             "slot": "BN",
             "starter": false,
             "points": 0,
