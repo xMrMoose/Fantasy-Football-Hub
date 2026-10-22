@@ -2204,6 +2204,13 @@
         "customPoints": null,
         "lineup": [
           {
+            "playerId": "1373",
+            "slot": "QB",
+            "starter": true,
+            "points": 0,
+            "status": null
+          },
+          {
             "playerId": "8150",
             "slot": "RB",
             "starter": true,
@@ -2256,13 +2263,6 @@
             "playerId": "DEN",
             "slot": "DEF",
             "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "1373",
-            "slot": "BN",
-            "starter": false,
             "points": 0,
             "status": null
           },
