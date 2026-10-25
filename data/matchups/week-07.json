@@ -10,7 +10,7 @@
       "state": "live",
       "teamA": {
         "teamId": "AFC-1",
-        "points": 0,
+        "points": 11,
         "customPoints": null,
         "lineup": [
           {
@@ -66,7 +66,7 @@
             "playerId": "1945",
             "slot": "K",
             "starter": true,
-            "points": 0,
+            "points": 11,
             "status": null
           },
           {
@@ -229,7 +229,7 @@
       "state": "live",
       "teamA": {
         "teamId": "AFC-2",
-        "points": 0,
+        "points": 22.1,
         "customPoints": null,
         "lineup": [
           {
@@ -264,7 +264,7 @@
             "playerId": "13274",
             "slot": "WR",
             "starter": true,
-            "points": 0,
+            "points": 5.7,
             "status": null
           },
           {
@@ -278,7 +278,7 @@
             "playerId": "11834",
             "slot": "FLEX",
             "starter": true,
-            "points": 0,
+            "points": 16.4,
             "status": null
           },
           {
@@ -334,14 +334,14 @@
       },
       "teamB": {
         "teamId": "AFC-7",
-        "points": 0,
+        "points": 14.82,
         "customPoints": null,
         "lineup": [
           {
             "playerId": "12545",
             "slot": "QB",
             "starter": true,
-            "points": 0,
+            "points": 14.82,
             "status": null
           },
           {
@@ -437,7 +437,7 @@
           }
         ]
       },
-      "winnerTeamId": null,
+      "winnerTeamId": "AFC-2",
       "customPointsUsed": false
     },
     {
@@ -599,7 +599,7 @@
             "status": null
           },
           {
-            "playerId": "8155",
+            "playerId": "11435",
             "slot": "FLEX",
             "starter": true,
             "points": 0,
@@ -616,13 +616,6 @@
             "playerId": "DEN",
             "slot": "DEF",
             "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "11435",
-            "slot": "BN",
-            "starter": false,
             "points": 0,
             "status": null
           },
@@ -648,6 +641,13 @@
             "status": null
           },
           {
+            "playerId": "8155",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
             "playerId": "9480",
             "slot": "BN",
             "starter": false,
@@ -667,7 +667,7 @@
       "state": "live",
       "teamA": {
         "teamId": "AFC-5",
-        "points": 0,
+        "points": 11.6,
         "customPoints": null,
         "lineup": [
           {
@@ -709,14 +709,14 @@
             "playerId": "7600",
             "slot": "TE",
             "starter": true,
-            "points": 0,
+            "points": 4,
             "status": null
           },
           {
             "playerId": "5846",
             "slot": "FLEX",
             "starter": true,
-            "points": 0,
+            "points": 7.6,
             "status": null
           },
           {
@@ -772,7 +772,7 @@
       },
       "teamB": {
         "teamId": "AFC-11",
-        "points": 22.12,
+        "points": 38.12,
         "customPoints": null,
         "lineup": [
           {
@@ -821,7 +821,7 @@
             "playerId": "8228",
             "slot": "FLEX",
             "starter": true,
-            "points": 0,
+            "points": 16,
             "status": null
           },
           {
@@ -1105,7 +1105,7 @@
       "state": "live",
       "teamA": {
         "teamId": "AFC-8",
-        "points": 22.5,
+        "points": 34.1,
         "customPoints": null,
         "lineup": [
           {
@@ -1140,7 +1140,7 @@
             "playerId": "8144",
             "slot": "WR",
             "starter": true,
-            "points": 0,
+            "points": 11.6,
             "status": null
           },
           {
@@ -1210,14 +1210,14 @@
       },
       "teamB": {
         "teamId": "AFC-12",
-        "points": 19.9,
+        "points": 41.38,
         "customPoints": null,
         "lineup": [
           {
             "playerId": "96",
             "slot": "QB",
             "starter": true,
-            "points": 0,
+            "points": 12.48,
             "status": null
           },
           {
@@ -1273,7 +1273,7 @@
             "playerId": "PIT",
             "slot": "DEF",
             "starter": true,
-            "points": 0,
+            "points": 9,
             "status": null
           },
           {
@@ -1313,7 +1313,7 @@
           }
         ]
       },
-      "winnerTeamId": "AFC-8",
+      "winnerTeamId": "AFC-12",
       "customPointsUsed": false
     },
     {
@@ -1324,7 +1324,7 @@
       "state": "live",
       "teamA": {
         "teamId": "NFC-1",
-        "points": 0,
+        "points": 16,
         "customPoints": null,
         "lineup": [
           {
@@ -1345,7 +1345,7 @@
             "playerId": "8228",
             "slot": "RB",
             "starter": true,
-            "points": 0,
+            "points": 16,
             "status": null
           },
           {
@@ -1543,7 +1543,7 @@
       "state": "live",
       "teamA": {
         "teamId": "NFC-2",
-        "points": 0,
+        "points": 5.7,
         "customPoints": null,
         "lineup": [
           {
@@ -1578,7 +1578,7 @@
             "playerId": "13274",
             "slot": "WR",
             "starter": true,
-            "points": 0,
+            "points": 5.7,
             "status": null
           },
           {
@@ -1613,7 +1613,7 @@
             "playerId": "11834",
             "slot": "BN",
             "starter": false,
-            "points": 0,
+            "points": 16.4,
             "status": null
           },
           {
@@ -1867,7 +1867,7 @@
       },
       "teamB": {
         "teamId": "NFC-8",
-        "points": 19.9,
+        "points": 27.5,
         "customPoints": null,
         "lineup": [
           {
@@ -1888,7 +1888,7 @@
             "playerId": "5846",
             "slot": "WR",
             "starter": true,
-            "points": 0,
+            "points": 7.6,
             "status": null
           },
           {
@@ -2291,7 +2291,7 @@
             "playerId": "7002",
             "slot": "BN",
             "starter": false,
-            "points": 0,
+            "points": 1.7,
             "status": null
           },
           {
@@ -2305,14 +2305,14 @@
       },
       "teamB": {
         "teamId": "NFC-7",
-        "points": 23.7,
+        "points": 58.78,
         "customPoints": null,
         "lineup": [
           {
             "playerId": "96",
             "slot": "QB",
             "starter": true,
-            "points": 0,
+            "points": 12.48,
             "status": null
           },
           {
@@ -2340,7 +2340,7 @@
             "playerId": "8144",
             "slot": "WR",
             "starter": true,
-            "points": 0,
+            "points": 11.6,
             "status": null
           },
           {
@@ -2361,7 +2361,7 @@
             "playerId": "1945",
             "slot": "K",
             "starter": true,
-            "points": 0,
+            "points": 11,
             "status": null
           },
           {
@@ -2423,7 +2423,7 @@
         "customPoints": null,
         "lineup": [
           {
-            "playerId": "4881",
+            "playerId": "3163",
             "slot": "QB",
             "starter": true,
             "points": 0,
@@ -2451,7 +2451,7 @@
             "status": null
           },
           {
-            "playerId": "12514",
+            "playerId": "8126",
             "slot": "WR",
             "starter": true,
             "points": 0,
@@ -2465,7 +2465,7 @@
             "status": null
           },
           {
-            "playerId": "2216",
+            "playerId": "13276",
             "slot": "FLEX",
             "starter": true,
             "points": 0,
@@ -2486,7 +2486,7 @@
             "status": null
           },
           {
-            "playerId": "11631",
+            "playerId": "12514",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -2500,14 +2500,14 @@
             "status": null
           },
           {
-            "playerId": "13330",
+            "playerId": "2216",
             "slot": "BN",
             "starter": false,
             "points": 0,
             "status": null
           },
           {
-            "playerId": "3257",
+            "playerId": "4881",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -2615,7 +2615,7 @@
             "playerId": "12545",
             "slot": "BN",
             "starter": false,
-            "points": 0,
+            "points": 14.82,
             "status": null
           },
           {
