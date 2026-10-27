@@ -3,7 +3,7 @@
   "conference": "NFC",
   "reseed": true,
   "official": false,
-  "asOfWeek": 7,
+  "asOfWeek": 8,
   "hasPlayedGames": true,
   "matchups": [
     {
@@ -29,12 +29,12 @@
       "participants": [
         {
           "seed": 2,
-          "teamId": "NFC-2",
+          "teamId": "NFC-1",
           "score": null,
           "source": "bye"
         }
       ],
-      "winnerTeamId": "NFC-2",
+      "winnerTeamId": "NFC-1",
       "state": "scheduled",
       "provenance": "auto"
     },
@@ -45,7 +45,7 @@
       "participants": [
         {
           "seed": 3,
-          "teamId": "NFC-1",
+          "teamId": "NFC-3",
           "score": null,
           "source": "auto"
         },
@@ -67,7 +67,7 @@
       "participants": [
         {
           "seed": 4,
-          "teamId": "NFC-3",
+          "teamId": "NFC-2",
           "score": null,
           "source": "auto"
         },

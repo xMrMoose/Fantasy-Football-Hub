@@ -3,7 +3,7 @@
   "conference": "AFC",
   "reseed": true,
   "official": false,
-  "asOfWeek": 7,
+  "asOfWeek": 8,
   "hasPlayedGames": true,
   "matchups": [
     {
@@ -51,7 +51,7 @@
         },
         {
           "seed": 6,
-          "teamId": "AFC-5",
+          "teamId": "AFC-7",
           "score": null,
           "source": "auto"
         }
@@ -73,7 +73,7 @@
         },
         {
           "seed": 5,
-          "teamId": "AFC-7",
+          "teamId": "AFC-5",
           "score": null,
           "source": "auto"
         }
