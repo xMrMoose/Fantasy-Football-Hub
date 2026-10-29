@@ -685,7 +685,7 @@
             "status": null
           },
           {
-            "playerId": "12495",
+            "playerId": "12490",
             "slot": "RB",
             "starter": true,
             "points": 0,
@@ -713,7 +713,7 @@
             "status": null
           },
           {
-            "playerId": "5846",
+            "playerId": "12495",
             "slot": "FLEX",
             "starter": true,
             "points": 0,
@@ -727,16 +727,9 @@
             "status": null
           },
           {
-            "playerId": "HOU",
+            "playerId": "CIN",
             "slot": "DEF",
             "starter": true,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "12490",
-            "slot": "BN",
-            "starter": false,
             "points": 0,
             "status": null
           },
@@ -763,6 +756,13 @@
           },
           {
             "playerId": "13424",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "5846",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -1496,7 +1496,7 @@
             "status": null
           },
           {
-            "playerId": "11435",
+            "playerId": "11586",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -1504,6 +1504,13 @@
           },
           {
             "playerId": "11834",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "13298",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -1518,13 +1525,6 @@
           },
           {
             "playerId": "9500",
-            "slot": "BN",
-            "starter": false,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "9758",
             "slot": "BN",
             "starter": false,
             "points": 0,
