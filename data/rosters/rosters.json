@@ -1275,7 +1275,7 @@
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": "MIN"
+        "playerId": "JAX"
       },
       {
         "slot": "BN",
@@ -1300,7 +1300,7 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "9500"
+        "playerId": "MIN"
       }
     ],
     "playerIds": [
@@ -1315,8 +1315,8 @@
       "8151",
       "8167",
       "9484",
-      "9500",
       "9997",
+      "JAX",
       "MIN"
     ]
   },
