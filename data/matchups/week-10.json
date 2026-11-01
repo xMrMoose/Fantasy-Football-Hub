@@ -1666,6 +1666,13 @@
             "status": null
           },
           {
+            "playerId": "9226",
+            "slot": "RB",
+            "starter": true,
+            "points": 0,
+            "status": null
+          },
+          {
             "playerId": "5846",
             "slot": "WR",
             "starter": true,
