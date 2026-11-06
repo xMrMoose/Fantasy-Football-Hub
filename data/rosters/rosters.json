@@ -295,7 +295,7 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": "6770"
+        "playerId": "8183"
       },
       {
         "slot": "RB",
@@ -325,7 +325,7 @@
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": "9482"
+        "playerId": "8155"
       },
       {
         "slot": "K",
@@ -355,12 +355,12 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "8155"
+        "playerId": "6770"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "8183"
+        "playerId": "9482"
       }
     ],
     "playerIds": [
