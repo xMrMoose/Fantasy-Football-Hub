@@ -1997,12 +1997,12 @@
       {
         "slot": "QB",
         "starter": true,
-        "playerId": "9228"
+        "playerId": "12545"
       },
       {
         "slot": "RB",
         "starter": true,
-        "playerId": "8155"
+        "playerId": "13345"
       },
       {
         "slot": "RB",
@@ -2017,7 +2017,7 @@
       {
         "slot": "WR",
         "starter": true,
-        "playerId": "8146"
+        "playerId": "13346"
       },
       {
         "slot": "TE",
@@ -2052,17 +2052,17 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "12545"
+        "playerId": "8146"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "13345"
+        "playerId": "8155"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "13346"
+        "playerId": "9228"
       }
     ],
     "playerIds": [
