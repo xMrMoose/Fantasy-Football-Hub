@@ -449,17 +449,17 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "13287"
-      },
-      {
-        "slot": "BN",
-        "starter": false,
-        "playerId": "13424"
+        "playerId": "5844"
       },
       {
         "slot": "BN",
         "starter": false,
         "playerId": "5846"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": "9502"
       }
     ],
     "playerIds": [
@@ -470,11 +470,11 @@
       "12506",
       "12529",
       "13276",
-      "13287",
-      "13424",
+      "5844",
       "5846",
       "6801",
       "9221",
+      "9502",
       "9997",
       "CIN"
     ]
