@@ -236,7 +236,7 @@
       {
         "slot": "DEF",
         "starter": true,
-        "playerId": "NE"
+        "playerId": null
       },
       {
         "slot": "BN",
@@ -266,6 +266,11 @@
       {
         "slot": "BN",
         "starter": false,
+        "playerId": "6130"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
         "playerId": "MIN"
       }
     ],
@@ -277,13 +282,13 @@
       "3271",
       "4881",
       "5967",
+      "6130",
       "650",
       "6804",
       "8112",
       "8138",
       "9756",
-      "MIN",
-      "NE"
+      "MIN"
     ]
   },
   {
@@ -622,7 +627,7 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "11655"
+        "playerId": "12474"
       },
       {
         "slot": "BN",
@@ -647,8 +652,8 @@
     ],
     "playerIds": [
       "11632",
-      "11655",
       "12185",
+      "12474",
       "12481",
       "12501",
       "12519",
@@ -1923,12 +1928,12 @@
       {
         "slot": "TE",
         "starter": true,
-        "playerId": "5022"
+        "playerId": null
       },
       {
         "slot": "FLEX",
         "starter": true,
-        "playerId": "6130"
+        "playerId": null
       },
       {
         "slot": "K",
@@ -1948,12 +1953,12 @@
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "12514"
+        "playerId": "12491"
       },
       {
         "slot": "BN",
         "starter": false,
-        "playerId": "12529"
+        "playerId": "12514"
       },
       {
         "slot": "BN",
@@ -1964,22 +1969,32 @@
         "slot": "BN",
         "starter": false,
         "playerId": "2216"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": "5844"
+      },
+      {
+        "slot": "BN",
+        "starter": false,
+        "playerId": "9501"
       }
     ],
     "playerIds": [
       "10213",
       "12474",
+      "12491",
       "12514",
-      "12529",
       "13276",
       "2216",
       "2747",
       "3163",
       "4866",
-      "5022",
-      "6130",
+      "5844",
       "6786",
       "8126",
+      "9501",
       "NE"
     ]
   },
