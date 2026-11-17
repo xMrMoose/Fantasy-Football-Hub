@@ -1384,6 +1384,20 @@
             "status": null
           },
           {
+            "playerId": "4195",
+            "slot": "K",
+            "starter": true,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "NYJ",
+            "slot": "DEF",
+            "starter": true,
+            "points": 0,
+            "status": null
+          },
+          {
             "playerId": "10235",
             "slot": "BN",
             "starter": false,
@@ -1598,6 +1612,13 @@
           {
             "playerId": "12527",
             "slot": "FLEX",
+            "starter": true,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "6650",
+            "slot": "K",
             "starter": true,
             "points": 0,
             "status": null

@@ -1,13 +1,13 @@
 {
   "week": 11,
-  "state": "scheduled",
+  "state": "computed",
   "matchups": [
     {
       "matchupId": "AFC-6",
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 11,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "AFC-1",
         "points": 0,
@@ -226,7 +226,7 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 11,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "AFC-2",
         "points": 0,
@@ -445,7 +445,7 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 11,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "AFC-3",
         "points": 0,
@@ -664,7 +664,7 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 11,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "AFC-4",
         "points": 0,
@@ -883,7 +883,7 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 11,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "AFC-5",
         "points": 0,
@@ -1102,7 +1102,7 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 11,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "AFC-9",
         "points": 0,
@@ -1321,7 +1321,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 11,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "NFC-1",
         "points": 0,
@@ -1372,6 +1372,20 @@
           {
             "playerId": "12501",
             "slot": "FLEX",
+            "starter": true,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "4195",
+            "slot": "K",
+            "starter": true,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "NYJ",
+            "slot": "DEF",
             "starter": true,
             "points": 0,
             "status": null
@@ -1540,7 +1554,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 11,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "NFC-2",
         "points": 0,
@@ -1759,7 +1773,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 11,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "NFC-3",
         "points": 0,
@@ -1810,6 +1824,13 @@
           {
             "playerId": "12527",
             "slot": "FLEX",
+            "starter": true,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "6650",
+            "slot": "K",
             "starter": true,
             "points": 0,
             "status": null
@@ -1978,7 +1999,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 11,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "NFC-4",
         "points": 0,
@@ -2204,7 +2225,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 11,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "NFC-5",
         "points": 0,
@@ -2423,7 +2444,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 11,
-      "state": "scheduled",
+      "state": "live",
       "teamA": {
         "teamId": "NFC-6",
         "points": 0,
