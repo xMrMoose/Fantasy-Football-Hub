@@ -338,7 +338,7 @@
         "customPoints": null,
         "lineup": [
           {
-            "playerId": "8183",
+            "playerId": "6770",
             "slot": "QB",
             "starter": true,
             "points": 0,
@@ -380,7 +380,7 @@
             "status": null
           },
           {
-            "playerId": "5859",
+            "playerId": "4866",
             "slot": "FLEX",
             "starter": true,
             "points": 0,
@@ -394,7 +394,7 @@
             "status": null
           },
           {
-            "playerId": "IND",
+            "playerId": "DEN",
             "slot": "DEF",
             "starter": true,
             "points": 0,
@@ -415,21 +415,21 @@
             "status": null
           },
           {
-            "playerId": "4866",
+            "playerId": "5859",
             "slot": "BN",
             "starter": false,
             "points": 0,
             "status": null
           },
           {
-            "playerId": "6770",
+            "playerId": "8183",
             "slot": "BN",
             "starter": false,
             "points": 0,
             "status": null
           },
           {
-            "playerId": "DEN",
+            "playerId": "IND",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -2570,7 +2570,7 @@
             "status": null
           },
           {
-            "playerId": "12474",
+            "playerId": "4866",
             "slot": "RB",
             "starter": true,
             "points": 0,
@@ -2605,7 +2605,7 @@
             "status": null
           },
           {
-            "playerId": "9501",
+            "playerId": "2216",
             "slot": "FLEX",
             "starter": true,
             "points": 0,
@@ -2633,6 +2633,13 @@
             "status": null
           },
           {
+            "playerId": "12474",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
             "playerId": "12514",
             "slot": "BN",
             "starter": false,
@@ -2647,14 +2654,7 @@
             "status": null
           },
           {
-            "playerId": "2216",
-            "slot": "BN",
-            "starter": false,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "4866",
+            "playerId": "9501",
             "slot": "BN",
             "starter": false,
             "points": 0,
