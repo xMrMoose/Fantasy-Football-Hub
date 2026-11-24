@@ -6,17 +6,17 @@
   "seeds": [
     {
       "seed": 1,
-      "teamId": "NFC-2",
+      "teamId": "NFC-1",
       "source": "auto"
     },
     {
       "seed": 2,
-      "teamId": "NFC-6",
+      "teamId": "NFC-2",
       "source": "auto"
     },
     {
       "seed": 3,
-      "teamId": "NFC-1",
+      "teamId": "NFC-6",
       "source": "auto"
     },
     {

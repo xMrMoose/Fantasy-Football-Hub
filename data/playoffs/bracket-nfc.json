@@ -3,7 +3,7 @@
   "conference": "NFC",
   "reseed": true,
   "official": false,
-  "asOfWeek": 11,
+  "asOfWeek": 12,
   "hasPlayedGames": true,
   "matchups": [
     {
@@ -13,6 +13,22 @@
       "participants": [
         {
           "seed": 1,
+          "teamId": "NFC-1",
+          "score": null,
+          "source": "bye"
+        }
+      ],
+      "winnerTeamId": "NFC-1",
+      "state": "scheduled",
+      "provenance": "auto"
+    },
+    {
+      "round": "wildcard",
+      "week": 14,
+      "conference": "NFC",
+      "participants": [
+        {
+          "seed": 2,
           "teamId": "NFC-2",
           "score": null,
           "source": "bye"
@@ -28,24 +44,8 @@
       "conference": "NFC",
       "participants": [
         {
-          "seed": 2,
-          "teamId": "NFC-6",
-          "score": null,
-          "source": "bye"
-        }
-      ],
-      "winnerTeamId": "NFC-6",
-      "state": "scheduled",
-      "provenance": "auto"
-    },
-    {
-      "round": "wildcard",
-      "week": 14,
-      "conference": "NFC",
-      "participants": [
-        {
           "seed": 3,
-          "teamId": "NFC-1",
+          "teamId": "NFC-6",
           "score": null,
           "source": "auto"
         },

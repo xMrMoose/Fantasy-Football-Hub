@@ -7,10 +7,10 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 11,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "AFC-1",
-        "points": 111.86,
+        "points": 120.36,
         "customPoints": null,
         "lineup": [
           {
@@ -45,7 +45,7 @@
             "playerId": "2449",
             "slot": "WR",
             "starter": true,
-            "points": 0,
+            "points": 8.5,
             "status": null
           },
           {
@@ -80,7 +80,7 @@
             "playerId": "12533",
             "slot": "BN",
             "starter": false,
-            "points": 0,
+            "points": 15.7,
             "status": null
           },
           {
@@ -218,7 +218,7 @@
           }
         ]
       },
-      "winnerTeamId": "AFC-7",
+      "winnerTeamId": "AFC-1",
       "customPointsUsed": false
     },
     {
@@ -226,10 +226,10 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 11,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "AFC-2",
-        "points": 81.74,
+        "points": 90.34,
         "customPoints": null,
         "lineup": [
           {
@@ -243,7 +243,7 @@
             "playerId": "9224",
             "slot": "RB",
             "starter": true,
-            "points": 0,
+            "points": 8.6,
             "status": null
           },
           {
@@ -306,7 +306,7 @@
             "playerId": "11566",
             "slot": "BN",
             "starter": false,
-            "points": 0,
+            "points": 17.06,
             "status": null
           },
           {
@@ -445,7 +445,7 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 11,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "AFC-3",
         "points": 99.54,
@@ -671,17 +671,17 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 11,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "AFC-4",
-        "points": 88.5,
+        "points": 118.4,
         "customPoints": null,
         "lineup": [
           {
             "playerId": "6770",
             "slot": "QB",
             "starter": true,
-            "points": 0,
+            "points": 19.9,
             "status": null
           },
           {
@@ -730,7 +730,7 @@
             "playerId": "7839",
             "slot": "K",
             "starter": true,
-            "points": 0,
+            "points": 10,
             "status": null
           },
           {
@@ -890,10 +890,10 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 11,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "AFC-5",
-        "points": 84.1,
+        "points": 99.4,
         "customPoints": null,
         "lineup": [
           {
@@ -921,7 +921,7 @@
             "playerId": "6801",
             "slot": "WR",
             "starter": true,
-            "points": 0,
+            "points": 12.3,
             "status": null
           },
           {
@@ -956,7 +956,7 @@
             "playerId": "CIN",
             "slot": "DEF",
             "starter": true,
-            "points": 0,
+            "points": 3,
             "status": null
           },
           {
@@ -1101,7 +1101,7 @@
           }
         ]
       },
-      "winnerTeamId": "AFC-6",
+      "winnerTeamId": "AFC-5",
       "customPointsUsed": false
     },
     {
@@ -1109,10 +1109,10 @@
       "conference": "AFC",
       "sourceLeagueId": "1398855181952667648",
       "week": 11,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "AFC-9",
-        "points": 78.04,
+        "points": 86.14,
         "customPoints": null,
         "lineup": [
           {
@@ -1161,7 +1161,7 @@
             "playerId": "7564",
             "slot": "FLEX",
             "starter": true,
-            "points": 0,
+            "points": 8.1,
             "status": null
           },
           {
@@ -1328,7 +1328,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 11,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "NFC-1",
         "points": 131.5,
@@ -1436,7 +1436,7 @@
       },
       "teamB": {
         "teamId": "NFC-10",
-        "points": 112.06,
+        "points": 120.66,
         "customPoints": null,
         "lineup": [
           {
@@ -1457,7 +1457,7 @@
             "playerId": "9224",
             "slot": "RB",
             "starter": true,
-            "points": 0,
+            "points": 8.6,
             "status": null
           },
           {
@@ -1547,7 +1547,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 11,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "NFC-2",
         "points": 90.94,
@@ -1655,14 +1655,14 @@
       },
       "teamB": {
         "teamId": "NFC-7",
-        "points": 90.1,
+        "points": 115.66,
         "customPoints": null,
         "lineup": [
           {
             "playerId": "11566",
             "slot": "QB",
             "starter": true,
-            "points": 0,
+            "points": 17.06,
             "status": null
           },
           {
@@ -1704,7 +1704,7 @@
             "playerId": "2449",
             "slot": "FLEX",
             "starter": true,
-            "points": 0,
+            "points": 8.5,
             "status": null
           },
           {
@@ -1725,7 +1725,7 @@
             "playerId": "12533",
             "slot": "BN",
             "starter": false,
-            "points": 0,
+            "points": 15.7,
             "status": null
           },
           {
@@ -1758,7 +1758,7 @@
           }
         ]
       },
-      "winnerTeamId": "NFC-2",
+      "winnerTeamId": "NFC-7",
       "customPointsUsed": false
     },
     {
@@ -1766,10 +1766,10 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 11,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "NFC-3",
-        "points": 101.1,
+        "points": 104.1,
         "customPoints": null,
         "lineup": [
           {
@@ -1832,7 +1832,7 @@
             "playerId": "CIN",
             "slot": "DEF",
             "starter": true,
-            "points": 0,
+            "points": 3,
             "status": null
           },
           {
@@ -1985,10 +1985,10 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 11,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "NFC-4",
-        "points": 90.8,
+        "points": 108.9,
         "customPoints": null,
         "lineup": [
           {
@@ -2016,7 +2016,7 @@
             "playerId": "7564",
             "slot": "WR",
             "starter": true,
-            "points": 0,
+            "points": 8.1,
             "status": null
           },
           {
@@ -2044,7 +2044,7 @@
             "playerId": "7839",
             "slot": "K",
             "starter": true,
-            "points": 0,
+            "points": 10,
             "status": null
           },
           {
@@ -2204,7 +2204,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 11,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "NFC-5",
         "points": 77.86,
@@ -2423,7 +2423,7 @@
       "conference": "NFC",
       "sourceLeagueId": "1398856149637275648",
       "week": 11,
-      "state": "live",
+      "state": "final",
       "teamA": {
         "teamId": "NFC-6",
         "points": 70.56,
@@ -2608,14 +2608,14 @@
             "playerId": "6770",
             "slot": "BN",
             "starter": false,
-            "points": 0,
+            "points": 19.9,
             "status": null
           },
           {
             "playerId": "6801",
             "slot": "BN",
             "starter": false,
-            "points": 0,
+            "points": 12.3,
             "status": null
           },
           {
