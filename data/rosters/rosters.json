@@ -2022,7 +2022,7 @@
       {
         "slot": "K",
         "starter": true,
-        "playerId": "12185"
+        "playerId": null
       },
       {
         "slot": "DEF",
@@ -2056,7 +2056,6 @@
       }
     ],
     "playerIds": [
-      "12185",
       "12506",
       "12512",
       "12545",
