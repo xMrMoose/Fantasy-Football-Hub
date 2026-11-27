@@ -261,7 +261,7 @@
             "status": null
           },
           {
-            "playerId": "11625",
+            "playerId": "13279",
             "slot": "WR",
             "starter": true,
             "points": 0,
@@ -275,7 +275,7 @@
             "status": null
           },
           {
-            "playerId": "6130",
+            "playerId": "8112",
             "slot": "FLEX",
             "starter": true,
             "points": 0,
@@ -303,7 +303,14 @@
             "status": null
           },
           {
-            "playerId": "13279",
+            "playerId": "11625",
+            "slot": "BN",
+            "starter": false,
+            "points": 0,
+            "status": null
+          },
+          {
+            "playerId": "6130",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -311,13 +318,6 @@
           },
           {
             "playerId": "6804",
-            "slot": "BN",
-            "starter": false,
-            "points": 0,
-            "status": null
-          },
-          {
-            "playerId": "8112",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -1123,7 +1123,7 @@
             "status": null
           },
           {
-            "playerId": "8151",
+            "playerId": "9753",
             "slot": "RB",
             "starter": true,
             "points": 0,
@@ -1172,7 +1172,7 @@
             "status": null
           },
           {
-            "playerId": "13274",
+            "playerId": "12483",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -1186,7 +1186,7 @@
             "status": null
           },
           {
-            "playerId": "3257",
+            "playerId": "4017",
             "slot": "BN",
             "starter": false,
             "points": 0,
@@ -1200,7 +1200,7 @@
             "status": null
           },
           {
-            "playerId": "9753",
+            "playerId": "8151",
             "slot": "BN",
             "starter": false,
             "points": 0,
